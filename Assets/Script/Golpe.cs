@@ -19,12 +19,14 @@ public class Golpe : MonoBehaviour
     public int cantAlert = 0;
     public float tempo = 0f;
     public bool nextscene = false;
+    [SerializeField] private BarraDeVida barraDeVida;
 
     // Start is called before the first frame update
     void Start()
     {
         objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
+        barraDeVida.InicializarBarraDeVida(4);
     }
 
     // Update is called once per frame
@@ -60,6 +62,7 @@ public class Golpe : MonoBehaviour
                         //exito = true;
                         puntaje += 100;
                         cantAlert--;
+                        barraDeVida.CambiarVidaActual(cantAlert);
                         Scoretxt.text = "Puntaje: " + puntaje;
                         PlayerPrefs.SetInt("Puntaje", puntaje);
                         PlayerPrefs.Save();
@@ -87,5 +90,6 @@ public class Golpe : MonoBehaviour
     public void CantAlertas()
     {
         cantAlert++;
+        barraDeVida.CambiarVidaActual(cantAlert);
     }
 }

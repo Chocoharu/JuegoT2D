@@ -30,6 +30,6 @@ public class BarraDeVida : MonoBehaviour
     {
 
         CambiarVidaMaxima(cantidadVida);
-        CambiarVidaActual(cantidadVida);
+        CambiarVidaActual(0);
     }
 }
