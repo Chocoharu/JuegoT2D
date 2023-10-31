@@ -7,11 +7,12 @@ public class arm : MonoBehaviour
 {
     public Transform arm1;
     public SpriteRenderer armR;
-    public int speedTiza;
+    public int speedTiza=10;
     Vector3 targetrotation;
 
     public GameObject tiza;
     Vector3 finalTarget;
+    public int numtiza = 3;
 
     void Update()
     {
@@ -23,7 +24,8 @@ public class arm : MonoBehaviour
             armR.flipY = true;
         else
             armR.flipY= false;
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && numtiza > 0)
             shoot();
     }
     void shoot()
@@ -32,5 +34,6 @@ public class arm : MonoBehaviour
         targetrotation.z = 0;
         finalTarget = (targetrotation - transform.position).normalized;
         Ball.GetComponent<Rigidbody2D>().AddForce(finalTarget * speedTiza, ForceMode2D.Impulse);
+        numtiza--;
     }
 }
