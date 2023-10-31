@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,5 +51,20 @@ public class Movement : MonoBehaviour
             rigidbody.velocity = Vector3.zero;
         }
         animator.SetInteger("Movement", Dir);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Mancha"))
+        {
+            Speed = 2;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Mancha"))
+        {
+            Speed = 4;
+        }
     }
 }
