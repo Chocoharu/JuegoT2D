@@ -34,6 +34,6 @@ public class arm : MonoBehaviour
         targetrotation.z = 0;
         finalTarget = (targetrotation - transform.position).normalized;
         Ball.GetComponent<Rigidbody2D>().AddForce(finalTarget * speedTiza, ForceMode2D.Impulse);
-        numtiza--;
+        //numtiza--;
     }
 }
