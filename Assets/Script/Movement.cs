@@ -11,6 +11,9 @@ public class Movement : MonoBehaviour
     private Animator animator;
     private int Dir = 0;
 
+    public GameObject panelDialogo;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,14 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (panelDialogo.activeSelf)
+            {
+                return;
+            }
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
             rigidbody.velocity = transform.up * Speed;

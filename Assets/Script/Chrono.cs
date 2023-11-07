@@ -7,6 +7,10 @@ public class Chrono : MonoBehaviour
 {
     public TextMeshProUGUI Texttiempo;
     public float tiempo = 0f;
+
+    public GameObject panelDialogo;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,14 @@ public class Chrono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (panelDialogo.activeSelf)
+            {
+                return;
+            }
+        }
+
         tiempo += Time.deltaTime;
         Cronometro();
     }

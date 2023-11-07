@@ -13,6 +13,9 @@ public class Alerta : MonoBehaviour
     GameObject spriteGenerado = null;
     public Transform profe;
 
+    public GameObject panelDialogo;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,14 @@ public class Alerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (panelDialogo.activeSelf)
+            {
+                return;
+            }
+        }
+
         if (!Existe)
         {
             Timer -= Time.deltaTime;

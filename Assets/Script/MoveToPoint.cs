@@ -18,7 +18,7 @@ public class MoveToPoint : MonoBehaviour
     {
         if (TargetPos != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, TargetPos.position, speed*Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, TargetPos.position, speed * Time.deltaTime);
         }
     }
 }

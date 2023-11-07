@@ -14,8 +14,19 @@ public class arm : MonoBehaviour
     Vector3 finalTarget;
     public int numtiza = 3;
 
+    public GameObject panelDialogo;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     void Update()
     {
+        if (dialog == true)
+        {
+            if (panelDialogo.activeSelf)
+            {
+                return;
+            }
+        }
+
         targetrotation = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = MathF.Atan2(targetrotation.y, targetrotation.x) * Mathf.Rad2Deg;
         arm1.rotation = Quaternion.Euler(new Vector3(0, 0, angle));

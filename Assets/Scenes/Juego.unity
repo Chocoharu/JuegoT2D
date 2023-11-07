@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.399994, y: 0.000005722046}
+  m_AnchoredPosition: {x: 4.399994, y: 0.0000076293945}
   m_SizeDelta: {x: -3.3727, y: -30.0349}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!114 &134283543
@@ -485,10 +485,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1245392721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.018444795, y: 0.055849463}
-  m_AnchorMax: {x: 0.27220923, y: 0.13565117}
-  m_AnchoredPosition: {x: 39.25702, y: 407.4934}
-  m_SizeDelta: {x: 84.783, y: 3.3932}
+  m_AnchorMin: {x: 0.018444795, y: 0.8782657}
+  m_AnchorMax: {x: 0.37335017, y: 0.96453136}
+  m_AnchoredPosition: {x: 1.3959961, y: -0.38000488}
+  m_SizeDelta: {x: -1.2170029, y: 0.39318848}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &406233595
 GameObject:
@@ -524,8 +524,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17, y: 0}
-  m_SizeDelta: {x: -373.9773, y: -100}
+  m_AnchoredPosition: {x: 41.46219, y: -0.43519592}
+  m_SizeDelta: {x: -206.9595, y: -40.9533}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406233597
 MonoBehaviour:
@@ -839,10 +839,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1245392721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.015327101, y: 0.8218865}
-  m_AnchorMax: {x: 0.28741843, y: 0.8996688}
-  m_AnchoredPosition: {x: 33, y: 31}
-  m_SizeDelta: {x: 73.8448, y: 0}
+  m_AnchorMin: {x: 0.015327101, y: 0.77000004}
+  m_AnchorMax: {x: 0.46117467, y: 0.84900004}
+  m_AnchoredPosition: {x: -0.37182617, y: -1.1239929}
+  m_SizeDelta: {x: -0.74269867, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575713926
 MonoBehaviour:
@@ -1097,10 +1097,10 @@ RectTransform:
   - {fileID: 1530291895}
   m_Father: {fileID: 1245392721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 303, y: 243.54}
-  m_SizeDelta: {x: 332.9661, y: 56.1243}
+  m_AnchorMin: {x: 0.5892256, y: 0.84900004}
+  m_AnchorMax: {x: 0.9723502, y: 0.952}
+  m_AnchoredPosition: {x: 3, y: 2.800003}
+  m_SizeDelta: {x: 6.966095, y: 7.124298}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059603195
 MonoBehaviour:
@@ -1482,6 +1482,10 @@ PrefabInstance:
       propertyPath: profe
       value: 
       objectReference: {fileID: 2087760012}
+    - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: panelDialogo
+      value: 
+      objectReference: {fileID: 2075298989}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1612,6 +1616,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Texttiempo: {fileID: 356089687}
   tiempo: 0
+  panelDialogo: {fileID: 2075298989}
+  dialog: 1
 --- !u!1 &1530291894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,7 +1652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.4375, y: 0.000019073486}
+  m_AnchoredPosition: {x: -2.4375, y: 0.000015258789}
   m_SizeDelta: {x: 4.8751, y: -0.0000076294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1530291896
@@ -1851,6 +1857,10 @@ PrefabInstance:
       propertyPath: profe
       value: 
       objectReference: {fileID: 2087760012}
+    - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: panelDialogo
+      value: 
+      objectReference: {fileID: 2075298989}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1976,7 +1986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2014365016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,9 +2000,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - heeheheheheheheh
+  - heehehehehehehehasdsdaasd
   dialogue: {fileID: 406233597}
-  text: 0
+  text: 1
   TimeTyping: 0.075
   panel: {fileID: 2075298989}
 --- !u!4 &2014365017
@@ -2070,6 +2080,10 @@ PrefabInstance:
       propertyPath: profe
       value: 
       objectReference: {fileID: 2087760012}
+    - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: panelDialogo
+      value: 
+      objectReference: {fileID: 2075298989}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2092,7 +2106,7 @@ GameObject:
   - component: {fileID: 2075298992}
   - component: {fileID: 2075298991}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel Dialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2115,8 +2129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -5.4201, y: -163.01492}
-  m_SizeDelta: {x: 1006.5073, y: -372.488}
+  m_AnchoredPosition: {x: 0.68488, y: -119.69515}
+  m_SizeDelta: {x: 741.85, y: -285.8485}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075298991
 MonoBehaviour:
@@ -2192,6 +2206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
+  panelDialogo: {fileID: 2075298989}
+  dialog: 1
 --- !u!61 &2087760009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2399,6 +2415,8 @@ MonoBehaviour:
   speedTiza: 10
   tiza: {fileID: 415148036}
   numtiza: 3
+  panelDialogo: {fileID: 2075298989}
+  dialog: 1
 --- !u!1001 &248485848376176727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2602,6 +2620,10 @@ PrefabInstance:
       propertyPath: profe
       value: 
       objectReference: {fileID: 2087760012}
+    - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: panelDialogo
+      value: 
+      objectReference: {fileID: 2075298989}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
