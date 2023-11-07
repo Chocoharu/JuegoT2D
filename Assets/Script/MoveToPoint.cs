@@ -18,21 +18,14 @@ public class MoveToPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(flag)
+        if (TargetPos != null && flag)
         {
-            if (TargetPos != null)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, TargetPos.position, speed * Time.deltaTime);
-            }
+            transform.position = Vector3.MoveTowards(transform.position, TargetPos.position, speed * Time.deltaTime);
+            //    flag = false;
         }
-        else
+        if (transform.position == TargetPos.position && !flag)
         {
-            if (TargetPos2 != null)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, TargetPos2.position, speed * Time.deltaTime);
-            }
+            transform.position = Vector3.MoveTowards(transform.position, TargetPos2.position, speed * Time.deltaTime);
         }
-        
-        
     }
 }
