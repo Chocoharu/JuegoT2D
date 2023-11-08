@@ -13,7 +13,7 @@ public class Alerta : MonoBehaviour
     GameObject spriteGenerado = null;
     public Transform profe;
 
-    public GameObject panelDialogo;
+    public GameObject Pause;
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ public class Alerta : MonoBehaviour
     {
         if (dialog == true)
         {
-            if (panelDialogo.activeSelf)
+            if (Pause.activeSelf)
             {
                 return;
             }

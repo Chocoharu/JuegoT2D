@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     private Animator animator;
     private int Dir = 0;
 
-    public GameObject panelDialogo;
+    public GameObject Pause;
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
     {
         if (dialog == true)
         {
-            if (panelDialogo.activeSelf)
+            if (Pause.activeSelf)
             {
                 return;
             }

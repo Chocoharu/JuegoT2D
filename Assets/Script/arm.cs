@@ -14,14 +14,14 @@ public class arm : MonoBehaviour
     Vector3 finalTarget;
     public int numtiza = 3;
 
-    public GameObject panelDialogo;
+    public GameObject Pause;
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     void Update()
     {
         if (dialog == true)
         {
-            if (panelDialogo.activeSelf)
+            if (Pause.activeSelf)
             {
                 return;
             }

@@ -14,9 +14,13 @@ public class ActivarPanel : MonoBehaviour
     private int LineIndex;
     [SerializeField] private float TimeTyping = 0.075f;
 
-
     public GameObject panel;
     private float tiempoEspera = 0f; // Tiempo en segundos antes de activar el panel
+
+    public MoveToPoint moveToPointScript;
+
+    public Image ImagePanel;
+    private bool startTyping = false;
 
     private void Start()
     {
@@ -28,31 +32,31 @@ public class ActivarPanel : MonoBehaviour
     {
         if (text)
         {
-            
-            if (!DidDialogueStart)
+            if (startTyping)
             {
-                StartDialogue();
-            }
-            else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
-            {
-                if (dialogue.text == dialogueLines[LineIndex])
+                if (!DidDialogueStart)
                 {
-                    NextDialogueLine();
+                    StartDialogue();
                 }
-                else
+                else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
                 {
-                    StopAllCoroutines();
-                    dialogue.text = dialogueLines[LineIndex];
+                    if (dialogue.text == dialogueLines[LineIndex])
+                    {
+                        NextDialogueLine();
+                    }
+                    else
+                    {
+                        StopAllCoroutines();
+                        dialogue.text = dialogueLines[LineIndex];
+                    }
                 }
-        
+                //else
+                //{
+                //    panel.SetActive(false);
+                //}
             }
-                    
             
-        }
-        else
-        {
-            panel.SetActive(false);
-        }
+        } 
     }
     private void StartDialogue()
     {
@@ -71,6 +75,7 @@ public class ActivarPanel : MonoBehaviour
         {
             DidDialogueStart = false;
             panel.SetActive(false);
+            moveToPointScript.flag = false;
         }
     }
 
@@ -89,5 +94,14 @@ public class ActivarPanel : MonoBehaviour
     {
         // Activa el panel
         panel.SetActive(true);
+    }
+    public void Empezar()
+    {
+        Color colorActual = ImagePanel.color;
+        colorActual.a = 0.5f; // Establece el valor alfa (transparencia) deseado
+
+        ImagePanel.color = colorActual;
+
+        startTyping = true;
     }
 }
