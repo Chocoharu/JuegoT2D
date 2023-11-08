@@ -13,6 +13,7 @@ public class MoveToPoint : MonoBehaviour
     public bool flag2 = false;
     public ActivarPanel empezarEscribir;
 
+
     // Start is called before the first frame update
     void Start()
     {
