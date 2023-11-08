@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class PlaygroundShoot : MonoBehaviour
 {
-    public GameObject prefab;
-
     // Start is called before the first frame update
     void Start()
     {
-        prefab = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -19,6 +16,6 @@ public class PlaygroundShoot : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        Destroy(prefab);
+        Destroy(gameObject);
     }
 }
