@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlaygroundShoot : MonoBehaviour
 {
+    public int Score;
+    public TextMeshPro TextoScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +19,18 @@ public class PlaygroundShoot : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        Destroy(gameObject);
+        if (CompareTag("Estudiante"))
+        {
+            Score += 100;
+            TextoScore.text = "Puntaje" + Score;
+            Destroy(gameObject);
+        }
+        else if(CompareTag("Ave"))
+        {
+
+        }
+           
     }
+    public int Puntaje()
+    { return Score; }
 }

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class GeneradorDeObjetos : MonoBehaviour
 {
-    public GameObject objetoPrefab; // El GameObject que quieres generar.
-    public float intervaloDeGeneracion = 1.0f; // El intervalo entre generaciones.
-    public float rangoYMinimo = -2.0f; // Valor mínimo en el eje Y.
-    public float rangoYMaximo = 2.0f; // Valor máximo en el eje Y.
+    public GameObject objetoPrefab;
+    public GameObject objetoPrefab1;
+    public GameObject objetoPrefab2;
+    public float intervaloDeGeneracion = 1.0f;
+    public float rangoYMinimo;
+    public float rangoYMaximo;
     public bool dir;
 
     private void Start()
@@ -18,14 +20,34 @@ public class GeneradorDeObjetos : MonoBehaviour
 
     private void GenerarObjeto()
     {
-        // Genera un objeto en una posición aleatoria en el eje Y.
-        float posY = Random.Range(rangoYMinimo, rangoYMaximo);
-        Vector3 posicionGeneracion = new Vector3(transform.position.x, posY, transform.position.z);
-        Instantiate(objetoPrefab, posicionGeneracion, Quaternion.identity);
-    }
+        float randomValue = Random.value;
 
+        GameObject objetoGenerado;
+
+        // 40% de probabilidad de generar objetoPrefab
+        if (randomValue <= 0.4f)
+        {
+            objetoGenerado = Instantiate(objetoPrefab, ObtenerPosicionAleatoria(), Quaternion.identity);
+        }
+        // 30% de probabilidad de generar objetoPrefab1
+        else if (randomValue <= 0.7f)
+        {
+            objetoGenerado = Instantiate(objetoPrefab1, ObtenerPosicionAleatoria(), Quaternion.identity);
+        }
+        // 30% de probabilidad de generar objetoPrefab2
+        else
+        {
+            objetoGenerado = Instantiate(objetoPrefab2, ObtenerPosicionAleatoria(), Quaternion.identity);
+        }
+    }
+    private Vector3 ObtenerPosicionAleatoria()
+    {
+        float posY = Random.Range(rangoYMinimo, rangoYMaximo);
+        return new Vector3(transform.position.x, posY, transform.position.z);
+    }
     public bool DireccionAlumno()
     {
         return dir;
     }
+
 }
