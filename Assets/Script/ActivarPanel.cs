@@ -50,10 +50,6 @@ public class ActivarPanel : MonoBehaviour
                         dialogue.text = dialogueLines[LineIndex];
                     }
                 }
-                //else
-                //{
-                //    panel.SetActive(false);
-                //}
             }
             
         } 
@@ -98,7 +94,7 @@ public class ActivarPanel : MonoBehaviour
     public void Empezar()
     {
         Color colorActual = ImagePanel.color;
-        colorActual.a = 0.5f; // Establece el valor alfa (transparencia) deseado
+        colorActual.a = 0.5f;
 
         ImagePanel.color = colorActual;
 

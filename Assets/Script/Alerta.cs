@@ -22,7 +22,6 @@ public class Alerta : MonoBehaviour
         animator = GetComponent<Animator>();
         animator.SetBool("Inquieto", false);
         Timer = Random.Range(3.0f, 9.0f);
-        //StartCoroutine(GenerarSpritesRepetidamente());
     }
 
     // Update is called once per frame
