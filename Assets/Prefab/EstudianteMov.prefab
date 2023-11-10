@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 2304179575116010051}
   - component: {fileID: -763831011249425138}
   - component: {fileID: -5819507779577459920}
-  - component: {fileID: 7229788552786143263}
   - component: {fileID: 209729822963477672}
+  - component: {fileID: -1473357064577582362}
   m_Layer: 0
   m_Name: EstudianteMov
-  m_TagString: Untagged
+  m_TagString: Estudiante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,18 +130,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7229788552786143263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797905057709477700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac54a23c1d279de4ba89504b9f6b64aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &209729822963477672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,3 +175,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-1473357064577582362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797905057709477700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc2016c0b5a44d1408b9ea6fa1ef8b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

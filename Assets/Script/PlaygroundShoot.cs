@@ -6,31 +6,36 @@ using UnityEngine;
 public class PlaygroundShoot : MonoBehaviour
 {
     public int Score;
-    public TextMeshPro TextoScore;
+    public TextMeshProUGUI TextoScore;
+    public static PlaygroundShoot Instance;
     // Start is called before the first frame update
     void Start()
     {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        if(Instance != null)
+        {
+            Destroy(gameObject);
+            
+        }
+        
+    }
+
+    
+    public void AddPoint(int points)
+    {
+        Score += points;
+        TextoScore.text = "Puntaje: " + Score;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       //TextoScore.text = "Puntaje: " + Score;
     }
-    private void OnMouseDown()
-    {
-        if (CompareTag("Estudiante"))
-        {
-            Score += 100;
-            TextoScore.text = "Puntaje" + Score;
-            Destroy(gameObject);
-        }
-        else if(CompareTag("Ave"))
-        {
-
-        }
-           
-    }
+    
     public int Puntaje()
     { return Score; }
 }
