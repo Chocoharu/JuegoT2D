@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8013398909908294558}
   - component: {fileID: 2304179575116010051}
-  - component: {fileID: -763831011249425138}
   - component: {fileID: -5819507779577459920}
   - component: {fileID: 209729822963477672}
   - component: {fileID: -1473357064577582362}
+  - component: {fileID: 1754423307219003966}
   m_Layer: 0
   m_Name: EstudianteMov
   m_TagString: Estudiante
@@ -88,21 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-763831011249425138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6797905057709477700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83952965aa437034da0fc6eb59bb9da2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
-  dir: 1
-  InitPos: {fileID: 0}
 --- !u!50 &-5819507779577459920
 Rigidbody2D:
   serializedVersion: 4
@@ -187,3 +172,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2016c0b5a44d1408b9ea6fa1ef8b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1754423307219003966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797905057709477700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83952965aa437034da0fc6eb59bb9da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  dir: 0
+  InitPos: {fileID: 0}
