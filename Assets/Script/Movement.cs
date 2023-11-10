@@ -48,12 +48,14 @@ public class Movement : MonoBehaviour
         {
             rigidbody.velocity = transform.right * Speed;
             Dir = 4;
+            transform.localScale = new Vector3(1, 1, 1);
             //transform.position += Vector3.right * Time.deltaTime * Speed;
         }
         else if (Input.GetKey(KeyCode.A))
         {
             rigidbody.velocity = -transform.right * Speed;
             Dir = 2;
+            transform.localScale = new Vector3(-1, 1, 1);
             //transform.position -= Vector3.right * Time.deltaTime * Speed;
         }
         else
