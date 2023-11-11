@@ -11,6 +11,8 @@ public class Obstaculo : MonoBehaviour
 
     private float minTiempoInvisible = 1.0f;
     private float maxTiempoInvisible = 3.0f;
+
+    public GameObject Pause;
     // Start is called before the first frame update
     void Start()
     {

@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class Chrono : MonoBehaviour
 {
     public TextMeshProUGUI Texttiempo;
     public float tiempo = 0f;
+
+    public GameObject Pause;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +22,17 @@ public class Chrono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
+        if (tiempo >= 30f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
         tiempo += Time.deltaTime;
         Cronometro();
     }

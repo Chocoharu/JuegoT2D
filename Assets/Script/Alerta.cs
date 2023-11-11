@@ -13,18 +13,28 @@ public class Alerta : MonoBehaviour
     GameObject spriteGenerado = null;
     public Transform profe;
 
+    public GameObject Pause;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         animator.SetBool("Inquieto", false);
         Timer = Random.Range(3.0f, 9.0f);
-        //StartCoroutine(GenerarSpritesRepetidamente());
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
+
         if (!Existe)
         {
             Timer -= Time.deltaTime;

@@ -11,6 +11,9 @@ public class Movement : MonoBehaviour
     private Animator animator;
     private int Dir = 0;
 
+    public GameObject Pause;
+    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,14 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dialog == true)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
             rigidbody.velocity = transform.up * Speed;
@@ -37,12 +48,14 @@ public class Movement : MonoBehaviour
         {
             rigidbody.velocity = transform.right * Speed;
             Dir = 4;
+            transform.localScale = new Vector3(1, 1, 1);
             //transform.position += Vector3.right * Time.deltaTime * Speed;
         }
         else if (Input.GetKey(KeyCode.A))
         {
             rigidbody.velocity = -transform.right * Speed;
             Dir = 2;
+            transform.localScale = new Vector3(-1, 1, 1);
             //transform.position -= Vector3.right * Time.deltaTime * Speed;
         }
         else
