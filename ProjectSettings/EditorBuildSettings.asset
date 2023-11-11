@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MuestraAsset.unity
     guid: 35ce10a5faca6874cb39aa63c6c6b3fa
+  - enabled: 1
+    path: Assets/Scenes/Patio.unity
+    guid: c34afb41ee1382f4fa7cb3399e67cada
   m_configObjects: {}
