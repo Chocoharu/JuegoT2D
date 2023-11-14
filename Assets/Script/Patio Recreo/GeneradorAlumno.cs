@@ -29,16 +29,15 @@ public class GeneradorDeObjetos : MonoBehaviour
         if (randomValue <= 0.4f)
         {
             objetoGenerado = Instantiate(objetoPrefab, ObtenerPosicionAleatoria(), Quaternion.identity);
-            objetoGenerado.transform.Translate(Vector2.right * 5 * Time.deltaTime);
 
         }
         // 30% de probabilidad de generar objetoPrefab1
-        /*else if (randomValue <= 0.7f)
+        else if (randomValue <= 0.7f)
         {
             objetoGenerado = Instantiate(objetoPrefab1, ObtenerPosicionAleatoria(), Quaternion.identity);
         }
         // 30% de probabilidad de generar objetoPrefab2
-        else
+        /*else
         {
             objetoGenerado = Instantiate(objetoPrefab2, ObtenerPosicionAleatoria(), Quaternion.identity);
             objetoGenerado.transform.Translate(Vector2.right * 5 * Time.deltaTime);
@@ -53,5 +52,4 @@ public class GeneradorDeObjetos : MonoBehaviour
     {
         return dir;
     }
-
 }

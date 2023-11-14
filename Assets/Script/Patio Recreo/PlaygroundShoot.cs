@@ -29,6 +29,15 @@ public class PlaygroundShoot : MonoBehaviour
         Score += points;
         TextoScore.text = "Puntaje: " + Score;
     }
+    public void RemovePoint(int points)
+    {
+        Score -= points;
+        if(Score<0)
+        {
+            Score = 0;
+        }
+        TextoScore.text = "Puntaje: " + Score;
+    }
 
     // Update is called once per frame
     void Update()
