@@ -18,6 +18,7 @@ public class MoveToPoint : MonoBehaviour
     public ActivarPanel empezarEscribir;
     public GameObject Pause;
 
+    public GameObject PowEj;
     public GameObject StudentEj;
     public GameObject Dialog;
     public SpriteRenderer RealStudent;
@@ -53,7 +54,8 @@ public class MoveToPoint : MonoBehaviour
 
                 Destroy(Dialog);
                 Destroy(EjNoise);
-                 
+                PowEj.SetActive(true);
+                Destroy(PowEj, 0.5f);
             }
         }
         if (flag2 && flag3)

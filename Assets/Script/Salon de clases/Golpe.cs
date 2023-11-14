@@ -77,7 +77,7 @@ public class Golpe : MonoBehaviour
             tempo += Time.deltaTime;
             if(tempo >= 5f && !nextscene)
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 nextscene = true;
             }

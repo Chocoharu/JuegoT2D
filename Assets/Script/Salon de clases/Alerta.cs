@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class Alerta : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject Pow;
     public bool permisoGolpe;
     private Animator animator;
     private float Timer;
     bool Existe = false;
     GameObject spriteGenerado = null;
+    GameObject spritePow = null;
     public Transform profe;
 
     public GameObject Pause;
@@ -56,6 +58,8 @@ public class Alerta : MonoBehaviour
     public void Destruir()
     {
         Destroy(spriteGenerado);
+        spritePow = Instantiate(Pow, transform.position + transform.up + transform.right, Quaternion.identity);
+        Destroy(spritePow, 0.5f);
         permisoGolpe = false;
         animator.SetBool("Inquieto", false);
         Existe = false;
