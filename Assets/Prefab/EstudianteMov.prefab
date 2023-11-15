@@ -172,6 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2016c0b5a44d1408b9ea6fa1ef8b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tierra: {fileID: 5681174988993343008, guid: d0952639b3468054181f4c7db912ebef, type: 3}
+  newBorn: 0
+  StartInquieto: 0
+  Movimiento: 1
 --- !u!114 &1754423307219003966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,5 +189,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2
-  dir: 0
-  InitPos: {fileID: 0}
+  PermisoMovimiento: 0
