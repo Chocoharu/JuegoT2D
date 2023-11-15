@@ -23,7 +23,7 @@ public class student1 : MonoBehaviour
             return;
         }
         timer += Time.deltaTime;
-        if(timer > 2)
+        if(timer > 3)
         {
             timer = 0;
             Shoot();

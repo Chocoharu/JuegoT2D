@@ -31,7 +31,7 @@ public class Chrono : MonoBehaviour
         }
         if (tiempo >= 30f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
         tiempo += Time.deltaTime;
         Cronometro();

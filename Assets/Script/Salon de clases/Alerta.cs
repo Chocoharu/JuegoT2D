@@ -18,6 +18,12 @@ public class Alerta : MonoBehaviour
     public GameObject Pause;
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
+    private bool isStunned = false;
+    private float stunDuration = 5f;
+    private float stunTimer = 0f;
+
+    public bool SpecialStudent = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,32 +43,72 @@ public class Alerta : MonoBehaviour
             }
         }
 
-        if (!Existe)
+        if (!isStunned)
         {
-            Timer -= Time.deltaTime;
+            if (!Existe)
+            {
+                Timer -= Time.deltaTime;
+            }
+
+            if (Timer < 0 && !Existe)
+            {
+                // Check if not stunned before generating new alerts
+                if (!isStunned)
+                {
+                    animator.SetBool("Inquieto", true);
+                    spriteGenerado = Instantiate(prefab, transform.position + transform.up, Quaternion.identity);
+                    profe.GetComponent<Golpe>().CantAlertas();
+                    permisoGolpe = true;
+                    Existe = true;
+                    if (SpecialStudent)
+                    {
+                        // Llamar al método StartMoving del script StudentMovement
+                        GetComponent<StudentMovement>().StartMoving();
+                        Debug.Log("no normal");
+                    }
+                }
+            }
         }
-            
-        if (Timer < 0 && !Existe)
+        else
         {
-            animator.SetBool("Inquieto", true);
-            spriteGenerado = Instantiate(prefab, transform.position + transform.up, Quaternion.identity);
-            profe.GetComponent<Golpe>().CantAlertas();  
-            permisoGolpe = true;
-            Existe = true;
+            // Handle stun timer
+            stunTimer += Time.deltaTime;
+            if (stunTimer >= stunDuration)
+            {
+                isStunned = false;
+                stunTimer = 0f;
+            }
         }
     }
+
     public bool PermisoGolpe()
     {
-        return permisoGolpe;
+        return permisoGolpe && !isStunned;
+    }
+
+    public void ApplyStun()
+    {
+        isStunned = true;
+        // Add any visual/audio effects for stun here, if necessary
     }
     public void Destruir()
     {
-        Destroy(spriteGenerado);
-        spritePow = Instantiate(Pow, transform.position + transform.up + transform.right, Quaternion.identity);
-        Destroy(spritePow, 0.5f);
-        permisoGolpe = false;
-        animator.SetBool("Inquieto", false);
-        Existe = false;
-        Timer = Random.Range(3.0f, 9.0f);
+        if (!isStunned)
+        {
+            Destroy(spriteGenerado);
+            spritePow = Instantiate(Pow, transform.position + transform.up + transform.right, Quaternion.identity);
+            Destroy(spritePow, 0.5f);
+            permisoGolpe = false;
+            animator.SetBool("Inquieto", false);
+            Existe = false;
+            Timer = Random.Range(3.0f, 9.0f);
+
+            if (SpecialStudent)
+            {
+                Debug.Log("normal");
+                // Llamar al método ReturnToSeat del script StudentMovement
+                GetComponent<StudentMovement>().ReturnToSeat();
+            }
+        }
     }
 }

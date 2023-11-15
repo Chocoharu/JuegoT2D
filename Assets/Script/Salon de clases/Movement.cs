@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public float Speed;
     private Animator animator;
     private int Dir = 0;
+    public bool CanMove = true;
 
     public GameObject Pause;
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
@@ -32,26 +33,26 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) && CanMove)
         {
             rigidbody.velocity = transform.up * Speed;
             Dir = 1;
             //transform.position += Vector3.right * Time.deltaTime * Speed;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) && CanMove)
         {
             rigidbody.velocity = -transform.up * Speed;
             Dir = 3;
             //transform.position -= Vector3.right * Time.deltaTime * Speed;
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && CanMove)
         {
             rigidbody.velocity = transform.right * Speed;
             Dir = 4;
             transform.localScale = new Vector3(1, 1, 1);
             //transform.position += Vector3.right * Time.deltaTime * Speed;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && CanMove)
         {
             rigidbody.velocity = -transform.right * Speed;
             Dir = 2;
@@ -79,5 +80,16 @@ public class Movement : MonoBehaviour
         {
             Speed = 4;
         }
+    }
+    public void Stunned()
+    {
+        CanMove = false;
+        StartCoroutine("EsperarYCambiarEstado", 1.25f);
+        //EsperarYCambiarEstado();
+    }
+    public IEnumerator EsperarYCambiarEstado()
+    {
+        yield return new WaitForSeconds(0.5f);
+        CanMove = true;
     }
 }

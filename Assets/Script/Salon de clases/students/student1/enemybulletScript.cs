@@ -22,6 +22,7 @@ public class enemybulletScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             //stun player
+            player.GetComponent<Movement>().Stunned();
             Destroy(gameObject);
 
         }

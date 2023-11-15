@@ -14,7 +14,8 @@ public class tiza : MonoBehaviour
             Alerta alerta = collision.gameObject.GetComponent<Alerta>();
             if (alerta != null && alerta.PermisoGolpe())
             {
-                alerta.Destruir(); // Destruye el estudiante
+                alerta.Destruir();
+                alerta.ApplyStun();
                 golpe.puntaje += 100;
                 golpe.cantAlert--;
                 barraDeVida.CambiarVidaActual(golpe.cantAlert);
@@ -22,5 +23,6 @@ public class tiza : MonoBehaviour
             }
             Destroy(this.gameObject); // Destruye la tiza
         }
+        Destroy(this.gameObject); // Destruye la tiza
     }
 }
