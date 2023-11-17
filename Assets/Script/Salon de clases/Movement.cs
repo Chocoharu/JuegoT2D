@@ -25,14 +25,16 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialog == true)
-        {
-            if (Pause.activeSelf)
+        if (SceneManager.GetActiveScene().name == "Juego")
+        { 
+            if (dialog == true)
             {
-                return;
+                if (Pause.activeSelf)
+                {
+                    return;
+                }
             }
         }
-
         if (Input.GetKey(KeyCode.W) && CanMove)
         {
             rigidbody.velocity = transform.up * Speed;

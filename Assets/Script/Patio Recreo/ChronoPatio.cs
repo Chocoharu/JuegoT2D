@@ -1,17 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class Chrono : MonoBehaviour
+public class ChronoPatio : MonoBehaviour
 {
     public TextMeshProUGUI Texttiempo;
     public float tiempo = 0f;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+    //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
     void Start()
@@ -23,18 +22,7 @@ public class Chrono : MonoBehaviour
     {
         tiempo += Time.deltaTime;
         
-        if (dialog == true)
-        {
-            if (Pause.activeSelf)
-            {
-                return;
-            }
-        }
-        if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-        }
-        if (tiempo >= 5f && SceneManager.GetActiveScene().name == "Patio")
+        if (tiempo >= 10f)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
@@ -53,5 +41,4 @@ public class Chrono : MonoBehaviour
         PlayerPrefs.SetFloat("TotalTiempo", tiempo);
 
     }
-
 }
