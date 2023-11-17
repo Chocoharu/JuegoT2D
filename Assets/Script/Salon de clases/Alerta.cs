@@ -19,7 +19,7 @@ public class Alerta : MonoBehaviour
     [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     private bool isStunned = false;
-    private float stunDuration = 5f;
+    private float stunDuration = 2.75f;
     private float stunTimer = 0f;
 
     public bool SpecialStudent = false;
@@ -29,7 +29,7 @@ public class Alerta : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         //animator.SetBool("Inquieto", false);
-        Timer = Random.Range(3.0f, 9.0f);
+        Timer = Random.Range(5.5f, 9.0f);
     }
 
     // Update is called once per frame

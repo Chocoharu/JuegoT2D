@@ -29,7 +29,7 @@ public class Chrono : MonoBehaviour
                 return;
             }
         }
-        if (tiempo >= 30f)
+        if (tiempo >= 60f)
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }

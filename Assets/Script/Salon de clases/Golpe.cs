@@ -15,11 +15,17 @@ public class Golpe : MonoBehaviour
     public LayerMask EstudiantesLayer;    
     public bool permiso;
     private Animator animator;
+
     public bool exito = false;
     public int cantAlert = 0;
     public float tempo = 0f;
+    public float ContadorRegresivo = 6f;
     public bool nextscene = false;
     [SerializeField] private BarraDeVida barraDeVida;
+    public int NumeroEstudiantesAlarm = 3;
+
+    public TextMeshProUGUI cuentaRegresiva;
+    public GameObject objCuentaRegresiva;
 
     // Start is called before the first frame update
     void Start()
@@ -72,10 +78,14 @@ public class Golpe : MonoBehaviour
                 //animator.SetBool("Golpear", exito);
             }
         }
-        if (cantAlert >= 3)
+        if (cantAlert >= NumeroEstudiantesAlarm)
         {
             tempo += Time.deltaTime;
-            if(tempo >= 5f && !nextscene)
+            objCuentaRegresiva.SetActive(true);
+            ContadorRegresivo -= Time.deltaTime;
+            Cronometro();
+
+            if (tempo >= 5f && !nextscene) //muerte?
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 
@@ -85,6 +95,8 @@ public class Golpe : MonoBehaviour
         else
         {
             tempo = 0f;
+            ContadorRegresivo = 6;
+            objCuentaRegresiva.SetActive(false);
             nextscene = false;
         }
     }
@@ -92,5 +104,17 @@ public class Golpe : MonoBehaviour
     {
         cantAlert++;
         barraDeVida.CambiarVidaActual(cantAlert);
+    }
+    void Cronometro()
+    {
+        //int minutos = Mathf.FloorToInt(tempo / 60);
+        int segundos = Mathf.FloorToInt(ContadorRegresivo % 60);
+        //int milisegundos = Mathf.FloorToInt((tempo * 1000) % 1000);
+
+        string tiempoTexto = string.Format("{0:00}",segundos);
+        cuentaRegresiva.text = tiempoTexto;
+
+        //PlayerPrefs.SetFloat("TotalTiempo", tempo);
+
     }
 }
