@@ -9,6 +9,8 @@ TagManager:
   - bolita
   - mesa
   - Tiza
+  - Ave
+  - Medidor
   layers:
   - Default
   - TransparentFX

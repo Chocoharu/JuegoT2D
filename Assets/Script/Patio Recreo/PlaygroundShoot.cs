@@ -23,10 +23,18 @@ public class PlaygroundShoot : MonoBehaviour
         
     }
 
-    
     public void AddPoint(int points)
     {
         Score += points;
+        TextoScore.text = "Puntaje: " + Score;
+    }
+    public void RemovePoint(int points)
+    {
+        Score -= points;
+        if(Score<0)
+        {
+            Score = 0;
+        }
         TextoScore.text = "Puntaje: " + Score;
     }
 
