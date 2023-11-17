@@ -8,7 +8,7 @@ public class GeneradorDeObjetos : MonoBehaviour
     public GameObject objetoPrefab1;
     public GameObject objetoPrefab2;
     private Transform t;
-    public float intervaloDeGeneracion = 1.0f;
+    public float intervaloDeGeneracion = 3.0f;
     public float rangoYMinimo;
     public float rangoYMaximo;
     public bool dir;
@@ -26,13 +26,13 @@ public class GeneradorDeObjetos : MonoBehaviour
         GameObject objetoGenerado;
 
         // 40% de probabilidad de generar objetoPrefab
-        if (randomValue <= 0.4f)
+        if (randomValue <= 0.7f)
         {
             objetoGenerado = Instantiate(objetoPrefab, ObtenerPosicionAleatoria(), Quaternion.identity);
 
         }
         // 30% de probabilidad de generar objetoPrefab1
-        else if (randomValue <= 0.7f)
+        else if (randomValue <= 1f)
         {
             objetoGenerado = Instantiate(objetoPrefab1, ObtenerPosicionAleatoria(), Quaternion.identity);
         }

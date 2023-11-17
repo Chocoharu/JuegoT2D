@@ -21,7 +21,7 @@ public class ShootTarget : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
-        StartInquieto = Random.Range(3f, 5f);
+        StartInquieto = Random.Range(2f, 4f);
         
     }
 
@@ -32,7 +32,7 @@ public class ShootTarget : MonoBehaviour
         {
             float randomValue = Random.value;
 
-            if (randomValue <= 0.2f&&!cambioColor&&!CompareTag("Ave"))
+            if (randomValue <= 0.5f&&!cambioColor&&!CompareTag("Ave"))
             {
                 Inquieto = true;
                 renderer.material.color = Color.red;
@@ -85,10 +85,5 @@ public class ShootTarget : MonoBehaviour
             this.gameObject.GetComponent<MovimientoAve>().rg.gravityScale = 3;
             //Destroy(gameObject);
         }
-    }
-
-    public bool PermisoMovimiento()
-    {
-        return Movimiento;
     }
 }
