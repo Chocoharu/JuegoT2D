@@ -41,7 +41,7 @@ public class Golpe : MonoBehaviour
                 if (distancia < distanciaMinima && estudiante.GetComponent<Alerta>().permisoGolpe)
                 {
                     exito = true;
-                    animator.SetBool("Golpear", exito);
+                    //animator.SetBool("Golpear", exito);
                 } 
             }
         }
@@ -69,7 +69,7 @@ public class Golpe : MonoBehaviour
                     }    
                 }
                 exito = false;
-                animator.SetBool("Golpear", exito);
+                //animator.SetBool("Golpear", exito);
             }
         }
         if (cantAlert >= 3)

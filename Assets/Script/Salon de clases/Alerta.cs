@@ -28,7 +28,7 @@ public class Alerta : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.SetBool("Inquieto", false);
+        //animator.SetBool("Inquieto", false);
         Timer = Random.Range(3.0f, 9.0f);
     }
 
@@ -55,8 +55,8 @@ public class Alerta : MonoBehaviour
                 // Check if not stunned before generating new alerts
                 if (!isStunned)
                 {
-                    animator.SetBool("Inquieto", true);
-                    spriteGenerado = Instantiate(prefab, transform.position + transform.up, Quaternion.identity);
+                    //animator.SetBool("Inquieto", true);
+                    spriteGenerado = Instantiate(prefab, transform.position + transform.up - transform.right, Quaternion.identity);
                     profe.GetComponent<Golpe>().CantAlertas();
                     permisoGolpe = true;
                     Existe = true;
@@ -96,10 +96,10 @@ public class Alerta : MonoBehaviour
         if (!isStunned)
         {
             Destroy(spriteGenerado);
-            spritePow = Instantiate(Pow, transform.position + transform.up + transform.right, Quaternion.identity);
+            spritePow = Instantiate(Pow, transform.position + transform.up , Quaternion.identity);
             Destroy(spritePow, 0.5f);
             permisoGolpe = false;
-            animator.SetBool("Inquieto", false);
+            //animator.SetBool("Inquieto", false);
             Existe = false;
             Timer = Random.Range(3.0f, 9.0f);
 

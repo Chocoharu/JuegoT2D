@@ -7,11 +7,18 @@ public class changeLayer : MonoBehaviour
     public SpriteRenderer sprite;
 
     private void OnTriggerEnter2D(Collider2D collision)
-    { 
-        sprite.sortingOrder = 1;
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            sprite.sortingOrder = 1;
+        }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        sprite.sortingOrder = 3;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            sprite.sortingOrder = 3;
+        }
     }
 }

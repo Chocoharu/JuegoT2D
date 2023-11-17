@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1705269530355788303}
   - component: {fileID: 5329153316538470732}
   - component: {fileID: 6962398635344677220}
-  - component: {fileID: 5920014390154903255}
   - component: {fileID: 7560281528101147748}
   - component: {fileID: 3504891298450610860}
   - component: {fileID: 804641709974480218}
@@ -163,64 +162,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6541097, y: 1.5833722}
   m_EdgeRadius: 0
---- !u!68 &5920014390154903255
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3429293262184827562}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.18841852, y: -1.0637597}
-  - {x: -1.1891451, y: -1.0686266}
-  - {x: -1.191948, y: -0.12749147}
-  - {x: -1.2518277, y: -0.12788749}
-  - {x: -1.2529763, y: 0.128268}
-  - {x: 0.36636013, y: 0.13141167}
-  - {x: 0.37420037, y: 0.56103873}
-  - {x: 0.31031403, y: 0.5601638}
-  - {x: 0.30946365, y: 1.2517631}
-  - {x: 1.00282, y: 1.2526748}
-  - {x: 1.0023818, y: 0.6903666}
-  - {x: 1.12606, y: 0.69087124}
-  - {x: 1.128426, y: 0.501899}
-  - {x: 1.3156831, y: 0.5032718}
-  - {x: 1.3148263, y: -0.44445515}
-  - {x: 1.2545149, y: -0.44294405}
-  - {x: 1.2537044, y: -1.0681317}
-  - {x: 0.9314624, y: -1.0673823}
-  - {x: 0.18817136, y: -1.0641427}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &7560281528101147748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,10 +175,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 844836438944612610, guid: e11cd5929a54f904fbda910d24e0284c, type: 3}
+  Pow: {fileID: 0}
   permisoGolpe: 0
   profe: {fileID: 0}
   Pause: {fileID: 0}
   dialog: 1
+  SpecialStudent: 0
 --- !u!114 &3504891298450610860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b083076593973a049bad960dd4d4c8ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
 --- !u!95 &804641709974480218
 Animator:
   serializedVersion: 5
