@@ -23,7 +23,6 @@ public class PlaygroundShoot : MonoBehaviour
         
     }
 
-    
     public void AddPoint(int points)
     {
         Score += points;

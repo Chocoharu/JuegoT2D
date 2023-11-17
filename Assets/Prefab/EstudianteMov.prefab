@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 209729822963477672}
   - component: {fileID: -1473357064577582362}
   - component: {fileID: 1754423307219003966}
+  - component: {fileID: 341759150293670194}
   m_Layer: 0
   m_Name: EstudianteMov
   m_TagString: Estudiante
@@ -176,6 +177,7 @@ MonoBehaviour:
   newBorn: 0
   StartInquieto: 0
   Movimiento: 1
+  barraDirector: {fileID: 0}
 --- !u!114 &1754423307219003966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +192,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 4
   PermisoMovimiento: 0
+  isAve: 0
+--- !u!114 &341759150293670194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6797905057709477700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8b840664593124ab9fb59d7a12e4af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Estudiante1: {fileID: 21300000, guid: 62235bc8fee2c7f4885d64c6d98fd0ba, type: 3}
+  Estudiante2: {fileID: 21300000, guid: 298505ff7cd6b124bbf5b81fe8224427, type: 3}
+  Estudiante3: {fileID: 21300000, guid: e2a68d6627024904f9dbdec0e7ef1c2c, type: 3}
+  Estudiante4: {fileID: 21300000, guid: 429b52a1daf83ca4287f145f4a14a6ea, type: 3}
+  Apariencia: {fileID: 0}

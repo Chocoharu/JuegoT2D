@@ -10,19 +10,21 @@ public class ShootTarget : MonoBehaviour
     private bool Inquieto = false;
     private bool cambioColor = false;
     private bool click = false;
-    private float Timer = 3f;
+    private float Timer = 2f;
     private Renderer renderer;
     public bool newBorn = false;
     public float StartInquieto;
     public bool Movimiento = true;
     private static int ContTierra = 0;
+    public MedidorDirector barraDirector;
 
     // Start is called before the first frame update
     void Start()
     {
+        barraDirector = MedidorDirector.instance;
         renderer = GetComponent<Renderer>();
         StartInquieto = Random.Range(2f, 4f);
-        
+        //barraDirector.InicializarBarraDeVida(5);
     }
 
     // Update is called once per frame
@@ -47,7 +49,9 @@ public class ShootTarget : MonoBehaviour
                 {
                     Instantiate(Tierra, new Vector3(0, 0, 0), Quaternion.identity);
                     ContTierra++;
+                    barraDirector.CambiarVidaActual(1);
                 }
+                
             }
         }
         else
@@ -69,12 +73,13 @@ public class ShootTarget : MonoBehaviour
             this.gameObject.GetComponent<MoviminetoAlumno>().PermisoMovimiento = false;
             click = true;
             
-            //renderer.material.color = Color.white;
+            renderer.material.color = Color.white;
             //Destroy(gameObject);
         }
         else if((CompareTag("Estudiante") && !Inquieto))
         {
             PlaygroundShoot.Instance.RemovePoint(100);
+            barraDirector.CambiarVidaActual(1);
             this.gameObject.GetComponent<MoviminetoAlumno>().PermisoMovimiento = false;
             click = true;
             //Destroy(gameObject);
@@ -82,7 +87,8 @@ public class ShootTarget : MonoBehaviour
         else if (CompareTag("Ave"))
         {
             PlaygroundShoot.Instance.RemovePoint(100);
-            this.gameObject.GetComponent<MovimientoAve>().rg.gravityScale = 3;
+            barraDirector.CambiarVidaActual(1);
+            this.gameObject.GetComponent<Rigidbody2D>().gravityScale = 3;
             //Destroy(gameObject);
         }
     }
