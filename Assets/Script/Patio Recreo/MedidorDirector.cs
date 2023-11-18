@@ -45,7 +45,7 @@ public class MedidorDirector : MonoBehaviour
     {
         if(slider.value==10)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         }
         if (Input.GetMouseButtonDown(0) && !clicPresionado)
         {

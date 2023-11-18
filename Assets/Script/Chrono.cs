@@ -34,7 +34,7 @@ public class Chrono : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
-        if (tiempo >= 5f && SceneManager.GetActiveScene().name == "Patio")
+        if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
