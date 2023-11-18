@@ -16,7 +16,7 @@ public class MoviminetoAlumno : MonoBehaviour
     {
         PosGeneracion = transform.position.x < 0;
         PermisoMovimiento = true;
-        velocidad += Random.Range(-1f, 1f);
+        velocidad += Random.Range(0f, 2f);
         if (PosGeneracion)
         {
             GetComponent<SpriteRenderer>().flipX = true;
