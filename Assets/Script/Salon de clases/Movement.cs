@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Juego")
         { 
-            if (dialog == true)
+            if (Pause != null)
             {
                 if (Pause.activeSelf)
                 {

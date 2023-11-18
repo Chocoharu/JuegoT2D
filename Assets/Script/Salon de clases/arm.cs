@@ -15,11 +15,11 @@ public class arm : MonoBehaviour
     public int numtiza = 3;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+    //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     void Update()
     {
-        if (dialog == true)
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {

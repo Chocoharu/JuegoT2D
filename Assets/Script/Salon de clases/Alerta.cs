@@ -35,7 +35,7 @@ public class Alerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialog == true)
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {

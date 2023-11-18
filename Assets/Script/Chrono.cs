@@ -11,7 +11,6 @@ public class Chrono : MonoBehaviour
     public float tiempo = 0f;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +21,8 @@ public class Chrono : MonoBehaviour
     void Update()
     {
         tiempo += Time.deltaTime;
-        
-        if (dialog == true)
+
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {
@@ -32,7 +31,7 @@ public class Chrono : MonoBehaviour
         }
         if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")
         {
@@ -42,7 +41,7 @@ public class Chrono : MonoBehaviour
     }
     void Cronometro()
     {
-        Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
+        //Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
         int minutos = Mathf.FloorToInt(tiempo / 60);
         int segundos = Mathf.FloorToInt(tiempo % 60);
         int milisegundos = Mathf.FloorToInt((tiempo * 1000) % 1000);

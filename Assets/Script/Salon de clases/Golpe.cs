@@ -87,7 +87,7 @@ public class Golpe : MonoBehaviour
 
             if (tempo >= 5f && !nextscene) //muerte?
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 nextscene = true;
             }
