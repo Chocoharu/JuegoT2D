@@ -47,7 +47,7 @@ public class ShootTarget : MonoBehaviour
             {
                 Inquieto = false;
                 renderer.material.color = Color.white;
-                if (!click /*&& CompareTag("Estudiante")*/&& permitirGenerarTierra)
+                if (!click && permitirGenerarTierra)
                 {
                     permitirGenerarTierra = false;
                     StartCoroutine(ReiniciarGeneracionTierra());
