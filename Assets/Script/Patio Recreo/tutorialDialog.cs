@@ -22,6 +22,8 @@ public class tutorialDialog : MonoBehaviour
     public Image ImagePanel;
     [SerializeField] private bool startTyping = false;
 
+    public GameObject Pause;
+
     private void Start()
     {
         // Llama a la funci�n ActivarPanelDespuesDeEspera despues del tiempo especificado
@@ -35,7 +37,6 @@ public class tutorialDialog : MonoBehaviour
             
             if (startTyping)
             {
-                Debug.Log("entra2");
                 if (!DidDialogueStart)
                 {
                     StartDialogue();
@@ -73,6 +74,7 @@ public class tutorialDialog : MonoBehaviour
         {
             DidDialogueStart = false;
             panel.SetActive(false);
+            Pause.SetActive(false);
             //moveToPointScript.flag = false;
         }
     }

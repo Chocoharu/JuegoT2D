@@ -13,6 +13,13 @@ public class GeneradorDeObjetos : MonoBehaviour
 
     private void Start()
     {
+       
+        // Comienza a generar objetos en intervalos regulares.
+        InvokeRepeating("GenerarObjeto", 0, intervaloDeGeneracion);
+    }
+
+    private void GenerarObjeto()
+    {
         if (Pause != null)
         {
             if (Pause.activeSelf)
@@ -20,12 +27,6 @@ public class GeneradorDeObjetos : MonoBehaviour
                 return;
             }
         }
-        // Comienza a generar objetos en intervalos regulares.
-        InvokeRepeating("GenerarObjeto", 0, intervaloDeGeneracion);
-    }
-
-    private void GenerarObjeto()
-    {
         float randomValue = Random.value;
 
         GameObject objetoGenerado;
