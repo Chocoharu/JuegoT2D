@@ -10,6 +10,7 @@ public class StudentMovement : MonoBehaviour
     private int currentWaypoint = 0;
     private bool isMoving = true;
     private NavMeshAgent navMeshAgent;
+    private Animator animator;
 
     public GameObject Pause;
 
@@ -20,6 +21,7 @@ public class StudentMovement : MonoBehaviour
         navMeshAgent.updateUpAxis = false;
         navMeshAgent.speed = speed;
         SetWaypoints();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -31,6 +33,8 @@ public class StudentMovement : MonoBehaviour
         if (isMoving && GetComponent<Alerta>().permisoGolpe)
         {
             MoveToWaypoint();
+
+            HandleAnimation();
         }
     }
 
@@ -64,5 +68,17 @@ public class StudentMovement : MonoBehaviour
     public void StartMoving()
     {
         isMoving = true;
+    }
+
+    void HandleAnimation()
+    {
+        // Obtener la velocidad actual del NavMeshAgent
+        float currentSpeed = navMeshAgent.velocity.magnitude;
+
+        // Determinar si la velocidad es mayor que un valor umbral (puedes ajustar este valor según tus necesidades)
+        bool isMovingFast = currentSpeed > 0.1f;
+
+        // Configurar el parámetro de la animación en el Animator
+        animator.SetBool("Caminan", isMovingFast);
     }
 }
