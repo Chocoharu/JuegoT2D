@@ -11,7 +11,6 @@ public class Chrono : MonoBehaviour
     public float tiempo = 0f;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,7 @@ public class Chrono : MonoBehaviour
     {
         tiempo += Time.deltaTime;
         
-        if (dialog == true)
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {
