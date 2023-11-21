@@ -5,12 +5,12 @@ using UnityEngine;
 public class MoveToPointPatio : MonoBehaviour
 {
     public Transform TargetPos;
-    //public Transform TargetPos2;
+    public Transform TargetPos2;
     //public Transform TargetPos3;
     //public Transform TargetPos4;
     public float speed = 2;
     public bool flag = true;
-    //public bool flag2 = false;
+    public bool flag2 = false;
     //public bool flag3 = true;
 
     //public ActivarPanel empezarEscribir;
@@ -38,5 +38,12 @@ public class MoveToPointPatio : MonoBehaviour
                 }
             }
         }
+        /*if (TargetPos2 != null && flag2)
+        {
+            if (next != null)
+            {
+                next.SetActive(true);
+            }
+        }*/
     }
 }
