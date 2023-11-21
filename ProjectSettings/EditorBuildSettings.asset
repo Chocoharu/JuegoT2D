@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Patio.unity
     guid: c34afb41ee1382f4fa7cb3399e67cada
+  - enabled: 1
+    path: Assets/Scenes/Biblioteca.unity
+    guid: c72e47e6c0152c1479b3c4bdac21bc91
   m_configObjects: {}
