@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 73334435}
   - component: {fileID: 73334434}
   m_Layer: 0
-  m_Name: Square (11)
+  m_Name: Estante (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 108845590}
   - component: {fileID: 108845589}
   m_Layer: 0
-  m_Name: Square (17)
+  m_Name: Estante (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 108895158}
   - component: {fileID: 108895157}
   m_Layer: 0
-  m_Name: Square (14)
+  m_Name: Estante (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -368,7 +368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108895156}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -19.84, y: -12.15, z: 0}
   m_LocalScale: {x: 3.375, y: 4.8262568, z: 1}
   m_ConstrainProportionsScale: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 174379063}
   - component: {fileID: 174379062}
   m_Layer: 0
-  m_Name: Square (6)
+  m_Name: Mesa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +486,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210884324}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -504,7 +504,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &210884326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -611,7 +611,7 @@ Transform:
   m_GameObject: {fileID: 210884324}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.62, y: -1.57, z: 0}
+  m_LocalPosition: {x: -7.8, y: 2.41, z: 0}
   m_LocalScale: {x: 2.656048, y: 2.656048, z: 2.656048}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -792,7 +792,7 @@ Transform:
   m_GameObject: {fileID: 513389655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.34, y: -6.11, z: 0}
+  m_LocalPosition: {x: 8.67, y: -5.92, z: 0}
   m_LocalScale: {x: 2.656048, y: 2.656048, z: 2.656048}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -851,7 +851,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513389655}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -869,38 +869,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!1 &592640186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 592640187}
-  m_Layer: 0
-  m_Name: Estante
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &592640187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 592640186}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.69, y: 7.48, z: -9.944023}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Constraints: 4
 --- !u!1001 &650516508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,11 +900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7754645142833141572, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.99
+      value: -11.41
       objectReference: {fileID: 0}
     - target: {fileID: 7754645142833141572, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -7.03
       objectReference: {fileID: 0}
     - target: {fileID: 7754645142833141572, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
       propertyPath: m_LocalPosition.z
@@ -985,7 +954,7 @@ GameObject:
   - component: {fileID: 727778662}
   - component: {fileID: 727778661}
   m_Layer: 0
-  m_Name: Square (12)
+  m_Name: Estante (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,7 +1038,7 @@ GameObject:
   - component: {fileID: 782022364}
   - component: {fileID: 782022363}
   m_Layer: 0
-  m_Name: Square (15)
+  m_Name: Estante (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1536,7 +1505,7 @@ GameObject:
   - component: {fileID: 1222897811}
   - component: {fileID: 1222897810}
   m_Layer: 0
-  m_Name: Square (10)
+  m_Name: Estante
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1620,7 +1589,7 @@ GameObject:
   - component: {fileID: 1291917402}
   - component: {fileID: 1291917401}
   m_Layer: 0
-  m_Name: Square (13)
+  m_Name: Estante (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1704,7 +1673,7 @@ GameObject:
   - component: {fileID: 1293784681}
   - component: {fileID: 1293784680}
   m_Layer: 0
-  m_Name: Square (7)
+  m_Name: Mesa (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1789,6 +1758,7 @@ GameObject:
   - component: {fileID: 1314196112}
   - component: {fileID: 1314196111}
   - component: {fileID: 1314196110}
+  - component: {fileID: 1314196114}
   m_Layer: 0
   m_Name: AlumnoAzul
   m_TagString: Estudiante
@@ -1804,7 +1774,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314196109}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1822,7 +1792,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1314196111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1929,12 +1899,29 @@ Transform:
   m_GameObject: {fileID: 1314196109}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.11, y: -5.89, z: 0}
+  m_LocalPosition: {x: -8.56, y: -5.62, z: 0}
   m_LocalScale: {x: 2.656048, y: 2.656048, z: 2.656048}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314196114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314196109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e5c1d0d7933fc544954f565c04c6910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Positions:
+  - {fileID: 108895158}
+  - {fileID: 782022364}
+  speed: 4
+  escondido: 0
 --- !u!1 &1435874909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1946,7 +1933,7 @@ GameObject:
   - component: {fileID: 1435874911}
   - component: {fileID: 1435874910}
   m_Layer: 0
-  m_Name: Square (16)
+  m_Name: Estante (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2180,7 +2167,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652986390}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2305,7 +2292,7 @@ Transform:
   m_GameObject: {fileID: 1652986390}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.71, y: -1.76, z: 0}
+  m_LocalPosition: {x: 7.65, y: 1.62, z: 0}
   m_LocalScale: {x: 2.6560478, y: 2.6560478, z: 2.6560478}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2483,7 +2470,7 @@ GameObject:
   - component: {fileID: 2132643455}
   - component: {fileID: 2132643454}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Mancha
   m_TagString: Mancha
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2521,9 +2508,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.029683387, y: -0.09234818}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.35817942
 --- !u!212 &2132643455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2565,7 +2552,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 122d1476e7a2920429de451a94b70137, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2585,7 +2572,7 @@ Transform:
   m_GameObject: {fileID: 2132643453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: -11.46, z: 0}
+  m_LocalPosition: {x: -0.28, y: -11.77, z: 0}
   m_LocalScale: {x: 3.1141, y: 3.1141, z: 3.1141}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2603,9 +2590,9 @@ SceneRoots:
   - {fileID: 727778662}
   - {fileID: 1291917402}
   - {fileID: 108845590}
-  - {fileID: 108895158}
   - {fileID: 1435874911}
   - {fileID: 782022364}
+  - {fileID: 108895158}
   - {fileID: 2132643456}
   - {fileID: 650516508}
   - {fileID: 1888971215}
@@ -2615,4 +2602,3 @@ SceneRoots:
   - {fileID: 1652986394}
   - {fileID: 496301973}
   - {fileID: 893927711}
-  - {fileID: 592640187}

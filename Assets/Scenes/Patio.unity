@@ -818,10 +818,10 @@ RectTransform:
   - {fileID: 1955490033}
   m_Father: {fileID: 1099204430}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.026851468}
-  m_AnchorMax: {x: 0.98239595, y: 0.43529192}
-  m_AnchoredPosition: {x: 17.205505, y: 8.723572}
-  m_SizeDelta: {x: -39.7489, y: -17.4473}
+  m_AnchorMin: {x: 0.1694375, y: 0.040703706}
+  m_AnchorMax: {x: 0.88500005, y: 0.43522224}
+  m_AnchoredPosition: {x: -0.65167236, y: 1.2235718}
+  m_SizeDelta: {x: -2.5250854, y: -2.4473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &929922803
 GameObject:
@@ -858,6 +858,7 @@ MonoBehaviour:
   intervaloDeGeneracion: 4
   rangoYMinimo: -4.5
   rangoYMaximo: 4.5
+  Pause: {fileID: 0}
 --- !u!212 &929922805
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1060,7 +1061,6 @@ MonoBehaviour:
   Texttiempo: {fileID: 1190882053}
   tiempo: 0
   Pause: {fileID: 130937567}
-  dialog: 0
 --- !u!1 &1186694580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1768,15 +1768,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1781449485}
-  - component: {fileID: 1781449484}
-  m_Layer: 0
-  m_Name: FondoBiblioteca
   - component: {fileID: 1955490033}
   - component: {fileID: 1955490034}
   - component: {fileID: 1955490035}
-  m_Layer: 5
-  m_Name: Text (TMP)
+  m_Layer: 0
+  m_Name: FondoBiblioteca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1933,6 +1929,7 @@ MonoBehaviour:
   intervaloDeGeneracion: 4.5
   rangoYMinimo: -4.5
   rangoYMaximo: 4
+  Pause: {fileID: 0}
 --- !u!212 &2086865147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2111,6 +2108,7 @@ MonoBehaviour:
   TimeTyping: 0.075
   panel: {fileID: 737717558}
   ImagePanel: {fileID: 737717559}
+  startTyping: 0
 --- !u!4 &2099851431
 Transform:
   m_ObjectHideFlags: 0
