@@ -19,7 +19,7 @@ public class ShootTarget : MonoBehaviour
     public MedidorDirector barraDirector;
     private bool permitirGenerarTierra = true;
     private float tiempoEsperaGeneracion = 2.0f;
-    private float tiempoEsperaDisminucion = 3.0f;
+    //private float tiempoEsperaDisminucion = 3.0f;
 
     // Start is called before the first frame update
     void Start()
