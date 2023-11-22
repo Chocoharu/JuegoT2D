@@ -20,8 +20,6 @@ public class Chrono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-
         if (Pause != null)
         {
             if (Pause.activeSelf)
@@ -29,6 +27,8 @@ public class Chrono : MonoBehaviour
                 return;
             }
         }
+        tiempo += Time.deltaTime;
+
         if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
         {
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
@@ -41,7 +41,7 @@ public class Chrono : MonoBehaviour
     }
     void Cronometro()
     {
-        //Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
+        Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
         int minutos = Mathf.FloorToInt(tiempo / 60);
         int segundos = Mathf.FloorToInt(tiempo % 60);
         int milisegundos = Mathf.FloorToInt((tiempo * 1000) % 1000);
