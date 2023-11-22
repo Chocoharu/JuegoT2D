@@ -22,7 +22,8 @@ public class tutorialDialog : MonoBehaviour
     public Image ImagePanel;
     [SerializeField] private bool startTyping = false;
 
-    public GameObject Pause;
+    //public GameObject Pause;
+    public GameObject studentEx;
 
     private void Start()
     {
@@ -74,7 +75,7 @@ public class tutorialDialog : MonoBehaviour
         {
             DidDialogueStart = false;
             panel.SetActive(false);
-            Pause.SetActive(false);
+            studentEx.SetActive(true);
             //moveToPointScript.flag = false;
         }
     }

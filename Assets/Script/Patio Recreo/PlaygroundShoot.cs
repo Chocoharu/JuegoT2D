@@ -22,7 +22,11 @@ public class PlaygroundShoot : MonoBehaviour
         }
         
     }
-
+    public void Reset()
+    {
+        Score = 0;
+        TextoScore.text = "Puntaje: " + Score;
+    }
     public void AddPoint(int points)
     {
         Score += points;

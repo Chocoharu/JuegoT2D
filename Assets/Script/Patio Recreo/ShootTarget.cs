@@ -32,6 +32,12 @@ public class ShootTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(barraDirector == null)
+        {
+            Debug.Log("instantia");
+            barraDirector = MedidorDirector.instance;
+        }
+
         if(newBorn)
         {
             float randomValue = Random.value;

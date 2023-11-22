@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Destructor : MonoBehaviour
 {
+    public GameObject Pause;
+    public MedidorDirector barraDirector;
+    private bool flag = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,14 @@ public class Destructor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("colision");
-         Destroy(collision.gameObject);
+        if (collision.CompareTag("Ave") && flag)
+        {
+            Debug.Log("colision");
+            Pause.SetActive(false);
+            barraDirector.Reset();
+            PlaygroundShoot.Instance.Reset();
+            flag = false;
+        }
+        Destroy(collision.gameObject);
     }
 }

@@ -34,7 +34,10 @@ public class MedidorDirector : MonoBehaviour
 
         slider.value += cantidadVida;
     }
-
+    public void Reset()
+    {
+        slider.value = 0;
+    }
     public void InicializarBarraDeVida(float cantidadVida)
     {
 

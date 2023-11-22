@@ -20,8 +20,6 @@ public class Chrono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-        
         if (Pause != null)
         {
             if (Pause.activeSelf)
@@ -29,6 +27,8 @@ public class Chrono : MonoBehaviour
                 return;
             }
         }
+        tiempo += Time.deltaTime;
+
         if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
