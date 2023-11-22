@@ -11,6 +11,7 @@ TagManager:
   - Tiza
   - Ave
   - Medidor
+  - Canica
   layers:
   - Default
   - TransparentFX
