@@ -37,6 +37,10 @@ public class Chrono : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+        if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Biblioteca")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        }
         Cronometro();
     }
     void Cronometro()
