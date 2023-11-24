@@ -9,15 +9,24 @@ public class GeneradorDeObjetos : MonoBehaviour
     public float intervaloDeGeneracion = 3.0f;
     public float rangoYMinimo;
     public float rangoYMaximo;
+    public GameObject Pause;
 
     private void Start()
     {
+       
         // Comienza a generar objetos en intervalos regulares.
         InvokeRepeating("GenerarObjeto", 0, intervaloDeGeneracion);
     }
 
     private void GenerarObjeto()
     {
+        if (Pause != null)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
         float randomValue = Random.value;
 
         GameObject objetoGenerado;

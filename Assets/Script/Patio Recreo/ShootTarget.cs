@@ -15,11 +15,10 @@ public class ShootTarget : MonoBehaviour
     public bool newBorn = false;
     public float StartInquieto;
     public bool Movimiento = true;
-    private static int ContTierra = 0;
     public MedidorDirector barraDirector;
     private bool permitirGenerarTierra = true;
     private float tiempoEsperaGeneracion = 2.0f;
-    private float tiempoEsperaDisminucion = 3.0f;
+    //private float tiempoEsperaDisminucion = 3.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,12 +26,17 @@ public class ShootTarget : MonoBehaviour
         barraDirector = MedidorDirector.instance;
         renderer = GetComponent<Renderer>();
         StartInquieto = Random.Range(2f, 4f);
-        //barraDirector.InicializarBarraDeVida(5);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(barraDirector == null)
+        {
+            Debug.Log("instantia");
+            barraDirector = MedidorDirector.instance;
+        }
+
         if(newBorn)
         {
             float randomValue = Random.value;
@@ -48,18 +52,17 @@ public class ShootTarget : MonoBehaviour
             {
                 Inquieto = false;
                 renderer.material.color = Color.white;
-                if (!click && CompareTag("Estudiante")&&ContTierra <1)
+                if (!click && permitirGenerarTierra)
                 {
                     permitirGenerarTierra = false;
                     StartCoroutine(ReiniciarGeneracionTierra());
-                    StartCoroutine(DisminuirContTierra());
+
                     Instantiate(Tierra, new Vector3(0, -2, 0), Quaternion.identity);
                     Tierra.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                    ContTierra++;
+
                     barraDirector.CambiarVidaActual(1);
                     PlaygroundShoot.Instance.RemovePoint(20);
                 }
-
             }
         }
         else
@@ -101,12 +104,5 @@ public class ShootTarget : MonoBehaviour
     {
         yield return new WaitForSeconds(tiempoEsperaGeneracion);
         permitirGenerarTierra = true;
-    }
-
-    // Coroutine para disminuir ContTierra después de un tiempo
-    IEnumerator DisminuirContTierra()
-    {
-        yield return new WaitForSeconds(tiempoEsperaDisminucion);
-        ContTierra--;
     }
 }

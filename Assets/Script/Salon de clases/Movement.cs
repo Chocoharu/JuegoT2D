@@ -15,6 +15,10 @@ public class Movement : MonoBehaviour
     public GameObject Pause;
     //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
+    private bool sobreCanica = false;
+    private float velocidadDeslizamiento = 10.0f;
+    private Vector2 direccionOriginal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,52 +39,70 @@ public class Movement : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKey(KeyCode.W) && CanMove)
+        if (sobreCanica)
         {
-            rigidbody.velocity = transform.up * Speed;
-            Dir = 1;
-            //transform.position += Vector3.right * Time.deltaTime * Speed;
-        }
-        else if (Input.GetKey(KeyCode.S) && CanMove)
-        {
-            rigidbody.velocity = -transform.up * Speed;
-            Dir = 3;
-            //transform.position -= Vector3.right * Time.deltaTime * Speed;
-        }
-        else if (Input.GetKey(KeyCode.D) && CanMove)
-        {
-            rigidbody.velocity = transform.right * Speed;
-            Dir = 4;
-            transform.localScale = new Vector3(1, 1, 1);
-            //transform.position += Vector3.right * Time.deltaTime * Speed;
-        }
-        else if (Input.GetKey(KeyCode.A) && CanMove)
-        {
-            rigidbody.velocity = -transform.right * Speed;
-            Dir = 2;
-            transform.localScale = new Vector3(-1, 1, 1);
-            //transform.position -= Vector3.right * Time.deltaTime * Speed;
+            rigidbody.velocity = direccionOriginal * velocidadDeslizamiento;
         }
         else
         {
-            Dir = 0;
-            rigidbody.velocity = Vector3.zero;
+            if (Input.GetKey(KeyCode.W) && CanMove)
+            {
+                direccionOriginal = transform.up;
+                rigidbody.velocity = direccionOriginal * Speed;
+                Dir = 1;
+                //transform.position += Vector3.right * Time.deltaTime * Speed;
+            }
+            else if (Input.GetKey(KeyCode.S) && CanMove)
+            {
+                direccionOriginal = -transform.up;
+                rigidbody.velocity = direccionOriginal * Speed;
+                Dir = 3;
+                //transform.position -= Vector3.right * Time.deltaTime * Speed;
+            }
+            else if (Input.GetKey(KeyCode.D) && CanMove)
+            {
+                direccionOriginal = transform.right;
+                rigidbody.velocity = direccionOriginal * Speed;
+                rigidbody.velocity = transform.right * Speed;
+                Dir = 4;
+                transform.localScale = new Vector3(1, 1, 1);
+                //transform.position += Vector3.right * Time.deltaTime * Speed;
+            }
+            else if (Input.GetKey(KeyCode.A) && CanMove)
+            {
+                direccionOriginal = -transform.right;
+                rigidbody.velocity = direccionOriginal * Speed;
+                Dir = 2;
+                transform.localScale = new Vector3(-1, 1, 1);
+                //transform.position -= Vector3.right * Time.deltaTime * Speed;
+            }
+            else
+            {
+                Dir = 0;
+                rigidbody.velocity = Vector3.zero;
+            }
+            animator.SetInteger("Movement", Dir);
         }
-        animator.SetInteger("Movement", Dir);
+        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Mancha"))
         {
-            Speed = 2;
+            Speed = 3;
+        }
+        if (collision.CompareTag("Canica"))
+        {
+            // Si estamos sobre una "Canica", activamos el deslizamiento
+            StartCoroutine(Deslizarse());
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Mancha"))
         {
-            Speed = 4;
+            Speed = 8;
         }
     }
     public void Stunned()
@@ -93,5 +115,15 @@ public class Movement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         CanMove = true;
+    }
+    private IEnumerator Deslizarse()
+    {
+        sobreCanica = true;
+
+        // Esperamos un tiempo arbitrario, puedes ajustar según sea necesario
+        yield return new WaitForSeconds(1.0f);
+
+        // Desactivamos el deslizamiento
+        sobreCanica = false;
     }
 }

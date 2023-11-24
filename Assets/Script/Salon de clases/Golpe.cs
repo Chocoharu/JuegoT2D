@@ -32,6 +32,12 @@ public class Golpe : MonoBehaviour
     void Start()
     {
         objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
+        if (SceneManager.GetActiveScene().name == "Juego")
+        {
+            
+            barraDeVida.InicializarBarraDeVida(4);
+        }
+        //objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
         barraDeVida.InicializarBarraDeVida(sliderline);
     }
@@ -39,30 +45,17 @@ public class Golpe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (SceneManager.GetActiveScene().name == "Juego")
         {
-            foreach (Transform estudiante in objetivos)
-            {
-                float distancia = Vector2.Distance(transform.position, estudiante.position);
 
-                if (distancia < distanciaMinima && estudiante.GetComponent<Alerta>().permisoGolpe)
-                {
-                    exito = true;
-                    //animator.SetBool("Golpear", exito);
-                }
-            }
-        }
-        //bool Permiso = alerta.PermisoGolpe();
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            foreach (Transform estudiante in objetivos)
-            {
-                float distancia = Vector2.Distance(transform.position, estudiante.position);
 
-                // Verifica si la distancia es menor que la distancia mínima
-                if (distancia < distanciaMinima)
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                foreach (Transform estudiante in objetivos)
                 {
-                    if (estudiante.GetComponent<Alerta>().permisoGolpe)
+                    float distancia = Vector2.Distance(transform.position, estudiante.position);
+
+                    if (distancia < distanciaMinima && estudiante.GetComponent<Alerta>().permisoGolpe)
                     {
                         //animator.SetBool("Golpear", true);
                         estudiante.GetComponent<Alerta>().Destruir();
@@ -73,32 +66,75 @@ public class Golpe : MonoBehaviour
                         Scoretxt.text = "Puntaje: " + puntaje;
                         PlayerPrefs.SetInt("Puntaje", puntaje);
                         PlayerPrefs.Save();
+                        exito = true;
+                        //animator.SetBool("Golpear", exito);
                     }
                 }
-                exito = false;
-                //animator.SetBool("Golpear", exito);
             }
-        }
-        if (cantAlert >= NumeroEstudiantesAlarm)
-        {
-            tempo += Time.deltaTime;
-            objCuentaRegresiva.SetActive(true);
-            ContadorRegresivo -= Time.deltaTime;
-            Cronometro();
-
-            if (tempo >= 6f && !nextscene) //muerte?
+            //bool Permiso = alerta.PermisoGolpe();
+            if (Input.GetKeyUp(KeyCode.E))
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                
-                nextscene = true;
+                foreach (Transform estudiante in objetivos)
+                {
+                    float distancia = Vector2.Distance(transform.position, estudiante.position);
+
+                    // Verifica si la distancia es menor que la distancia mï¿½nima
+                    if (distancia < distanciaMinima)
+                    {
+                        if (estudiante.GetComponent<Alerta>().permisoGolpe)
+                        {
+                            //animator.SetBool("Golpear", true);
+                            estudiante.GetComponent<Alerta>().Destruir();
+                            //exito = true;
+                            puntaje += 100;
+                            cantAlert--;
+                            barraDeVida.CambiarVidaActual(cantAlert);
+                            Scoretxt.text = "Puntaje: " + puntaje;
+                            PlayerPrefs.SetInt("Puntaje", puntaje);
+                            PlayerPrefs.Save();
+                        }
+                    }
+                    exito = false;
+                    //animator.SetBool("Golpear", exito);
+                }
+            }
+            if (cantAlert >= NumeroEstudiantesAlarm)
+            {
+                tempo += Time.deltaTime;
+                objCuentaRegresiva.SetActive(true);
+                ContadorRegresivo -= Time.deltaTime;
+                Cronometro();
+
+                if (tempo >= 5f && !nextscene) //muerte?
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+                    nextscene = true;
+                }
+            }
+            else
+            {
+                tempo = 0f;
+                ContadorRegresivo = 6;
+                objCuentaRegresiva.SetActive(false);
+                nextscene = false;
             }
         }
-        else
+        if(SceneManager.GetActiveScene().name == "Biblioteca")
         {
-            tempo = 0f;
-            ContadorRegresivo = 6;
-            objCuentaRegresiva.SetActive(false);
-            nextscene = false;
+            if (Input.GetKeyUp(KeyCode.Space))
+            {
+                foreach (Transform estudiante in objetivos)
+                {
+                    float distancia = Vector2.Distance(transform.position, estudiante.position);
+
+                    // Verifica si la distancia es menor que la distancia mï¿½nima
+                    if (distancia < distanciaMinima)
+                    {
+                        estudiante.GetComponent<OcultarEstudiante>().ReturnToOriginalPosition();
+                    }
+                }
+            }
         }
     }
     public void CantAlertas()
