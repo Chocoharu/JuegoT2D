@@ -27,6 +27,7 @@ public class Golpe : MonoBehaviour
     public TextMeshProUGUI cuentaRegresiva;
     public GameObject objCuentaRegresiva;
     public int sliderline=4;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,11 +36,11 @@ public class Golpe : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Juego")
         {
             
-            barraDeVida.InicializarBarraDeVida(4);
+            //barraDeVida.InicializarBarraDeVida(4);
+            barraDeVida.InicializarBarraDeVida(sliderline);
         }
         //objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
-        barraDeVida.InicializarBarraDeVida(sliderline);
     }
 
     // Update is called once per frame
@@ -107,7 +108,12 @@ public class Golpe : MonoBehaviour
 
                 if (tempo >= 5f && !nextscene) //muerte?
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+                    string nombreEscenaActual = SceneManager.GetActiveScene().name;
+                    // Almacenar el nombre de la escena actual como la "EscenaAnterior"
+                    PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
+                    PlayerPrefs.Save();
+                    SceneManager.LoadScene("FinalMalo");
 
                     nextscene = true;
                 }

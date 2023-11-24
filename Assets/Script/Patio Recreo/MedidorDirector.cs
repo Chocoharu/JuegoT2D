@@ -48,7 +48,10 @@ public class MedidorDirector : MonoBehaviour
     {
         if(slider.value==10)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            string nombreEscenaActual = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("FinalMalo");
         }
         if (Input.GetMouseButtonDown(0) && !clicPresionado)
         {

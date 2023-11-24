@@ -11,6 +11,7 @@ public class Chrono : MonoBehaviour
     public float tiempo = 0f;
 
     public GameObject Pause;
+    public AreaEstudio aux;
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +30,14 @@ public class Chrono : MonoBehaviour
         }
         tiempo += Time.deltaTime;
 
-        if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
+        if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Juego")
         {
-            if(aprendizaje.Instance.Porcentaje() > 50)
+            string nombreEscenaActual = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
+            PlayerPrefs.Save();
+
+            SceneManager.LoadScene("FinalBueno");
+            /*if(aprendizaje.Instance.Porcentaje() > 50)
             {
                 //win
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
@@ -39,29 +45,37 @@ public class Chrono : MonoBehaviour
             else
             {
                 //lose
-            }
+            }*/
 
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            string nombreEscenaActual = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
+            PlayerPrefs.Save();
+
+            SceneManager.LoadScene("FinalBueno");
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Biblioteca")
         {
-            if(AreaEstudio.Instance.Porcentaje()>70)
+            string nombreEscenaActual = SceneManager.GetActiveScene().name;
+            PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
+            PlayerPrefs.Save();
+
+            if (aux.Porcentaje()>50)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+                SceneManager.LoadScene("FinalBueno");
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+                SceneManager.LoadScene("FinalMalo");
             }
         }
         Cronometro();
     }
     void Cronometro()
     {
-        Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
+        //Debug.Log("Cronometro() llamado en escena: " + SceneManager.GetActiveScene().name);
         int minutos = Mathf.FloorToInt(tiempo / 60);
         int segundos = Mathf.FloorToInt(tiempo % 60);
         int milisegundos = Mathf.FloorToInt((tiempo * 1000) % 1000);

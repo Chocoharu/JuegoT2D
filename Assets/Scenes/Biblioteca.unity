@@ -17706,7 +17706,11 @@ MonoBehaviour:
   scoreText: {fileID: 1446258862}
   PorcentText: {fileID: 532788639}
   timeToIncreaseScore: 2
-  Estudiantes: []
+  Estudiantes:
+  - {fileID: 1314196111}
+  - {fileID: 210884326}
+  - {fileID: 1652986392}
+  - {fileID: 1588526132}
 --- !u!61 &496301972
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17739,7 +17743,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3368218, y: 0.057933614}
+  m_Offset: {x: 1.3368218, y: 0.028805315}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -17750,7 +17754,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7532158, y: 0.9637054}
+  m_Size: {x: 3.7532158, y: 1.0608}
   m_EdgeRadius: 0
 --- !u!4 &496301973
 Transform:
@@ -18369,6 +18373,7 @@ MonoBehaviour:
   Texttiempo: {fileID: 189879984}
   tiempo: 0
   Pause: {fileID: 1484582464}
+  aux: {fileID: 496301971}
 --- !u!1 &1222897809
 GameObject:
   m_ObjectHideFlags: 0

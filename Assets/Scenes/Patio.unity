@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause: {fileID: 130937567}
-  barraDirector: {fileID: 0}
+  barraDirector: {fileID: 1595797312}
 --- !u!1001 &483227702
 PrefabInstance:
   m_ObjectHideFlags: 0
