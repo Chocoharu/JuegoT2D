@@ -49,7 +49,7 @@ public class Golpe : MonoBehaviour
         {
 
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 foreach (Transform estudiante in objetivos)
                 {
@@ -72,7 +72,7 @@ public class Golpe : MonoBehaviour
                 }
             }
             //bool Permiso = alerta.PermisoGolpe();
-            if (Input.GetKeyUp(KeyCode.E))
+            /*if (Input.GetKeyUp(KeyCode.E))
             {
                 foreach (Transform estudiante in objetivos)
                 {
@@ -97,7 +97,7 @@ public class Golpe : MonoBehaviour
                     exito = false;
                     //animator.SetBool("Golpear", exito);
                 }
-            }
+            }*/
             if (cantAlert >= NumeroEstudiantesAlarm)
             {
                 tempo += Time.deltaTime;
