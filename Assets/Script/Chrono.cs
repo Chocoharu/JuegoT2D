@@ -11,7 +11,6 @@ public class Chrono : MonoBehaviour
     public float tiempo = 0f;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
     void Start()
@@ -21,18 +20,18 @@ public class Chrono : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tiempo += Time.deltaTime;
-        
-        if (dialog == true)
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {
                 return;
             }
         }
+        tiempo += Time.deltaTime;
+
         if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")
         {

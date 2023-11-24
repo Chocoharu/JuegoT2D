@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1dae8ecee844db428060b9e2a9a3e84
+guid: d447f4fc678a1d542915360a123611a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 170
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sin t\xEDtulo-2_Mesa de trabajo 1_0"
+      name: Profesor caminando abajo_0
       rect:
         serializedVersion: 2
-        x: 885
-        y: 970
-        width: 234
-        height: 399
+        x: 145
+        y: 35
+        width: 268
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5271705bf5fe95840a0eabf4e92ddc29
-      internalID: -1093582768
+      spriteID: 9f472439fee5105419ed90866e55a86b
+      internalID: 865542097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor caminando abajo_1
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 39
+        width: 270
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49087330c49e6c44aa412baff7eeeed1
+      internalID: 357022181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor caminando abajo_2
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 42
+        width: 268
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5189ec5cf430c846994fddc4fb8b963
+      internalID: -2112887238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor caminando abajo_3
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 39
+        width: 270
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6c51b842ab3c94b8b66cb5395052c0
+      internalID: -2038631903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor caminando abajo_4
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 35
+        width: 270
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64a219ffcff785449902d5b04d41b88
+      internalID: -836191480
       vertices: []
       indices: 
       edges: []
@@ -154,7 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Sin t\xEDtulo-2_Mesa de trabajo 1_0": -1093582768
+      Profesor caminando abajo_0: 865542097
+      Profesor caminando abajo_1: 357022181
+      Profesor caminando abajo_2: -2112887238
+      Profesor caminando abajo_3: -2038631903
+      Profesor caminando abajo_4: -836191480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

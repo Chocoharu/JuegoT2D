@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
     public bool CanMove = true;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
+    //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Juego")
         { 
-            if (dialog == true)
+            if (Pause != null)
             {
                 if (Pause.activeSelf)
                 {

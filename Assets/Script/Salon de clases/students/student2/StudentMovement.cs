@@ -26,9 +26,12 @@ public class StudentMovement : MonoBehaviour
 
     void Update()
     {
-        if (Pause.activeSelf)
+        if (Pause != null)
         {
-            return;
+            if (Pause.activeSelf)
+            {
+                return;
+            }
         }
         if (isMoving && GetComponent<Alerta>().permisoGolpe)
         {

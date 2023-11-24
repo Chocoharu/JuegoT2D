@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1dae8ecee844db428060b9e2a9a3e84
+guid: 80cbf5254dc91e642864db227322af83
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 170
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sin t\xEDtulo-2_Mesa de trabajo 1_0"
+      name: pixilart-sprite (2)_0
       rect:
         serializedVersion: 2
-        x: 885
-        y: 970
-        width: 234
-        height: 399
+        x: 248
+        y: 141
+        width: 117
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5271705bf5fe95840a0eabf4e92ddc29
-      internalID: -1093582768
+      spriteID: 09212731345a778479721b6f90c46199
+      internalID: 72306025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_1
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 141
+        width: 119
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8decc0ead05c64684e16417c644dc7
+      internalID: -1496990672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_2
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 141
+        width: 117
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014299a9c95faae4fabb1ac7cafdf342
+      internalID: 1411604731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_3
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 141
+        width: 119
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ccec052bbb7a24a85d1d67f88def23
+      internalID: -637245789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_4
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 141
+        width: 117
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d6f72656ab9b94386104d0e1f478fe
+      internalID: 1746726388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_5
+      rect:
+        serializedVersion: 2
+        x: 3142
+        y: 141
+        width: 118
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94802ef0022a3464ba55fb302d3e8dc8
+      internalID: -779175904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixilart-sprite (2)_6
+      rect:
+        serializedVersion: 2
+        x: 3722
+        y: 141
+        width: 118
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78dc41ac5b3ab74f9a09935863ad132
+      internalID: -115063967
       vertices: []
       indices: 
       edges: []
@@ -154,7 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Sin t\xEDtulo-2_Mesa de trabajo 1_0": -1093582768
+      pixilart-sprite (2)_0: 72306025
+      pixilart-sprite (2)_1: -1496990672
+      pixilart-sprite (2)_2: 1411604731
+      pixilart-sprite (2)_3: -637245789
+      pixilart-sprite (2)_4: 1746726388
+      pixilart-sprite (2)_5: -779175904
+      pixilart-sprite (2)_6: -115063967
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

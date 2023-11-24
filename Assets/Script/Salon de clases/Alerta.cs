@@ -16,13 +16,13 @@ public class Alerta : MonoBehaviour
     public Transform profe;
 
     public GameObject Pause;
-    [SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     private bool isStunned = false;
     private float stunDuration = 2.75f;
     private float stunTimer = 0f;
 
     public bool SpecialStudent = false;
+    public GameObject special;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class Alerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialog == true)
+        if (Pause != null)
         {
             if (Pause.activeSelf)
             {
@@ -56,7 +56,15 @@ public class Alerta : MonoBehaviour
                 if (!isStunned)
                 {
                     //animator.SetBool("Inquieto", true);
-                    spriteGenerado = Instantiate(prefab, transform.position + transform.up - transform.right, Quaternion.identity);
+                    if (SpecialStudent)
+                    {
+                        special.SetActive(true);
+                    }
+                    else
+                    {
+                        spriteGenerado = Instantiate(prefab, transform.position + transform.up - transform.right, Quaternion.identity);
+                    }
+                    
                     profe.GetComponent<Golpe>().CantAlertas();
                     permisoGolpe = true;
                     Existe = true;
@@ -95,7 +103,15 @@ public class Alerta : MonoBehaviour
     {
         if (!isStunned)
         {
-            Destroy(spriteGenerado);
+            if (SpecialStudent)
+            {
+                special.SetActive(false);
+            }
+            else
+            {
+                Destroy(spriteGenerado);
+            }
+           
             spritePow = Instantiate(Pow, transform.position + transform.up , Quaternion.identity);
             Destroy(spritePow, 0.5f);
             permisoGolpe = false;

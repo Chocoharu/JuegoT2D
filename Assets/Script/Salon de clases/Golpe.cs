@@ -26,19 +26,20 @@ public class Golpe : MonoBehaviour
 
     public TextMeshProUGUI cuentaRegresiva;
     public GameObject objCuentaRegresiva;
+    public int sliderline=4;
 
     // Start is called before the first frame update
     void Start()
     {
         objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
-        barraDeVida.InicializarBarraDeVida(4);
+        barraDeVida.InicializarBarraDeVida(sliderline);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             foreach (Transform estudiante in objetivos)
             {
@@ -48,7 +49,7 @@ public class Golpe : MonoBehaviour
                 {
                     exito = true;
                     //animator.SetBool("Golpear", exito);
-                } 
+                }
             }
         }
         //bool Permiso = alerta.PermisoGolpe();
@@ -59,7 +60,7 @@ public class Golpe : MonoBehaviour
                 float distancia = Vector2.Distance(transform.position, estudiante.position);
 
                 // Verifica si la distancia es menor que la distancia mínima
-                if (distancia < distanciaMinima )
+                if (distancia < distanciaMinima)
                 {
                     if (estudiante.GetComponent<Alerta>().permisoGolpe)
                     {
@@ -72,7 +73,7 @@ public class Golpe : MonoBehaviour
                         Scoretxt.text = "Puntaje: " + puntaje;
                         PlayerPrefs.SetInt("Puntaje", puntaje);
                         PlayerPrefs.Save();
-                    }    
+                    }
                 }
                 exito = false;
                 //animator.SetBool("Golpear", exito);
@@ -85,9 +86,9 @@ public class Golpe : MonoBehaviour
             ContadorRegresivo -= Time.deltaTime;
             Cronometro();
 
-            if (tempo >= 5f && !nextscene) //muerte?
+            if (tempo >= 6f && !nextscene) //muerte?
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 
                 nextscene = true;
             }
