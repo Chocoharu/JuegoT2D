@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5329153316538470732}
   - component: {fileID: 6962398635344677220}
   - component: {fileID: 7560281528101147748}
-  - component: {fileID: 3504891298450610860}
   - component: {fileID: 804641709974480218}
   - component: {fileID: 8403828172870640191}
+  - component: {fileID: 7464808162181277938}
   m_Layer: 0
   m_Name: Alumno
   m_TagString: Estudiante
@@ -179,21 +179,8 @@ MonoBehaviour:
   permisoGolpe: 0
   profe: {fileID: 0}
   Pause: {fileID: 0}
-  dialog: 1
   SpecialStudent: 0
---- !u!114 &3504891298450610860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3429293262184827562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b083076593973a049bad960dd4d4c8ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  special: {fileID: 0}
 --- !u!95 &804641709974480218
 Animator:
   serializedVersion: 5
@@ -260,3 +247,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.8140466, y: 1.6247581}
   m_EdgeRadius: 0
+--- !u!114 &7464808162181277938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429293262184827562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b083076593973a049bad960dd4d4c8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}

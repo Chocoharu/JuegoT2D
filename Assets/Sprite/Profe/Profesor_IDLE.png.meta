@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1dae8ecee844db428060b9e2a9a3e84
+guid: 11f6f98faabdcc74cba196bf67dd57a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 170
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sin t\xEDtulo-2_Mesa de trabajo 1_0"
+      name: Profesor_IDLE_0
       rect:
         serializedVersion: 2
-        x: 885
-        y: 970
-        width: 234
-        height: 399
+        x: 248
+        y: 141
+        width: 117
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5271705bf5fe95840a0eabf4e92ddc29
-      internalID: -1093582768
+      spriteID: 1ea66948fd9ace447a2f8b24e36cd4e3
+      internalID: 7864823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_IDLE_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 141
+        width: 116
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae7f93633e768347a869898ecf8d050
+      internalID: 2032100877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_IDLE_2
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 141
+        width: 117
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e243fc98d91afc47ab557d742ccdafe
+      internalID: -1050613417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_IDLE_3
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 141
+        width: 116
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a53f7b394e1b14b948d6846105b38f
+      internalID: 2109454619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_IDLE_4
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 141
+        width: 116
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16ffa9e3fccfa84aa1efa997aa8f712
+      internalID: -1241129790
       vertices: []
       indices: 
       edges: []
@@ -154,7 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Sin t\xEDtulo-2_Mesa de trabajo 1_0": -1093582768
+      Profesor_IDLE_0: 7864823
+      Profesor_IDLE_1: 2032100877
+      Profesor_IDLE_2: -1050613417
+      Profesor_IDLE_3: 2109454619
+      Profesor_IDLE_4: -1241129790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1dae8ecee844db428060b9e2a9a3e84
+guid: db19662ecd409214f99ec0d729ab9f7f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 170
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sin t\xEDtulo-2_Mesa de trabajo 1_0"
+      name: Profesor_Caminando_Lado_0
       rect:
         serializedVersion: 2
-        x: 885
-        y: 970
-        width: 234
-        height: 399
+        x: 248
+        y: 141
+        width: 117
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5271705bf5fe95840a0eabf4e92ddc29
-      internalID: -1093582768
+      spriteID: 0c8b1462dacb0d24f9b7d2795ac65771
+      internalID: 1262821691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Caminando_Lado_1
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 144
+        width: 114
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778067c44d8df4345919fc5b26155309
+      internalID: 1311175788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Caminando_Lado_2
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 145
+        width: 114
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be706667dbd0d74ca33688106e4e023
+      internalID: 246027164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Caminando_Lado_3
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 144
+        width: 116
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913b0a8612b30334a9a7e32c6a72c2f3
+      internalID: 1410580752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Caminando_Lado_4
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 141
+        width: 115
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bba285d70862634599a771cf972cfb6
+      internalID: -186867181
       vertices: []
       indices: 
       edges: []
@@ -154,7 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "Sin t\xEDtulo-2_Mesa de trabajo 1_0": -1093582768
+      Profesor_Caminando_Lado_0: 1262821691
+      Profesor_Caminando_Lado_1: 1311175788
+      Profesor_Caminando_Lado_2: 246027164
+      Profesor_Caminando_Lado_3: 1410580752
+      Profesor_Caminando_Lado_4: -186867181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

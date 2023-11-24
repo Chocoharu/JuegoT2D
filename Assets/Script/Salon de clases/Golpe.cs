@@ -26,13 +26,14 @@ public class Golpe : MonoBehaviour
 
     public TextMeshProUGUI cuentaRegresiva;
     public GameObject objCuentaRegresiva;
+    public int sliderline=4;
 
     // Start is called before the first frame update
     void Start()
     {
         objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
-        barraDeVida.InicializarBarraDeVida(4);
+        barraDeVida.InicializarBarraDeVida(sliderline);
     }
 
     // Update is called once per frame

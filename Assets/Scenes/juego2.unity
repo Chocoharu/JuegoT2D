@@ -177,9 +177,10 @@ MonoBehaviour:
   ContadorRegresivo: 5
   nextscene: 0
   barraDeVida: {fileID: 341821941}
-  NumeroEstudiantesAlarm: 3
+  NumeroEstudiantesAlarm: 7
   cuentaRegresiva: {fileID: 1578109950}
   objCuentaRegresiva: {fileID: 1578109948}
+  sliderline: 9
 --- !u!4 &29437778
 Transform:
   m_ObjectHideFlags: 0
@@ -237,7 +238,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 21300000, guid: 6029ecfa43c6d7b4989c893e33778e37, type: 3}
+  m_Sprite: {fileID: -1093582768, guid: a1dae8ecee844db428060b9e2a9a3e84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -280,18 +281,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026503801, y: 0.15632656}
+  m_Offset: {x: -0.18119717, y: -0.8911675}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.79, y: 4.51}
+    oldSize: {x: 1.3764706, y: 2.3470588}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0054526, y: 2.0615473}
+  m_Size: {x: 1.0673294, y: 0.6206901}
   m_EdgeRadius: 0
 --- !u!95 &29437781
 Animator:
@@ -347,7 +348,6 @@ MonoBehaviour:
   Speed: 4
   CanMove: 1
   Pause: {fileID: 1073260546}
-  dialog: 1
 --- !u!61 &29437784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -380,18 +380,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0022025108, y: -0.17074299}
+  m_Offset: {x: 0.0066227913, y: -0.418252}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.79, y: 4.51}
+    oldSize: {x: 1.3764706, y: 2.3470588}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96627903, y: 0.4799719}
+  m_Size: {x: 1.4347792, y: 0.4799719}
   m_EdgeRadius: 0
 --- !u!50 &29437785
 Rigidbody2D:
@@ -656,6 +656,8 @@ GameObject:
   - component: {fileID: 84898016}
   - component: {fileID: 84898015}
   - component: {fileID: 84898014}
+  - component: {fileID: 84898018}
+  - component: {fileID: 84898017}
   m_Layer: 6
   m_Name: Mesa profe 1 (4)
   m_TagString: mesa
@@ -802,6 +804,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &84898017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84898012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b083076593973a049bad960dd4d4c8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 29437779}
+--- !u!61 &84898018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84898012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5707752, y: 1.2385495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.82, y: 1.4}
+    newSize: {x: 1.82, y: 1.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.911209, y: 2.3188334}
+  m_EdgeRadius: 0
 --- !u!1 &92258218
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1062,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -1027,12 +1091,20 @@ PrefabInstance:
       value: 2.945538
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: m_Size.y
+      value: 1.468942
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.x
-      value: -0.32216734
+      value: -0.3221674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3129298
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2058,6 +2130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -2080,11 +2156,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Size.y
-      value: 1.2710084
+      value: 1.2445226
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.x
@@ -2092,7 +2168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.y
-      value: 0.56181437
+      value: 0.16894403
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_IsTrigger
@@ -2537,6 +2613,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -2559,7 +2639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Size.y
-      value: 1.5893316
+      value: 1.4292407
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
@@ -2571,7 +2651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.y
-      value: 0.46136785
+      value: 0.22123194
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -3196,6 +3276,7 @@ GameObject:
   - component: {fileID: 713834273}
   - component: {fileID: 713834272}
   - component: {fileID: 713834271}
+  - component: {fileID: 713834275}
   m_Layer: 6
   m_Name: Mesa profe 1 (3)
   m_TagString: mesa
@@ -3225,7 +3306,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713834269}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3387,6 +3468,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &713834275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713834269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b083076593973a049bad960dd4d4c8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 29437779}
 --- !u!1 &732932156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4838,6 +4932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -5374,6 +5472,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -5399,12 +5501,20 @@ PrefabInstance:
       value: 2.945538
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4759438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.x
-      value: -0.32216734
+      value: -0.3221674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.21753469
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -7380,6 +7490,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -7402,11 +7516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Size.y
-      value: 1.2710084
+      value: 1.3561522
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.x
@@ -7414,7 +7528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.y
-      value: 0.56181437
+      value: 0.13609535
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_IsTrigger
@@ -8831,6 +8945,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7464808162181277938, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 29437779}
     - target: {fileID: 7560281528101147748, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: Pow
       value: 
@@ -8849,23 +8967,23 @@ PrefabInstance:
       objectReference: {fileID: 900931228}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Size.x
-      value: 2.8258376
+      value: 2.555195
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Size.y
-      value: 1.2710084
+      value: 1.3773317
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.x
-      value: -0.21763587
+      value: -0.35295713
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_Offset.y
-      value: 0.56181437
+      value: 0.1316855
       objectReference: {fileID: 0}
     - target: {fileID: 8403828172870640191, guid: 54055ef092065b943bd828842a1d1c09, type: 3}
       propertyPath: m_IsTrigger
@@ -9928,7 +10046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2041845382
 RectTransform:
   m_ObjectHideFlags: 0
