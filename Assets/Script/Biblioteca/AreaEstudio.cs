@@ -7,17 +7,28 @@ public class AreaEstudio : MonoBehaviour
 {
     public int score = 0;
     public float scoreRate = 10.0f;
+    public int Porcent = 0;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI PorcentText;
 
     private float timer = 0.0f;
     public float timeToIncreaseScore = 2.0f;
 
     public List<Collider2D> Estudiantes = new List<Collider2D>();
+    public static AreaEstudio Instance;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +42,7 @@ public class AreaEstudio : MonoBehaviour
             timer = 0.0f;
         }
 
+        PorcentText.text = "Aprendizaje: " + Porcent + "%";
         scoreText.text = "Score: " + score;
     }
 
@@ -63,5 +75,8 @@ public class AreaEstudio : MonoBehaviour
     private void IncreaseScore()
     {
         score += Mathf.RoundToInt(scoreRate);
+        Porcent += 3;
     }
+    public int Porcentaje()
+    { return Porcent; }
 }

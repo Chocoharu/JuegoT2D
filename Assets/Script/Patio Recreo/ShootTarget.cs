@@ -15,7 +15,6 @@ public class ShootTarget : MonoBehaviour
     public bool newBorn = false;
     public float StartInquieto;
     public bool Movimiento = true;
-    private static int ContTierra = 0;
     public MedidorDirector barraDirector;
     private bool permitirGenerarTierra = true;
     private float tiempoEsperaGeneracion = 2.0f;
@@ -60,7 +59,6 @@ public class ShootTarget : MonoBehaviour
 
                     Instantiate(Tierra, new Vector3(0, -2, 0), Quaternion.identity);
                     Tierra.GetComponent<SpriteRenderer>().sortingOrder = 1;
-
 
                     barraDirector.CambiarVidaActual(1);
                     PlaygroundShoot.Instance.RemovePoint(20);

@@ -39,7 +39,14 @@ public class Chrono : MonoBehaviour
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Biblioteca")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+            if(AreaEstudio.Instance.Porcentaje()>70)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            }
         }
         Cronometro();
     }

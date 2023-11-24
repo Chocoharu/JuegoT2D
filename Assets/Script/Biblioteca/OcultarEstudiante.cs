@@ -57,6 +57,7 @@ public class OcultarEstudiante : MonoBehaviour
     public void ReturnToOriginalPosition()
     {
         escondido = false;
+        this.GetComponent<SpriteRenderer>().sortingOrder = 0;
         StartCoroutine(MoveToOriginalPosition());
     }
 
@@ -80,7 +81,6 @@ public class OcultarEstudiante : MonoBehaviour
             yield return null;
         }
         transform.position = OriginalPosition;
-        this.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
         TargetPosition = GetRandomTargetPosition();
         returning = false;
