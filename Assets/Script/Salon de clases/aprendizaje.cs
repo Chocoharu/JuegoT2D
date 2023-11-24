@@ -11,7 +11,7 @@ public class aprendizaje : MonoBehaviour
     public TextMeshProUGUI learn;
     public int aprendizajePorcent;
     public float ultimoframe = 0;
-    public static aprendizaje Instance;
+    /*public static aprendizaje Instance;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class aprendizaje : MonoBehaviour
         }
     }
     public int Porcentaje()
-    { return aprendizajePorcent; }
+    { return aprendizajePorcent; }*/
 
     // Update is called once per frame
     void Update()

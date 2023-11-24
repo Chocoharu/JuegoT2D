@@ -31,7 +31,7 @@ public class Chrono : MonoBehaviour
 
         if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego")
         {
-            if(aprendizaje.Instance.Porcentaje() > 50)
+            /*if(aprendizaje.Instance.Porcentaje() > 50)
             {
                 //win
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
@@ -39,7 +39,7 @@ public class Chrono : MonoBehaviour
             else
             {
                 //lose
-            }
+            }*/
 
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")
@@ -56,6 +56,19 @@ public class Chrono : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
             }
+        }
+        if (tiempo >= 60f && SceneManager.GetActiveScene().name == "Juego2")
+        {
+            /*if (aprendizaje.Instance.Porcentaje() > 50)
+            {
+                //win
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+            }
+            else
+            {
+                //lose
+            }*/
+
         }
         Cronometro();
     }
