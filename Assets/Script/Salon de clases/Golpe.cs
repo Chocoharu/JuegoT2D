@@ -36,10 +36,11 @@ public class Golpe : MonoBehaviour
         {
             
             barraDeVida.InicializarBarraDeVida(4);
+            barraDeVida.InicializarBarraDeVida(sliderline);
         }
         //objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
-        barraDeVida.InicializarBarraDeVida(sliderline);
+        
     }
 
     // Update is called once per frame
@@ -120,7 +121,7 @@ public class Golpe : MonoBehaviour
                 nextscene = false;
             }
         }
-        if(SceneManager.GetActiveScene().name == "Biblioteca")
+        if(SceneManager.GetActiveScene().name == "Biblioteca" || SceneManager.GetActiveScene().name == "Biblioteca2")
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
