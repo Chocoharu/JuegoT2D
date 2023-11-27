@@ -126,7 +126,7 @@ public class Golpe : MonoBehaviour
                 nextscene = false;
             }
         }
-        if(SceneManager.GetActiveScene().name == "Biblioteca")
+        if(SceneManager.GetActiveScene().name == "Biblioteca" || SceneManager.GetActiveScene().name == "Biblioteca2")
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
