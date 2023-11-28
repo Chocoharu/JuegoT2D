@@ -32,21 +32,6 @@ public class Inicio : MonoBehaviour
     {
 
         string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", escenaInicial);
-
-        // Obtener el nombre de la escena anterior almacenada
-        /*if (SceneManager.GetActiveScene().name == "Juego")
-        {
-            escenaAnterior = PlayerPrefs.GetString("Juego", escenaInicial);
-        }
-        else if(SceneManager.GetActiveScene().name == "Patio")
-        {
-            escenaAnterior = PlayerPrefs.GetString("Patio", escenaInicial);
-        }
-        else if (SceneManager.GetActiveScene().name == "Biblioteca")
-        {
-            escenaAnterior = PlayerPrefs.GetString("Biblioteca", escenaInicial);
-        }*/
-        // Cargar la escena anterior
         SceneManager.LoadScene(escenaAnterior);
     }
     public void NextSceneVictory()

@@ -16,7 +16,7 @@ public class aprendizaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (Instance == null)
+        /*if (Instance == null)
         {
             Instance = this;
         }
@@ -24,7 +24,7 @@ public class aprendizaje : MonoBehaviour
         {
             Destroy(gameObject);
 
-        }
+        }*/
     }
     public int Porcentaje()
     { return aprendizajePorcent; }
