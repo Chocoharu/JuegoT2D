@@ -13,6 +13,8 @@ public class OcultarEstudiante : MonoBehaviour
     private float timer;
     private bool returning = false;
     public bool escondido = false;
+    public GameObject canicaPrefab;
+    private bool canCreateCanica = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,8 +48,26 @@ public class OcultarEstudiante : MonoBehaviour
 
         transform.position = Vector2.MoveTowards(transform.position, TargetPosition.position, speed * Time.deltaTime);
 
+
+        if (canCreateCanica && !IsInOriginalOrTargetPosition())
+        {
+            float distanceToOriginal = Vector2.Distance(transform.position, OriginalPosition);
+            float minimumDistance = 2.0f;  // Establece la distancia mínima deseada
+
+            if (distanceToOriginal > minimumDistance)
+            {
+                float randomProbability = Random.Range(0f, 1f);
+                if (randomProbability <= 0.8f)
+                {
+                    Instantiate(canicaPrefab, transform.position, Quaternion.identity);
+                    canCreateCanica = false;  // Desactiva la creación de canicas hasta el próximo movimiento
+                }
+            }
+        }
+
         if (transform.position == TargetPosition.position)
         {
+            
             timer = Random.Range(3.0f, 4.0f);
             escondido = true;
             this.GetComponent<SpriteRenderer>().sortingOrder = -1;
@@ -84,5 +104,9 @@ public class OcultarEstudiante : MonoBehaviour
 
         TargetPosition = GetRandomTargetPosition();
         returning = false;
+    }
+    bool IsInOriginalOrTargetPosition()
+    {
+        return transform.position == OriginalPosition || (TargetPosition != null && transform.position == TargetPosition.position);
     }
 }

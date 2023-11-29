@@ -17293,6 +17293,7 @@ MonoBehaviour:
   - {fileID: 73334435}
   speed: 4
   escondido: 0
+  canicaPrefab: {fileID: 1224372525}
 --- !u!1 &219934617
 GameObject:
   m_ObjectHideFlags: 0
@@ -19754,7 +19755,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314196109}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e5c1d0d7933fc544954f565c04c6910, type: 3}
   m_Name: 
@@ -19764,6 +19765,7 @@ MonoBehaviour:
   - {fileID: 108895158}
   speed: 4
   escondido: 0
+  canicaPrefab: {fileID: 0}
 --- !u!1 &1367458592
 GameObject:
   m_ObjectHideFlags: 0
@@ -20335,7 +20337,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588526130}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e5c1d0d7933fc544954f565c04c6910, type: 3}
   m_Name: 
@@ -20345,6 +20347,7 @@ MonoBehaviour:
   - {fileID: 1435874911}
   speed: 4
   escondido: 0
+  canicaPrefab: {fileID: 0}
 --- !u!1 &1652986390
 GameObject:
   m_ObjectHideFlags: 0
@@ -20511,7 +20514,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652986390}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e5c1d0d7933fc544954f565c04c6910, type: 3}
   m_Name: 
@@ -20521,6 +20524,7 @@ MonoBehaviour:
   - {fileID: 1291917402}
   speed: 4
   escondido: 0
+  canicaPrefab: {fileID: 0}
 --- !u!1 &1683173338
 GameObject:
   m_ObjectHideFlags: 0
