@@ -14,7 +14,9 @@ public class OcultarEstudiante : MonoBehaviour
     private bool returning = false;
     public bool escondido = false;
     public GameObject canicaPrefab;
+    private GameObject currentCanica;
     private bool canCreateCanica = true;
+    private bool destroyCanica = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,15 @@ public class OcultarEstudiante : MonoBehaviour
                     MoveToPosition();
                 }
             }
+        }
+        if(destroyCanica && currentCanica != null)
+        {
+            Destroy(currentCanica, 10.0f);
+            destroyCanica = false;
+        }
+        if (IsInOriginalOrTargetPosition())
+        {
+            canCreateCanica = true;
         }
     }
 
@@ -59,8 +70,9 @@ public class OcultarEstudiante : MonoBehaviour
                 float randomProbability = Random.Range(0f, 1f);
                 if (randomProbability <= 0.8f)
                 {
-                    Instantiate(canicaPrefab, transform.position, Quaternion.identity);
+                    currentCanica = Instantiate(canicaPrefab, transform.position, Quaternion.identity);
                     canCreateCanica = false;  // Desactiva la creación de canicas hasta el próximo movimiento
+                    destroyCanica = true;
                 }
             }
         }
