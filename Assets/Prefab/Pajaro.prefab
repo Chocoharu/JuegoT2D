@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc2016c0b5a44d1408b9ea6fa1ef8b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tierra: {fileID: 0}
+  Tierra: {fileID: 5681174988993343008, guid: d0952639b3468054181f4c7db912ebef, type: 3}
   newBorn: 0
   StartInquieto: 0
   Movimiento: 1
@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 6
   PermisoMovimiento: 0
+  pause: {fileID: 1638583965600054477, guid: ac4417c5b80af0c4c9c88e951e41db7b, type: 3}
   isAve: 1
 --- !u!95 &-7304140547695801711
 Animator:

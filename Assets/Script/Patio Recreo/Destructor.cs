@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Destructor : MonoBehaviour
 {
     public GameObject Pause;
     public MedidorDirector barraDirector;
-    private bool flag = true;
+    //[SerializeField] private bool flag = true; 
+
+    public GameObject BtnPause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +25,17 @@ public class Destructor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ave") && flag)
+        if (collision.CompareTag("Ave") && SceneManager.GetActiveScene().name == "Patio")
         {
             Debug.Log("colision");
             Pause.SetActive(false);
             barraDirector.Reset();
             PlaygroundShoot.Instance.Reset();
-            flag = false;
+            //flag = false;
+
+            BtnPause.SetActive(true);
         }
+
         Destroy(collision.gameObject);
     }
 }

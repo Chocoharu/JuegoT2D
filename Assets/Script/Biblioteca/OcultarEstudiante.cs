@@ -13,6 +13,9 @@ public class OcultarEstudiante : MonoBehaviour
     private float timer;
     private bool returning = false;
     public bool escondido = false;
+
+    public GameObject Pause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,14 @@ public class OcultarEstudiante : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Pause != null)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
+
         if (!escondido)
         {
             timer -= Time.deltaTime;

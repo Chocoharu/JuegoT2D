@@ -13,7 +13,6 @@ public class GeneradorDeObjetos : MonoBehaviour
 
     private void Start()
     {
-       
         // Comienza a generar objetos en intervalos regulares.
         InvokeRepeating("GenerarObjeto", 0, intervaloDeGeneracion);
     }
