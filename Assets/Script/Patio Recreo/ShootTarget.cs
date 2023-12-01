@@ -33,7 +33,6 @@ public class ShootTarget : MonoBehaviour
     {
         if(barraDirector == null)
         {
-            Debug.Log("instantia");
             barraDirector = MedidorDirector.instance;
         }
 
@@ -62,7 +61,9 @@ public class ShootTarget : MonoBehaviour
 
                     barraDirector.CambiarVidaActual(1);
                     PlaygroundShoot.Instance.RemovePoint(20);
+                    
                 }
+                
             }
         }
         else
