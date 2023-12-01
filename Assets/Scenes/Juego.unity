@@ -2944,7 +2944,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -6284,6 +6284,7 @@ MonoBehaviour:
   panel: {fileID: 2075298989}
   moveToPointScript: {fileID: 1975185998}
   ImagePanel: {fileID: 2075298991}
+  pause: {fileID: 0}
 --- !u!4 &2014365017
 Transform:
   m_ObjectHideFlags: 0
