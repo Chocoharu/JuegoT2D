@@ -15,7 +15,6 @@ public class AreaEstudio : MonoBehaviour
     public float timeToIncreaseScore = 2.0f;
 
     public List<Collider2D> Estudiantes = new List<Collider2D>();
-    public static AreaEstudio Instance;
 
     // Start is called before the first frame update
     void Start()
@@ -25,16 +24,11 @@ public class AreaEstudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        timer += Time.deltaTime;
-        if (timer >= timeToIncreaseScore && Estudiantes.Count!=0)
-        {
-            IncreaseScore();
-            timer = 0.0f;
-        }
-
         PorcentText.text = "Aprendizaje: " + Porcent + "%";
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Puntaje: " + score;
+        PlayerPrefs.SetInt("Puntaje", score);
+        PlayerPrefs.SetInt("Aprendizaje", Porcent);
+        PlayerPrefs.Save();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,6 +37,10 @@ public class AreaEstudio : MonoBehaviour
         {
             Estudiantes.Add(collision);
             timeToIncreaseScore -= 0.25f;
+            if(timeToIncreaseScore <1f)
+            {
+                timeToIncreaseScore = 1f;
+            }
         }
     }
 
@@ -50,7 +48,13 @@ public class AreaEstudio : MonoBehaviour
     {
         if (collision.CompareTag("Estudiante"))
         {
-            //score += 10;//Mathf.RoundToInt(scoreRate * Time.deltaTime);
+
+            timer += Time.deltaTime;
+            if (timer >= timeToIncreaseScore && Estudiantes.Count != 0)
+            {
+                IncreaseScore();
+                timer = 0.0f;
+            }
         }
     }
 
@@ -60,6 +64,10 @@ public class AreaEstudio : MonoBehaviour
         {
             Estudiantes.Remove(collision);
             timeToIncreaseScore += 0.25f;
+            if (timeToIncreaseScore > 3f)
+            {
+                timeToIncreaseScore = 3f;
+            }
         }
     }
 

@@ -2468,6 +2468,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3068831101172472794, guid: ab4f8306ce9f4f34fa9f456069a04ea6, type: 3}
+      propertyPath: m_TagString
+      value: AveEjemplo
+      objectReference: {fileID: 0}
     - target: {fileID: 4018602494948178701, guid: ab4f8306ce9f4f34fa9f456069a04ea6, type: 3}
       propertyPath: m_FlipX
       value: 1

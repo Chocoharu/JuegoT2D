@@ -37,15 +37,6 @@ public class Chrono : MonoBehaviour
             PlayerPrefs.Save();
 
             SceneManager.LoadScene("FinalBueno");
-            /*if(aprendizaje.Instance.Porcentaje() > 50)
-            {
-                //win
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
-            }
-            else
-            {
-                //lose
-            }*/
 
         }
         if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Patio")

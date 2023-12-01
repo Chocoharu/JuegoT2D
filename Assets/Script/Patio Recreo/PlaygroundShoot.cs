@@ -22,6 +22,7 @@ public class PlaygroundShoot : MonoBehaviour
         }
         
     }
+
     public void Reset()
     {
         Score = 0;
@@ -31,6 +32,8 @@ public class PlaygroundShoot : MonoBehaviour
     {
         Score += points;
         TextoScore.text = "Puntaje: " + Score;
+        PlayerPrefs.SetInt("Puntaje", Score);
+        PlayerPrefs.Save();
     }
     public void RemovePoint(int points)
     {
@@ -40,12 +43,14 @@ public class PlaygroundShoot : MonoBehaviour
             Score = 0;
         }
         TextoScore.text = "Puntaje: " + Score;
+        PlayerPrefs.SetInt("Puntaje", Score);
+        PlayerPrefs.Save();
     }
 
     // Update is called once per frame
     void Update()
     {
-       //TextoScore.text = "Puntaje: " + Score;
+        
     }
     
     public int Puntaje()

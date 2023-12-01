@@ -72,33 +72,6 @@ public class Golpe : MonoBehaviour
                     }
                 }
             }
-            //bool Permiso = alerta.PermisoGolpe();
-            /*if (Input.GetKeyUp(KeyCode.E))
-            {
-                foreach (Transform estudiante in objetivos)
-                {
-                    float distancia = Vector2.Distance(transform.position, estudiante.position);
-
-                    // Verifica si la distancia es menor que la distancia m�nima
-                    if (distancia < distanciaMinima)
-                    {
-                        if (estudiante.GetComponent<Alerta>().permisoGolpe)
-                        {
-                            //animator.SetBool("Golpear", true);
-                            estudiante.GetComponent<Alerta>().Destruir();
-                            //exito = true;
-                            puntaje += 100;
-                            cantAlert--;
-                            barraDeVida.CambiarVidaActual(cantAlert);
-                            Scoretxt.text = "Puntaje: " + puntaje;
-                            PlayerPrefs.SetInt("Puntaje", puntaje);
-                            PlayerPrefs.Save();
-                        }
-                    }
-                    exito = false;
-                    //animator.SetBool("Golpear", exito);
-                }
-            }*/
             if (cantAlert >= NumeroEstudiantesAlarm)
             {
                 tempo += Time.deltaTime;

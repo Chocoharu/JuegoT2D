@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OcultarEstudiante : MonoBehaviour
 {
@@ -17,11 +18,23 @@ public class OcultarEstudiante : MonoBehaviour
     private GameObject currentCanica;
     private bool canCreateCanica = true;
     private bool destroyCanica = false;
+    float randomProbability;
+    private float maxProbability;
+
     // Start is called before the first frame update
     void Start()
     {
         OriginalPosition = transform.position;
         timer = Random.Range(2.0f, 3.0f);
+        if (SceneManager.GetActiveScene().name == "Biblioteca")
+        {
+            maxProbability = 8.0f;
+        }
+        else if (SceneManager.GetActiveScene().name == "Biblioteca2")
+        {
+            maxProbability = 6.0f;
+        }
+        randomProbability = Random.Range(1.0f, maxProbability);
     }
 
     // Update is called once per frame
@@ -47,6 +60,7 @@ public class OcultarEstudiante : MonoBehaviour
         if (IsInOriginalOrTargetPosition())
         {
             canCreateCanica = true;
+            randomProbability = Random.Range(1.0f, maxProbability);
         }
     }
 
@@ -63,15 +77,16 @@ public class OcultarEstudiante : MonoBehaviour
         if (canCreateCanica && !IsInOriginalOrTargetPosition())
         {
             float distanceToOriginal = Vector2.Distance(transform.position, OriginalPosition);
-            float minimumDistance = 2.0f;  // Establece la distancia mínima deseada
+            float minimumDistance = 3.0f;
 
             if (distanceToOriginal > minimumDistance)
             {
-                float randomProbability = Random.Range(0f, 1f);
-                if (randomProbability <= 0.8f)
+                
+                Debug.Log(randomProbability.ToString());
+                if (randomProbability <= 3.0f)
                 {
                     currentCanica = Instantiate(canicaPrefab, transform.position, Quaternion.identity);
-                    canCreateCanica = false;  // Desactiva la creación de canicas hasta el próximo movimiento
+                    canCreateCanica = false; 
                     destroyCanica = true;
                 }
             }

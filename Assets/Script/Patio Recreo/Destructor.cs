@@ -21,7 +21,7 @@ public class Destructor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ave") && flag)
+        if (collision.CompareTag("AveEjemplo") && flag)
         {
             Debug.Log("colision");
             Pause.SetActive(false);

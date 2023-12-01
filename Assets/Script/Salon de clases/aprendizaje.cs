@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 using static Unity.Burst.Intrinsics.X86;
 
@@ -16,15 +17,6 @@ public class aprendizaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*if (Instance == null)
-        {
-            Instance = this;
-        }
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-
-        }*/
     }
     public int Porcentaje()
     { return aprendizajePorcent; }
@@ -41,6 +33,8 @@ public class aprendizaje : MonoBehaviour
         if (ultimoframe > 2)
         {
             aprendizajePorcent += 5;
+            PlayerPrefs.SetInt("Aprendizaje", aprendizajePorcent);
+            PlayerPrefs.Save();
             ultimoframe = 0f;
         }
     }

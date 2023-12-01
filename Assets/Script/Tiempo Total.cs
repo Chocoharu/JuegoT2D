@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TiempoTotal : MonoBehaviour
 {
 
     public TextMeshProUGUI TotalTiempo;
     public TextMeshProUGUI PuntajeTexto;
+    public TextMeshProUGUI AprendizajeTotal;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,12 @@ public class TiempoTotal : MonoBehaviour
         TotalTiempo.text = tiempoTexto;
         int puntaje = PlayerPrefs.GetInt("Puntaje", 0);
         PuntajeTexto.text = "Puntaje: " + puntaje;
-
+        string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", "Inicio");
+        if (escenaAnterior != "Patio")
+        {
+            int aprendizaje = PlayerPrefs.GetInt("Aprendizaje", 0);
+            AprendizajeTotal.text = "Aprendizaje: " + aprendizaje;
+        }
     }
 
     // Update is called once per frame
