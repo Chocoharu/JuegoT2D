@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalBueno.unity
     guid: ec49fb2b9d141ba40aa730758184b2d9
+  - enabled: 1
+    path: Assets/Scenes/juego2.unity
+    guid: 94783614095315d42bca1bf1d425bc26
+  - enabled: 1
+    path: Assets/Scenes/Biblioteca2.unity
+    guid: b59629f3937beca4bb448249882aa40c
   m_configObjects: {}

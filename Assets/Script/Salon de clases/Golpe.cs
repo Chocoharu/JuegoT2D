@@ -46,7 +46,7 @@ public class Golpe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Juego")
+        if (SceneManager.GetActiveScene().name == "Juego" || SceneManager.GetActiveScene().name == "juego2")
         {
 
 

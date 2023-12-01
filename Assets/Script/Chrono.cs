@@ -11,7 +11,7 @@ public class Chrono : MonoBehaviour
     public float tiempo = 0f;
 
     public GameObject Pause;
-    public AreaEstudio aux;
+    public GameObject areaEstudio;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,7 @@ public class Chrono : MonoBehaviour
         }
         tiempo += Time.deltaTime;
 
-        if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Juego")
+        if (tiempo >= 30f && (SceneManager.GetActiveScene().name == "Juego"|| SceneManager.GetActiveScene().name == "juego2"))
         {
             string nombreEscenaActual = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
@@ -47,13 +47,13 @@ public class Chrono : MonoBehaviour
 
             SceneManager.LoadScene("FinalBueno");
         }
-        if (tiempo >= 30f && SceneManager.GetActiveScene().name == "Biblioteca")
+        if (tiempo >= 30f && (SceneManager.GetActiveScene().name == "Biblioteca"||SceneManager.GetActiveScene().name == "Biblioteca2"))
         {
             string nombreEscenaActual = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
             PlayerPrefs.Save();
 
-            if (aux.Porcentaje()>50)
+            if (areaEstudio.GetComponent<AreaEstudio>().Porcentaje()>50)
             {
                 SceneManager.LoadScene("FinalBueno");
             }

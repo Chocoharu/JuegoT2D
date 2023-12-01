@@ -92,6 +92,10 @@ public class AreaEstudio : MonoBehaviour
     {
         score += Mathf.RoundToInt(scoreRate);
         Porcent += 3;
+        if(Porcent > 100)
+        {
+            Porcent = 100;
+        }
     }
     public int Porcentaje()
     { return Porcent; }

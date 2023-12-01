@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Inicio : MonoBehaviour
 {
     private string escenaInicial = "Inicio";
+    public TextMeshProUGUI bottonText;
     // Start is called before the first frame update
     public void NextScene()
     {
@@ -39,15 +41,23 @@ public class Inicio : MonoBehaviour
         string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", escenaInicial);
         if(escenaAnterior == "Juego")
         {
-            SceneManager.LoadScene("Patio");
-        }
-        else if (escenaAnterior == "Patio")
-        {
             SceneManager.LoadScene("Biblioteca");
         }
         else if (escenaAnterior == "Biblioteca")
         {
-            //SceneManager.LoadScene("Biblioteca");
+            SceneManager.LoadScene("Patio");
+        }
+        else if (escenaAnterior == "Patio")
+        {
+            SceneManager.LoadScene("juego2");
+        }
+        else if (escenaAnterior == "juego2")
+        {
+            SceneManager.LoadScene("Biblioteca2");
+        }
+        else if(escenaAnterior == "Biblioteca2")
+        {
+            bottonText.text = "Salir";
             Application.Quit();
         }
     }
