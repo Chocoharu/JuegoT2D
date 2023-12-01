@@ -24,6 +24,7 @@ public class ActivarPanel : MonoBehaviour
     private bool startTyping = false;
 
     public GameObject pause;
+    public GameObject btn;
 
     private void Start()
     {
@@ -85,6 +86,7 @@ public class ActivarPanel : MonoBehaviour
             else
             {
                 pause.SetActive(false);
+                btn.SetActive(true);
             }
             
         }
