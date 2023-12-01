@@ -29,8 +29,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Juego")
-        { 
+        //if (SceneManager.GetActiveScene().name == "Juego")
+        //{ 
             if (Pause != null)
             {
                 if (Pause.activeSelf)
@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
                     return;
                 }
             }
-        }
+        //}
         if (sobreCanica)
         {
             rigidbody.velocity = direccionOriginal * velocidadDeslizamiento;

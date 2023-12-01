@@ -82,6 +82,6 @@ public class StudentMovement : MonoBehaviour
         bool isMovingFast = currentSpeed > 0.1f;
 
         // Configurar el parámetro de la animación en el Animator
-        animator.SetBool("Caminan", isMovingFast);
+        //animator.SetBool("Caminan", isMovingFast);
     }
 }

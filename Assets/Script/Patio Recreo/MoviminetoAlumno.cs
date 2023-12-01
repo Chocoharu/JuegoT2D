@@ -9,8 +9,9 @@ public class MoviminetoAlumno : MonoBehaviour
     private bool PosGeneracion;
     public bool PermisoMovimiento;
     private float Timer = 1f;
-
+    public GameObject pause;
     public bool isAve = false;
+    //public bool Ej = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,13 @@ public class MoviminetoAlumno : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (pause != null)
+        {
+            if (pause.activeSelf)
+            {
+                return;
+            }
+        }
         if (PermisoMovimiento || isAve)
         {
             if (PosGeneracion) { transform.Translate(Vector2.right * velocidad * Time.deltaTime); }

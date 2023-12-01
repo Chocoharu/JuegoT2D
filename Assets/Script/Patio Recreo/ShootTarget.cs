@@ -40,7 +40,7 @@ public class ShootTarget : MonoBehaviour
         {
             float randomValue = Random.value;
 
-            if (randomValue <= 0.5f&&!cambioColor&&!CompareTag("Ave"))
+            if (randomValue <= 0.5f&&!cambioColor&&!CompareTag("Ave")&& !CompareTag("AveEjemplo"))
             {
                 Inquieto = true;
                 renderer.material.color = Color.red;
@@ -93,7 +93,7 @@ public class ShootTarget : MonoBehaviour
             this.gameObject.GetComponent<MoviminetoAlumno>().PermisoMovimiento = false;
             click = true;
         }
-        else if (CompareTag("Ave"))
+        else if (CompareTag("Ave") || CompareTag("AveEjemplo"))
         {
             PlaygroundShoot.Instance.RemovePoint(25);
             barraDirector.CambiarVidaActual(1);

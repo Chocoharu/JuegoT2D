@@ -27,8 +27,9 @@ public class MoveToPointPatio : MonoBehaviour
             if (transform.position == TargetPos.position)
             {
                 if (next != null)
-                {
+                {  
                     next.SetActive(true);
+                    flag = false;
                 }
             }
             

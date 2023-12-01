@@ -12,17 +12,21 @@ public class MoveToPoint : MonoBehaviour
     public Transform TargetPos4;
     public float speed = 5;
     public bool flag = true;
-    public bool flag2 = false;
-    public bool flag3 = true;
+    private bool flag2 = false;
+    private bool flag3 = true;
 
     public ActivarPanel empezarEscribir;
     public GameObject Pause;
+    public GameObject BtnPause;
+    private bool paused = false;
 
     public GameObject PowEj;
     public GameObject StudentEj;
     public GameObject Dialog;
     public SpriteRenderer RealStudent;
     public GameObject EjNoise;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -69,9 +73,11 @@ public class MoveToPoint : MonoBehaviour
         if (!flag3)
         {
             transform.position = Vector3.MoveTowards(transform.position, TargetPos4.position, speed * Time.deltaTime);
-            if (transform.position == TargetPos4.position)
+            if (transform.position == TargetPos4.position && !paused)
             {
                 Pause.SetActive(false);
+                BtnPause.SetActive(true);
+                paused = true;
             }
         }
     }

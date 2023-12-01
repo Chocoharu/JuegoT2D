@@ -16,6 +16,8 @@ public class AreaEstudio : MonoBehaviour
 
     public List<Collider2D> Estudiantes = new List<Collider2D>();
 
+    public GameObject Pause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,21 @@ public class AreaEstudio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Pause != null)
+        {
+            if (Pause.activeSelf)
+            {
+                return;
+            }
+        }
+
+        timer += Time.deltaTime;
+        if (timer >= timeToIncreaseScore && Estudiantes.Count!=0)
+        {
+            IncreaseScore();
+            timer = 0.0f;
+        }
+
         PorcentText.text = "Aprendizaje: " + Porcent + "%";
         scoreText.text = "Puntaje: " + score;
         PlayerPrefs.SetInt("Puntaje", score);

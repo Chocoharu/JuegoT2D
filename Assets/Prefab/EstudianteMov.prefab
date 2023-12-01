@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 3
   PermisoMovimiento: 0
+  pause: {fileID: 1638583965600054477, guid: ac4417c5b80af0c4c9c88e951e41db7b, type: 3}
   isAve: 0
 --- !u!114 &341759150293670194
 MonoBehaviour:
