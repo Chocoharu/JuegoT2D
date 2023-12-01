@@ -1,8 +1,9 @@
-using System.Collections;
+   using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ActivarPanel : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class ActivarPanel : MonoBehaviour
     public Image ImagePanel;
     private bool startTyping = false;
 
+    public GameObject pause;
+
     private void Start()
     {
         // Llama a la función ActivarPanelDespuesDeEspera después del tiempo especificado
@@ -32,6 +35,10 @@ public class ActivarPanel : MonoBehaviour
     {
         if (text)
         {
+            if(SceneManager.GetActiveScene().name == "Biblioteca")
+            {
+                Empezar();
+            }
             if (startTyping)
             {
                 if (!DidDialogueStart)
@@ -71,7 +78,15 @@ public class ActivarPanel : MonoBehaviour
         {
             DidDialogueStart = false;
             panel.SetActive(false);
-            moveToPointScript.flag = false;
+            if(SceneManager.GetActiveScene().name == "Juego")
+            {
+                moveToPointScript.flag = false;
+            }
+            else
+            {
+                pause.SetActive(false);
+            }
+            
         }
     }
 

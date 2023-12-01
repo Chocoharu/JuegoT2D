@@ -7,7 +7,7 @@ public class Destructor : MonoBehaviour
 {
     public GameObject Pause;
     public MedidorDirector barraDirector;
-    //[SerializeField] private bool flag = true; 
+    [SerializeField] private bool flag = true; 
 
     public GameObject BtnPause;
 
@@ -25,13 +25,13 @@ public class Destructor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ave") && SceneManager.GetActiveScene().name == "Patio")
+        if (collision.CompareTag("Ave") && flag)
         {
             Debug.Log("colision");
             Pause.SetActive(false);
             barraDirector.Reset();
             PlaygroundShoot.Instance.Reset();
-            //flag = false;
+            flag = false;
 
             BtnPause.SetActive(true);
         }

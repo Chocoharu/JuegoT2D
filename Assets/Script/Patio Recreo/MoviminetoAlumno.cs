@@ -11,6 +11,7 @@ public class MoviminetoAlumno : MonoBehaviour
     private float Timer = 1f;
     public GameObject pause;
     public bool isAve = false;
+    //public bool Ej = false;
     // Start is called before the first frame update
     void Start()
     {

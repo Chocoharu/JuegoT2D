@@ -29,6 +29,7 @@ public class MoveToPointPatio : MonoBehaviour
                 if (next != null)
                 {  
                     next.SetActive(true);
+                    flag = false;
                 }
             }
             
