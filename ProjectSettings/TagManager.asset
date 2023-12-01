@@ -12,6 +12,7 @@ TagManager:
   - Ave
   - Medidor
   - Canica
+  - AveEjemplo
   layers:
   - Default
   - TransparentFX

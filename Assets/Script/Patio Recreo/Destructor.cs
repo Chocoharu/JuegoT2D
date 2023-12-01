@@ -7,32 +7,30 @@ public class Destructor : MonoBehaviour
 {
     public GameObject Pause;
     public MedidorDirector barraDirector;
-    [SerializeField] private bool flag = true; 
-
+    [SerializeField] private int flag = 4;
+    public GameObject[] next;//siguientes en el tutorial
     public GameObject BtnPause;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ave") && flag)
+        if (flag < 3)
+        {
+            Destroy(next[flag]);
+
+            if (flag + 1 < next.Length)
+            {
+                next[flag + 1].SetActive(true);
+            }
+            
+            flag++;
+        }
+        if (collision.CompareTag("AveEjemplo"))
         {
             Debug.Log("colision");
             Pause.SetActive(false);
             barraDirector.Reset();
             PlaygroundShoot.Instance.Reset();
-            flag = false;
-
+            
             BtnPause.SetActive(true);
         }
 
