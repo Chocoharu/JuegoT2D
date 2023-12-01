@@ -61,7 +61,6 @@ public class ShootTarget : MonoBehaviour
 
                     barraDirector.CambiarVidaActual(1);
                     PlaygroundShoot.Instance.RemovePoint(20);
-                    
                 }
                 
             }
