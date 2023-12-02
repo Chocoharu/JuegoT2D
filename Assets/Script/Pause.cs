@@ -9,6 +9,8 @@ public class Pause : MonoBehaviour
     public GameObject PauseObj;
     public GameObject panelPause;
     public GameObject BtnPause;
+    
+
     float currentTime = 0;
     
     private void Start()

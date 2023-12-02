@@ -1457,7 +1457,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 75.5
   orthographic: 1
   orthographic size: 7.7306356
   m_Depth: -1
@@ -3964,7 +3964,7 @@ MonoBehaviour:
   Texttiempo: {fileID: 356089687}
   tiempo: 0
   Pause: {fileID: 294191796}
-  aux: {fileID: 0}
+  areaEstudio: {fileID: 0}
 --- !u!1 &1390550272
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,6 +6285,7 @@ MonoBehaviour:
   moveToPointScript: {fileID: 1975185998}
   ImagePanel: {fileID: 2075298991}
   pause: {fileID: 0}
+  btn: {fileID: 0}
 --- !u!4 &2014365017
 Transform:
   m_ObjectHideFlags: 0
