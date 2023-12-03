@@ -41,7 +41,16 @@ public class ResolutionManager : MonoBehaviour
         Resolution selectedResolution = resolutions[index];
 
         // Establece la resolución con la tasa de actualización actual
-        Screen.SetResolution(selectedResolution.width, selectedResolution.height, FullScreenMode.Windowed, new RefreshRate());
+        if(index == 1)
+        {
+            Screen.SetResolution(selectedResolution.width, selectedResolution.height, FullScreenMode.Windowed, new RefreshRate());
+        }
+        else
+        {
+            Screen.SetResolution(selectedResolution.width, selectedResolution.height, false);
+        }
+        
+        //Screen.SetResolution(selectedResolution.width, selectedResolution.height, FullScreenMode.Windowed, new RefreshRate());
 
         Debug.Log($"Resolución cambiada a {selectedResolution.width}x{selectedResolution.height} correctamente.");
     }
