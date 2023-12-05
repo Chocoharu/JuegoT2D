@@ -10,10 +10,12 @@ public class SpriteController : MonoBehaviour
     public Sprite Estudiante4;
     public SpriteRenderer Apariencia;
     private int Selector;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         Apariencia = GetComponent<SpriteRenderer>();
         Selector = Random.Range(0, 4);
         if(Selector==0)
@@ -31,6 +33,7 @@ public class SpriteController : MonoBehaviour
         else
         {
             Apariencia.sprite = Estudiante4;
+            //animator.SetBool("Caminar", true);
         }
     }
 

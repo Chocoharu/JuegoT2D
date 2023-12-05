@@ -14,6 +14,9 @@ public class MedidorDirector : MonoBehaviour
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
     private bool clicPresionado = false;
+    public Image Director;
+    public Sprite DirectorMolesto;
+    public Sprite DirectorSuperMolesto;
 
 
     // Start is called before the first frame update
@@ -46,6 +49,16 @@ public class MedidorDirector : MonoBehaviour
     }
     private void Update()
     {
+        if (slider.value > 3)
+        {
+            Director.sprite = DirectorMolesto;
+        }
+        if (slider.value > 6)
+        {
+            Director.sprite = DirectorSuperMolesto;
+        }
+
+
         if(slider.value==10)
         {
             string nombreEscenaActual = SceneManager.GetActiveScene().name;

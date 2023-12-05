@@ -20476,6 +20476,7 @@ GameObject:
   - component: {fileID: 1588526132}
   - component: {fileID: 1588526131}
   - component: {fileID: 1588526135}
+  - component: {fileID: 1588526136}
   m_Layer: 3
   m_Name: AlumnoRojo
   m_TagString: Estudiante
@@ -20641,6 +20642,27 @@ MonoBehaviour:
   escondido: 0
   canicaPrefab: {fileID: 1224372525}
   Pause: {fileID: 1484582464}
+--- !u!95 &1588526136
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588526130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ebc6febb8335494fb48f33ccbcd492d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1652986390
 GameObject:
   m_ObjectHideFlags: 0

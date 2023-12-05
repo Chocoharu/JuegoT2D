@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 671700715, guid: b0d9d66f6832960458d1b6b046b9658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5912a5dc2f224b94ab63da6f91bf3696, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1820,7 +1820,7 @@ MonoBehaviour:
   Texttiempo: {fileID: 1190882053}
   tiempo: 0
   Pause: {fileID: 37870334}
-  aux: {fileID: 0}
+  areaEstudio: {fileID: 0}
 --- !u!1 &1186694580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,6 +3128,9 @@ MonoBehaviour:
   cursorTextureClick: {fileID: 2800000, guid: 3419e094aa42d44419897bc3adc8317e, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
+  Director: {fileID: 626397728}
+  DirectorMolesto: {fileID: 21300000, guid: 37e136afc3ee21840b91ad3a1d6db0ac, type: 3}
+  DirectorSuperMolesto: {fileID: 21300000, guid: 8bb41dd49060fb948b466e62b3eff38d, type: 3}
 --- !u!23 &1595797313
 MeshRenderer:
   m_ObjectHideFlags: 0

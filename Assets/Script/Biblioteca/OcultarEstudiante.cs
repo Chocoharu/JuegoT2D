@@ -22,10 +22,12 @@ public class OcultarEstudiante : MonoBehaviour
     private float maxProbability;
 
     public GameObject Pause;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponentInChildren<Animator>();
         OriginalPosition = transform.position;
         timer = Random.Range(2.0f, 3.0f);
         if (SceneManager.GetActiveScene().name == "Biblioteca")
@@ -71,11 +73,13 @@ public class OcultarEstudiante : MonoBehaviour
         {
             canCreateCanica = true;
             randomProbability = Random.Range(1.0f, maxProbability);
+            
         }
     }
 
     void MoveToPosition()
     {
+        animator.SetBool("Caminar", true);
         if (TargetPosition == null)
         {
             TargetPosition = GetRandomTargetPosition();
@@ -104,7 +108,7 @@ public class OcultarEstudiante : MonoBehaviour
 
         if (transform.position == TargetPosition.position)
         {
-            
+            animator.SetBool("Caminar", false);
             timer = Random.Range(3.0f, 4.0f);
             escondido = true;
             this.GetComponent<SpriteRenderer>().sortingOrder = -1;
@@ -113,6 +117,7 @@ public class OcultarEstudiante : MonoBehaviour
     }
     public void ReturnToOriginalPosition()
     {
+        animator.SetBool("Caminar", true);
         escondido = false;
         this.GetComponent<SpriteRenderer>().sortingOrder = 0;
         StartCoroutine(MoveToOriginalPosition());
@@ -141,6 +146,11 @@ public class OcultarEstudiante : MonoBehaviour
 
         TargetPosition = GetRandomTargetPosition();
         returning = false;
+        if(transform.position == OriginalPosition)
+        {
+            animator.SetBool("Caminar", false);
+        }
+        
     }
     bool IsInOriginalOrTargetPosition()
     {
