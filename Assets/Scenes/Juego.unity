@@ -6272,10 +6272,10 @@ MonoBehaviour:
   - 'Cuando el ruido supere a mas de la mitad tendras 6 segundos antes de ser despedido,
     ademas muevete en el area negra para aumentar el aprendizaje
 
-
-    ->'
-  - 'Te voy a mostrar como se hacen callar a los alumnos y me voy
-
+    presiona enter ->'
+  - "Cuando el ruido supere a mas de la mitad tendras 6 segundos antes de ser despedido,
+    adem\xE1s muevete en el area negra para aumentar el aprendizaje.\n->"
+  - 'Te voy a mostrar como se hacen callar a los alumnos y me voy.
 
     ->'
   dialogue: {fileID: 406233597}
@@ -6366,7 +6366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.32000002}
   m_AnchorMax: {x: 0.13465104, y: 0.72549176}
-  m_AnchoredPosition: {x: -13.706757, y: 0.01099968}
+  m_AnchoredPosition: {x: -13.706665, y: 0.01099968}
   m_SizeDelta: {x: 26.568298, y: -1.0970001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041769106
