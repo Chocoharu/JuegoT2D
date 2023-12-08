@@ -33,7 +33,7 @@ public class Pause : MonoBehaviour
     }
     public void SpecialPause()
     {
-        Debug.Log("clic");
+        //Debug.Log("clic");
         panelPause.SetActive(true);
         Time.timeScale = 0f;
     }

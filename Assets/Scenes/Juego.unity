@@ -350,7 +350,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.105882354}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -983,8 +983,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1168,7 +1168,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1237,8 +1237,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1638,7 +1638,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.105882354}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1892,7 +1892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.018444795, y: 0.7968118}
   m_AnchorMax: {x: 0.265875, y: 0.8782657}
-  m_AnchoredPosition: {x: -8.499939, y: -0.4814453}
+  m_AnchoredPosition: {x: -8.5, y: -0.4814453}
   m_SizeDelta: {x: 12.25, y: -0.96300983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &575713926
@@ -1917,8 +1917,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Puntaje: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2286,8 +2286,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Aprendizaje: 0%'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2858,7 +2858,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &1049653055
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3135,7 +3135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.051}
   m_AnchorMin: {x: 0.49218747, y: 0.896}
   m_AnchorMax: {x: 0.76775, y: 0.9505943}
-  m_AnchoredPosition: {x: -1.259903, y: 6.071594}
+  m_AnchoredPosition: {x: -1.2598877, y: 6.071533}
   m_SizeDelta: {x: -11.7325, y: -11.6186}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059603195
@@ -3292,7 +3292,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4220,7 +4220,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.105882354}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4896,7 +4896,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.105882354}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5202,7 +5202,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5579,7 +5579,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.6117647}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6266,16 +6266,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - "Bienvenido profesor a el aula del 5Z, tu trabajo es mantener el orden dentro
-    del salon y ense\xF1ar al menos un 50% para que no seas despedido\n\npresiona
-    enter ->"
-  - 'Cuando el ruido supere a mas de la mitad tendras 6 segundos antes de ser despedido,
-    ademas muevete en el area negra para aumentar el aprendizaje
+  - 'Bienvenido profesor a el aula del 5Z, tu trabajo es mantener el orden dentro
+    del salon.
 
-
-    ->'
-  - 'Te voy a mostrar como se hacen callar a los alumnos y me voy
-
+    presiona enter ->'
+  - "Cuando el ruido supere a mas de la mitad tendras 6 segundos antes de ser despedido,
+    adem\xE1s muevete en el area negra para aumentar el aprendizaje.\n->"
+  - 'Te voy a mostrar como se hacen callar a los alumnos y me voy.
 
     ->'
   dialogue: {fileID: 406233597}
@@ -6366,7 +6363,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.32000002}
   m_AnchorMax: {x: 0.13465104, y: 0.72549176}
-  m_AnchoredPosition: {x: -13.706757, y: 0.01099968}
+  m_AnchoredPosition: {x: -13.706665, y: 0.01099968}
   m_SizeDelta: {x: 26.568298, y: -1.0970001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2041769106
@@ -6648,10 +6645,10 @@ RectTransform:
   - {fileID: 406233596}
   m_Father: {fileID: 1245392721}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.035869163, y: 0.030000001}
-  m_AnchorMax: {x: 0.9498692, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -10.94}
-  m_SizeDelta: {x: -612.01, y: -140.731}
+  m_AnchorMin: {x: 0.19333336, y: 0.084480144}
+  m_AnchorMax: {x: 0.791, y: 0.5}
+  m_AnchoredPosition: {x: 1.5, y: 3.1460876}
+  m_SizeDelta: {x: -5.01, y: 5.441101}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075298991
 MonoBehaviour:
@@ -6729,7 +6726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 4
   CanMove: 1
-  Pause: {fileID: 294191796}
+  Pausa: {fileID: 0}
+  pause: {fileID: 0}
 --- !u!61 &2087760009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7408,6 +7406,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 294191797}
+    - target: {fileID: 3355224217718583738, guid: 8faa3d672fbb8a742a69e45394e15d0a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SpecialPause
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7513,11 +7515,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 579196793244430197, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.8000183
+      value: -0.8000488
       objectReference: {fileID: 0}
     - target: {fileID: 2094862570125604859, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4
+      value: 3.9999924
       objectReference: {fileID: 0}
     - target: {fileID: 2701963046281245958, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_Pivot.x
@@ -7599,10 +7601,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2914843799240913068, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.1473389
+      objectReference: {fileID: 0}
     - target: {fileID: 3946324321082721170, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 294191797}
+    - target: {fileID: 3946324321082721170, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Run
+      objectReference: {fileID: 0}
     - target: {fileID: 4200451173636747084, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.8000488
@@ -7611,6 +7621,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 294191797}
+    - target: {fileID: 5012740187520620684, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.0280151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497008998620644595, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.6346436
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880783699454895237, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 6.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 7002142431619698626, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_Name
       value: Panel Pausa

@@ -12,7 +12,8 @@ public class Movement : MonoBehaviour
     private int Dir = 0;
     public bool CanMove = true;
 
-    public GameObject Pause;
+    public GameObject Pausa;
+    public Pause pause;
     //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
 
     private bool sobreCanica = false;
@@ -31,14 +32,20 @@ public class Movement : MonoBehaviour
     {
         //if (SceneManager.GetActiveScene().name == "Juego")
         //{ 
-            if (Pause != null)
+            if (Pausa != null)
             {
-                if (Pause.activeSelf)
+                if (Pausa.activeSelf)
                 {
                     return;
                 }
             }
         //}
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            pause.SpecialPause();
+        }
+
         if (sobreCanica)
         {
             rigidbody.velocity = direccionOriginal * velocidadDeslizamiento;

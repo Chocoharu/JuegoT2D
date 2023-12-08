@@ -36,7 +36,7 @@ public class arm : MonoBehaviour
         else
             armR.flipY= false;
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && numtiza > 0)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && numtiza > 0)
             shoot();
     }
     void shoot()
