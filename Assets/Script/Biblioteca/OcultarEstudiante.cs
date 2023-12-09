@@ -60,6 +60,7 @@ public class OcultarEstudiante : MonoBehaviour
             {
                 if (!returning)
                 {
+                    animator.SetBool("Caminar", true);
                     MoveToPosition();
                 }
             }
@@ -73,20 +74,20 @@ public class OcultarEstudiante : MonoBehaviour
         {
             canCreateCanica = true;
             randomProbability = Random.Range(1.0f, maxProbability);
-            
         }
     }
 
     void MoveToPosition()
     {
-        animator.SetBool("Caminar", true);
+        float timerActivar = 5f;
+        float timerDesactivar = 3f;
+
         if (TargetPosition == null)
         {
             TargetPosition = GetRandomTargetPosition();
         }
 
         transform.position = Vector2.MoveTowards(transform.position, TargetPosition.position, speed * Time.deltaTime);
-
 
         if (canCreateCanica && !IsInOriginalOrTargetPosition())
         {
@@ -95,12 +96,10 @@ public class OcultarEstudiante : MonoBehaviour
 
             if (distanceToOriginal > minimumDistance)
             {
-                
-                Debug.Log(randomProbability.ToString());
                 if (randomProbability <= 3.0f)
                 {
                     currentCanica = Instantiate(canicaPrefab, transform.position, Quaternion.identity);
-                    canCreateCanica = false; 
+                    canCreateCanica = false;
                     destroyCanica = true;
                 }
             }
@@ -109,14 +108,30 @@ public class OcultarEstudiante : MonoBehaviour
         if (transform.position == TargetPosition.position)
         {
             animator.SetBool("Caminar", false);
-            timer = Random.Range(3.0f, 4.0f);
             escondido = true;
             this.GetComponent<SpriteRenderer>().sortingOrder = -1;
-            TargetPosition = null;
+
+            Animator animatorEstante = TargetPosition.GetComponent<Animator>();
+            
+
+            timerActivar -= Time.deltaTime;
+
+            if (timerActivar <= 0)
+            {
+                animatorEstante.SetBool("Recordatorio", true);
+                timerDesactivar -= Time.deltaTime;
+            }
+
+            if (timerDesactivar <= 0)
+            {
+                animatorEstante.SetBool("Recordatorio", false);
+                timerActivar = 5f;
+                timerDesactivar = 3.0f;            }
         }
     }
     public void ReturnToOriginalPosition()
     {
+        TargetPosition = null;
         animator.SetBool("Caminar", true);
         escondido = false;
         this.GetComponent<SpriteRenderer>().sortingOrder = 0;

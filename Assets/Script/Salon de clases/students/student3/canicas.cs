@@ -69,7 +69,6 @@ public class canicas : MonoBehaviour
             // Verificar si es una colisión válida (puedes ajustar las condiciones según tus necesidades)
             if (collider.gameObject != gameObject)
             {
-                Debug.Log("break");
                 slip = true;
 
                 return true;
