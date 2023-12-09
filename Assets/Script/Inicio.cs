@@ -45,10 +45,6 @@ public class Inicio : MonoBehaviour
         }
         else if (escenaAnterior == "Biblioteca")
         {
-            SceneManager.LoadScene("Patio");
-        }
-        else if (escenaAnterior == "Patio")
-        {
             SceneManager.LoadScene("juego2");
         }
         else if (escenaAnterior == "juego2")

@@ -24,7 +24,7 @@ public class TiempoTotal : MonoBehaviour
         int puntaje = PlayerPrefs.GetInt("Puntaje", 0);
         PuntajeTexto.text = "Puntaje: " + puntaje;
         string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", "Inicio");
-        if (escenaAnterior != "Patio")
+        if (escenaAnterior == "Biblioteca" || escenaAnterior == "Biblioteca2")
         {
             int aprendizaje = PlayerPrefs.GetInt("Aprendizaje", 0);
             AprendizajeTotal.text = "Aprendizaje: " + aprendizaje;

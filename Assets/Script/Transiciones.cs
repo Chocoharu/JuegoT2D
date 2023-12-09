@@ -28,14 +28,14 @@ public class Transiciones : MonoBehaviour
             SceneManager.LoadScene("FinalBueno");
 
         }
-        if (SceneManager.GetActiveScene().name == "Patio")
+        /*if (SceneManager.GetActiveScene().name == "Patio")
         {
             string nombreEscenaActual = SceneManager.GetActiveScene().name;
             PlayerPrefs.SetString("EscenaAnterior", nombreEscenaActual);
             PlayerPrefs.Save();
 
             SceneManager.LoadScene("FinalBueno");
-        }
+        }*/
         if (SceneManager.GetActiveScene().name == "Biblioteca" || SceneManager.GetActiveScene().name == "Biblioteca2")
         {
             string nombreEscenaActual = SceneManager.GetActiveScene().name;
