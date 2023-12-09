@@ -269,6 +269,10 @@ PrefabInstance:
       propertyPath: Speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 893602243706411266, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 1784173727}
     - target: {fileID: 5702103846819107866, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
       propertyPath: m_Size.x
       value: 1.9418002
@@ -2001,7 +2005,7 @@ PrefabInstance:
       objectReference: {fileID: 1784173727}
     - target: {fileID: 3355224217718583738, guid: 8faa3d672fbb8a742a69e45394e15d0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: initPause
+      value: SpecialPause
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26540,7 +26544,7 @@ PrefabInstance:
       objectReference: {fileID: 1784173727}
     - target: {fileID: 3946324321082721170, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndPause
+      value: Run
       objectReference: {fileID: 0}
     - target: {fileID: 4634036791363317951, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

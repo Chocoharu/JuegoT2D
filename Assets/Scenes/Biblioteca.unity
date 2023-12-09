@@ -17279,7 +17279,7 @@ PrefabInstance:
       objectReference: {fileID: 1484582465}
     - target: {fileID: 3946324321082721170, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndPause
+      value: Run
       objectReference: {fileID: 0}
     - target: {fileID: 4634036791363317951, guid: c3c0d22c2990a1040bb999db9958d4d3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -17368,8 +17368,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:30:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
-  m_sharedMaterial: {fileID: 3549468211402323384, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17401,7 +17401,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -18344,8 +18344,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Aprendizaje: 0%'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
-  m_sharedMaterial: {fileID: 3549468211402323384, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18581,6 +18581,10 @@ PrefabInstance:
       propertyPath: Speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 893602243706411266, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
+      propertyPath: pause
+      value: 
+      objectReference: {fileID: 1484582465}
     - target: {fileID: 5702103846819107866, guid: 31a68dfa29c03b0488db5175e6f8f652, type: 3}
       propertyPath: m_Size.x
       value: 1.4963924
@@ -18720,8 +18724,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9.192017, y: -295.60297}
-  m_SizeDelta: {x: -269.649, y: -689.259}
+  m_AnchoredPosition: {x: 17.69983, y: -295.60297}
+  m_SizeDelta: {x: -524.8813, y: -689.259}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &657847507
 MonoBehaviour:
@@ -19403,10 +19407,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 657847506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.93, y: -0.244}
-  m_SizeDelta: {x: 1204.853, y: 195.317}
+  m_AnchorMin: {x: 0.0923357, y: 0.33276308}
+  m_AnchorMax: {x: 0.9543778, y: 0.83300006}
+  m_AnchoredPosition: {x: -1.4265137, y: -0.5}
+  m_SizeDelta: {x: 2.8530273, y: 0.31700134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1020826952
 MonoBehaviour:
@@ -19430,8 +19434,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
-  m_sharedMaterial: {fileID: 3549468211402323384, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19491,7 +19495,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0.15542603, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20760,10 +20764,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 893927711}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.016, y: 0.8615187}
-  m_AnchorMax: {x: 0.20500001, y: 0.915}
-  m_AnchoredPosition: {x: 0.39990234, y: 0.4000244}
-  m_SizeDelta: {x: 174.50201, y: 30}
+  m_AnchorMin: {x: 0.016, y: 0.85600007}
+  m_AnchorMax: {x: 0.20500001, y: 0.9110001}
+  m_AnchoredPosition: {x: 0.39990234, y: -0.3999939}
+  m_SizeDelta: {x: 174.50201, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1446258862
 MonoBehaviour:
@@ -20787,8 +20791,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Puntaje: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
-  m_sharedMaterial: {fileID: 3549468211402323384, guid: 4c6616c75ef790446afc6348d567df0b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
+  m_sharedMaterial: {fileID: 9002603314117176599, guid: 229b8cc04ea127c40ad8b81ab380c773, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20820,7 +20824,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -21503,7 +21507,7 @@ PrefabInstance:
       objectReference: {fileID: 1484582465}
     - target: {fileID: 3355224217718583738, guid: 8faa3d672fbb8a742a69e45394e15d0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: initPause
+      value: SpecialPause
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21670,15 +21674,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - 'Bienvenido a la biblioteca tu objetivo es hacer que los estudiantes que se esconden
-    vuelvan a sus asientos para que aprendan
-
-    Pulsa enter >'
+  - "Bienvenido a la biblioteca t\xFA objetivo es hacer que los estudiantes que se
+    esconden vuelvan a sus asientos para que aprendan\nPulsa enter ->"
   - 'Ten cuidado con los objetos que te suelten al piso, en este nivel debes tener
     al menos un 50% de aprendizaje para ganar
 
-
-    >'
+    ->'
   dialogue: {fileID: 1020826952}
   text: 1
   TimeTyping: 0.075
