@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d447f4fc678a1d542915360a123611a8
+guid: d33fae16ffe92814494bed511ac73143
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 170
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Profesor caminando abajo_0
+      name: Resbalarce_arriba_0
       rect:
         serializedVersion: 2
-        x: 145
-        y: 35
-        width: 268
-        height: 376
+        x: 41
+        y: 95
+        width: 149
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f472439fee5105419ed90866e55a86b
-      internalID: 865542097
+      spriteID: 824e05362dfc0904da7bd78d4a06e569
+      internalID: 48993431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor caminando abajo_1
+      name: Resbalarce_arriba_1
       rect:
         serializedVersion: 2
-        x: 723
-        y: 39
-        width: 270
-        height: 370
+        x: 270
+        y: 95
+        width: 149
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49087330c49e6c44aa412baff7eeeed1
-      internalID: 357022181
+      spriteID: a9dbcabb26331bd448e28ca10d411fbe
+      internalID: 324964660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor caminando abajo_2
+      name: Resbalarce_arriba_2
       rect:
         serializedVersion: 2
-        x: 1303
-        y: 42
-        width: 268
-        height: 364
+        x: 499
+        y: 95
+        width: 150
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5189ec5cf430c846994fddc4fb8b963
-      internalID: -2112887238
+      spriteID: b603a78c8a024934d98582c56160525b
+      internalID: -656577320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor caminando abajo_3
+      name: Resbalarce_arriba_3
       rect:
         serializedVersion: 2
-        x: 1881
-        y: 39
-        width: 270
-        height: 370
+        x: 713
+        y: 95
+        width: 178
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d6c51b842ab3c94b8b66cb5395052c0
-      internalID: -2038631903
+      spriteID: 833227495d889244db0377010b1090cb
+      internalID: 365492020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor caminando abajo_4
+      name: Resbalarce_arriba_4
       rect:
         serializedVersion: 2
-        x: 2460
-        y: 35
-        width: 270
-        height: 376
+        x: 917
+        y: 95
+        width: 227
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f64a219ffcff785449902d5b04d41b88
-      internalID: -836191480
+      spriteID: 5c0e091ba1d8b4e4e9483e5dffd407d2
+      internalID: 460615346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_arriba_5
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 95
+        width: 178
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5b399780d3edb48945eb3f1adad722
+      internalID: -1408828631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_arriba_6
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 95
+        width: 227
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d10cddb0a2544c8ebfb85cf7a291f
+      internalID: 1762924017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_arriba_7
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 95
+        width: 178
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd5f0015acfd7a4387a75777e4ca636
+      internalID: 593350279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_arriba_8
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 95
+        width: 227
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732554b901f5b554bbdcdbbe2fcb299e
+      internalID: -397745498
       vertices: []
       indices: 
       edges: []
@@ -238,11 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Profesor caminando abajo_0: 865542097
-      Profesor caminando abajo_1: 357022181
-      Profesor caminando abajo_2: -2112887238
-      Profesor caminando abajo_3: -2038631903
-      Profesor caminando abajo_4: -836191480
+      Resbalarce_arriba_0: 48993431
+      Resbalarce_arriba_1: 324964660
+      Resbalarce_arriba_2: -656577320
+      Resbalarce_arriba_3: 365492020
+      Resbalarce_arriba_4: 460615346
+      Resbalarce_arriba_5: -1408828631
+      Resbalarce_arriba_6: 1762924017
+      Resbalarce_arriba_7: 593350279
+      Resbalarce_arriba_8: -397745498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

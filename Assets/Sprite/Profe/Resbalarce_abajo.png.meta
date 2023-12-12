@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a5a7ead91d67c641abf78ff4011ceef
+guid: f884a24cf8a14854baa4805fd4da4cb2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 70
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_0
+      name: Resbalarce_abajo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 444
-        width: 16
-        height: 7
+        x: 66
+        y: 131
+        width: 95
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398c69d39f247d945a556e8df5b47e83
-      internalID: 333347624
+      spriteID: eda0a0561e67c904cae637be284503a6
+      internalID: 880624233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_1
+      name: Resbalarce_abajo_1
       rect:
         serializedVersion: 2
-        x: 5353
-        y: 0
-        width: 266
-        height: 451
+        x: 295
+        y: 131
+        width: 95
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ad37fefe6cbab4dbc5fad7849af0da
-      internalID: -750564365
+      spriteID: 5fae42129812cd94a8a897d73448d92a
+      internalID: 1929411113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_2
+      name: Resbalarce_abajo_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 413
-        width: 7
-        height: 11
+        x: 524
+        y: 131
+        width: 95
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d463c9ae3bd305241ac61eade1e6b5d3
-      internalID: -419193463
+      spriteID: d16d0cd56633e9743a34140c24b58a2f
+      internalID: -333981390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_3
+      name: Resbalarce_abajo_3
       rect:
         serializedVersion: 2
-        x: 147
-        y: 0
-        width: 267
-        height: 413
+        x: 754
+        y: 131
+        width: 94
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91e6fc9bd8a2524b8c92c7f840af5ed
-      internalID: 1376825083
+      spriteID: 2fc8d9b5ce951e7478eea0887349449c
+      internalID: 1581721186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_4
+      name: Resbalarce_abajo_4
       rect:
         serializedVersion: 2
-        x: 722
-        y: 32
-        width: 308
-        height: 381
+        x: 982
+        y: 131
+        width: 95
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdcab783342cb0741a7d556ae2ff2a7b
-      internalID: -807824716
+      spriteID: fee758df7453da94c8e4887604da1782
+      internalID: 400544888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_5
+      name: Resbalarce_abajo_5
       rect:
         serializedVersion: 2
-        x: 1299
-        y: 33
-        width: 367
-        height: 380
+        x: 1203
+        y: 131
+        width: 110
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42082b1f40e693c40bf188ce5ab88655
-      internalID: -556948987
+      spriteID: 4f785b02244deac4591a77ac35cd7bfa
+      internalID: 1577070828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_6
+      name: Resbalarce_abajo_6
       rect:
         serializedVersion: 2
-        x: 1879
-        y: 33
-        width: 308
-        height: 380
+        x: 1417
+        y: 131
+        width: 139
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2662ebc2e83b1804e8afeece53720cfc
-      internalID: -701885353
+      spriteID: 4a7fc1c5875046241b2abb6316976907
+      internalID: -1079882296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_7
+      name: Resbalarce_abajo_7
       rect:
         serializedVersion: 2
-        x: 2458
-        y: 33
-        width: 255
-        height: 380
+        x: 1661
+        y: 131
+        width: 110
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f9b3abbc9fe3d64d93b1d9ddf27a0f5
-      internalID: -1457628073
+      spriteID: b5fc92caf53eaaa4cae3f2ed809c6a1a
+      internalID: 1162733812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_8
+      name: Resbalarce_abajo_8
       rect:
         serializedVersion: 2
-        x: 3038
-        y: 33
-        width: 251
-        height: 380
+        x: 1874
+        y: 131
+        width: 141
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3cac2ca03aeab04983fb40417c58aff
-      internalID: 316354205
+      spriteID: db3bdb22f02f7df47a70da16a5010c00
+      internalID: 1685922239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_9
+      name: Resbalarce_abajo_9
       rect:
         serializedVersion: 2
-        x: 3615
-        y: 33
-        width: 248
-        height: 380
+        x: 2119
+        y: 131
+        width: 110
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5ed2d5550854dd41b365c585f04de7b
-      internalID: -841774175
+      spriteID: 00b8199ba57c3c244a0ceacf2240556d
+      internalID: 52375196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_10
+      name: Resbalarce_abajo_10
       rect:
         serializedVersion: 2
-        x: 4194
-        y: 33
-        width: 253
-        height: 380
+        x: 2332
+        y: 131
+        width: 141
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0aaed0fdcaf26f478370ec48e2541f9
-      internalID: 1627341215
+      spriteID: aabafc0f802b47741893fa2b1ba73062
+      internalID: -1937659146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_golpe_abajo_11
+      name: Resbalarce_abajo_11
       rect:
         serializedVersion: 2
-        x: 4774
-        y: 33
-        width: 254
-        height: 380
+        x: 2577
+        y: 131
+        width: 111
+        height: 133
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,8 +368,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b83c81993aa40a45964cf35bcdc635b
-      internalID: -836871241
+      spriteID: e4004be4246c71e4bb59406a2c13903c
+      internalID: -197537967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_abajo_12
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 131
+        width: 141
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc900738d6987de41b2c453ce0f981ee
+      internalID: -987012145
       vertices: []
       indices: 
       edges: []
@@ -385,18 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Profesor_golpe_abajo_0: 333347624
-      Profesor_golpe_abajo_1: -750564365
-      Profesor_golpe_abajo_10: 1627341215
-      Profesor_golpe_abajo_11: -836871241
-      Profesor_golpe_abajo_2: -419193463
-      Profesor_golpe_abajo_3: 1376825083
-      Profesor_golpe_abajo_4: -807824716
-      Profesor_golpe_abajo_5: -556948987
-      Profesor_golpe_abajo_6: -701885353
-      Profesor_golpe_abajo_7: -1457628073
-      Profesor_golpe_abajo_8: 316354205
-      Profesor_golpe_abajo_9: -841774175
+      Resbalarce_abajo_0: 880624233
+      Resbalarce_abajo_1: 1929411113
+      Resbalarce_abajo_10: -1937659146
+      Resbalarce_abajo_11: -197537967
+      Resbalarce_abajo_12: -987012145
+      Resbalarce_abajo_2: -333981390
+      Resbalarce_abajo_3: 1581721186
+      Resbalarce_abajo_4: 400544888
+      Resbalarce_abajo_5: 1577070828
+      Resbalarce_abajo_6: -1079882296
+      Resbalarce_abajo_7: 1162733812
+      Resbalarce_abajo_8: 1685922239
+      Resbalarce_abajo_9: 52375196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

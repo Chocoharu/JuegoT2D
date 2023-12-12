@@ -118,13 +118,13 @@ public class OcultarEstudiante : MonoBehaviour
 
             if (timerActivar <= 0)
             {
-                animatorEstante.SetBool("Recordatorio", true);
+                animatorEstante.SetBool("Pista", true);
                 timerDesactivar -= Time.deltaTime;
             }
 
             if (timerDesactivar <= 0)
             {
-                animatorEstante.SetBool("Recordatorio", false);
+                animatorEstante.SetBool("Pista", false);
                 timerActivar = 5f;
                 timerDesactivar = 3.0f;            }
         }

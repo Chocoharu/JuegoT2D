@@ -27,6 +27,9 @@ public class Golpe : MonoBehaviour
     public TextMeshProUGUI cuentaRegresiva;
     public GameObject objCuentaRegresiva;
     public int sliderline=4;
+
+    private float TimerGolpe = 1f;
+    private bool PermisoGolpe;
     
 
     // Start is called before the first frame update
@@ -52,6 +55,8 @@ public class Golpe : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                PermisoGolpe = true;
+                animator.SetBool("Golpear", PermisoGolpe);
                 foreach (Transform estudiante in objetivos)
                 {
                     float distancia = Vector2.Distance(transform.position, estudiante.position);
@@ -68,7 +73,6 @@ public class Golpe : MonoBehaviour
                         PlayerPrefs.SetInt("Puntaje", puntaje);
                         PlayerPrefs.Save();
                         exito = true;
-                        //animator.SetBool("Golpear", exito);
                     }
                 }
             }
@@ -103,6 +107,8 @@ public class Golpe : MonoBehaviour
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
+                PermisoGolpe = true;
+                animator.SetBool("Golpear", PermisoGolpe);
                 foreach (Transform estudiante in objetivos)
                 {
                     float distancia = Vector2.Distance(transform.position, estudiante.position);
@@ -113,6 +119,16 @@ public class Golpe : MonoBehaviour
                         estudiante.GetComponent<OcultarEstudiante>().ReturnToOriginalPosition();
                     }
                 }
+            }
+        }
+        if(PermisoGolpe)
+        {
+            TimerGolpe -= Time.deltaTime;
+            if(TimerGolpe<=0)
+            {
+                PermisoGolpe = false;
+                animator.SetBool("Golpear", PermisoGolpe);
+                TimerGolpe = 1;
             }
         }
     }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d6ab7a66bbabaf4eb5ccfef50c84393
+guid: ce24942f16ba22d4d9ecd5f33db9591b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BirdSpriteBig_0
+      name: AlumnoAzulCaminando_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
-        width: 160
-        height: 160
+        x: 33
+        y: 19
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458a3866919cd3a47bf5086eff9305a5
-      internalID: -1052484151
+      spriteID: 491f394580e06e44dbbcc59924c9e5ca
+      internalID: -402775057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_1
+      name: AlumnoAzulCaminando_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 320
-        width: 160
-        height: 160
+        x: 154
+        y: 19
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce163e6f582675242a7e1b1080c8c9e3
-      internalID: -991370541
+      spriteID: 765bbab0750a698459c7abb9e1f2eef4
+      internalID: 1141153995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_2
+      name: AlumnoAzulCaminando_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
-        width: 160
-        height: 160
+        x: 269
+        y: 19
+        width: 62
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c6bb7580980c54b87a4176c4905965
-      internalID: -1580191034
+      spriteID: 65ccdcd57fde8c04587be577cdd99084
+      internalID: -722276980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_3
+      name: AlumnoAzulCaminando_3
       rect:
         serializedVersion: 2
-        x: 480
-        y: 320
-        width: 160
-        height: 160
+        x: 385
+        y: 19
+        width: 67
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8f28eaf43ae8d74daafb39e81f7f1b6
-      internalID: -785165575
+      spriteID: f6726b700f3aa424eb2b114a106dfca4
+      internalID: -1579229324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_4
+      name: AlumnoAzulCaminando_4
       rect:
         serializedVersion: 2
-        x: 800
-        y: 320
-        width: 160
-        height: 160
+        x: 506
+        y: 19
+        width: 67
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215c6beb8df6de64f8d571b790e03ce6
-      internalID: 1361879752
+      spriteID: 5b410e74fb683b94db76da4ad0a2b529
+      internalID: -1844069630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_5
+      name: AlumnoAzulCaminando_5
       rect:
         serializedVersion: 2
-        x: 960
-        y: 320
-        width: 160
-        height: 160
+        x: 626
+        y: 19
+        width: 68
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b43baa26b006bf849853f53cb54c266f
-      internalID: 1832277250
+      spriteID: 790b121321797fa488ce370b9658ce54
+      internalID: -344539680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_6
+      name: AlumnoAzulCaminando_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 160
-        height: 160
+        x: 759
+        y: 19
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a49b36f678e09d46bd9492a18617c60
-      internalID: 789249353
+      spriteID: 0ea5f35898ed9674ab84b4db6fef0a98
+      internalID: 838362197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_7
+      name: AlumnoAzulCaminando_7
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 160
-        height: 160
+        x: 868
+        y: 19
+        width: 68
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53de72d5b15b4c64baea1fd24058f54b
-      internalID: 858193009
+      spriteID: 02362d010e5fd764596453b8e6abb2e7
+      internalID: 980743743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_8
+      name: AlumnoAzulCaminando_8
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
-        width: 160
-        height: 160
+        x: 990
+        y: 19
+        width: 67
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d4a9a0ea52ee5e4b99217ef6903871a
-      internalID: 1538413685
+      spriteID: 768dbc65d985ad543b510d9e0cf87b44
+      internalID: -1461184519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_9
+      name: AlumnoAzulCaminando_9
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
-        width: 160
-        height: 160
+        x: 1111
+        y: 19
+        width: 67
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edb0e300151e7314da6ac76b7802f4ca
-      internalID: 777245897
+      spriteID: adbec058c05ae8a46ab3082168e1151d
+      internalID: -454506458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_10
+      name: AlumnoAzulCaminando_10
       rect:
         serializedVersion: 2
-        x: 640
-        y: 160
-        width: 160
-        height: 160
+        x: 1237
+        y: 19
+        width: 62
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2641662ff0961f642b9c16e5c4b97e7b
-      internalID: -900491093
+      spriteID: 8cbae4eed1b19a94297ed28a6fac88b6
+      internalID: -1475508943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_11
+      name: AlumnoAzulCaminando_11
       rect:
         serializedVersion: 2
-        x: 800
-        y: 160
-        width: 160
-        height: 160
+        x: 1364
+        y: 19
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 354c4fc4c0d02ca4297acef33557a8f5
-      internalID: -509648038
+      spriteID: 363a277baff52ec4aa68ad76df08f974
+      internalID: -643597142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BirdSpriteBig_12
+      name: AlumnoAzulCaminando_12
       rect:
         serializedVersion: 2
-        x: 960
-        y: 160
-        width: 160
-        height: 160
+        x: 1485
+        y: 19
+        width: 56
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,134 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 702f5921570d6f348abf3865e9f04f5f
-      internalID: -373376264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_13
-      rect:
-        serializedVersion: 2
-        x: 1120
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6fcc391413fc7c24eb5d904aef9b6928
-      internalID: -1842250137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c302f8dc9b0ba2499a388106d82ff02
-      internalID: -1807634804
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_15
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b78f48dcd43f08241b1ae1673720a993
-      internalID: 1638246476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_16
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22e8b5394f326974faa207fe6996bfca
-      internalID: 799575187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_17
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1c3e164128b06f46a006c23959ee40d
-      internalID: -611526054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BirdSpriteBig_18
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aec53c3c7b393143af3e86a41a7b821
-      internalID: 423988567
+      spriteID: 71c1c0f7f8749a1488f3b2b4a9fe0b29
+      internalID: 945848630
       vertices: []
       indices: 
       edges: []
@@ -532,25 +406,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BirdSpriteBig_0: -1052484151
-      BirdSpriteBig_1: -991370541
-      BirdSpriteBig_10: -900491093
-      BirdSpriteBig_11: -509648038
-      BirdSpriteBig_12: -373376264
-      BirdSpriteBig_13: -1842250137
-      BirdSpriteBig_14: -1807634804
-      BirdSpriteBig_15: 1638246476
-      BirdSpriteBig_16: 799575187
-      BirdSpriteBig_17: -611526054
-      BirdSpriteBig_18: 423988567
-      BirdSpriteBig_2: -1580191034
-      BirdSpriteBig_3: -785165575
-      BirdSpriteBig_4: 1361879752
-      BirdSpriteBig_5: 1832277250
-      BirdSpriteBig_6: 789249353
-      BirdSpriteBig_7: 858193009
-      BirdSpriteBig_8: 1538413685
-      BirdSpriteBig_9: 777245897
+      AlumnoAzulCaminando_0: -402775057
+      AlumnoAzulCaminando_1: 1141153995
+      AlumnoAzulCaminando_10: -1475508943
+      AlumnoAzulCaminando_11: -643597142
+      AlumnoAzulCaminando_12: 945848630
+      AlumnoAzulCaminando_2: -722276980
+      AlumnoAzulCaminando_3: -1579229324
+      AlumnoAzulCaminando_4: -1844069630
+      AlumnoAzulCaminando_5: -344539680
+      AlumnoAzulCaminando_6: 838362197
+      AlumnoAzulCaminando_7: 980743743
+      AlumnoAzulCaminando_8: -1461184519
+      AlumnoAzulCaminando_9: -454506458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

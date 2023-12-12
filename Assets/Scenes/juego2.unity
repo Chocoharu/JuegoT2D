@@ -6463,6 +6463,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8844389590720700893, guid: 954265fac99ed3f42b470ddbc9c63296, type: 3}
+      propertyPath: m_TagString
+      value: Canica
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3696567464909971566, guid: 954265fac99ed3f42b470ddbc9c63296, type: 3}
     - {fileID: 472199819952265241, guid: 954265fac99ed3f42b470ddbc9c63296, type: 3}
