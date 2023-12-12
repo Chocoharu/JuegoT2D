@@ -15,6 +15,7 @@ public class Pause : MonoBehaviour
     
     private void Start()
     {
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
         currentTime += Time.deltaTime;
     }
     public void initPause()
@@ -36,11 +37,24 @@ public class Pause : MonoBehaviour
         //Debug.Log("clic");
         panelPause.SetActive(true);
         Time.timeScale = 0f;
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource a in audios)
+        {
+            a.Pause();
+        }
+
     }
     public void Run()
     {
         Time.timeScale = 1.0f;
         panelPause.SetActive(false);
+
+        AudioSource[] audios = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource a in audios)
+        {
+            a.Play();
+        }
     }
 
 }
