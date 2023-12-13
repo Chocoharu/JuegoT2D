@@ -22,7 +22,6 @@ public class AreaEstudio : MonoBehaviour
     void Start()
     {
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -32,13 +31,6 @@ public class AreaEstudio : MonoBehaviour
             {
                 return;
             }
-        }
-
-        timer += Time.deltaTime;
-        if (timer >= timeToIncreaseScore && Estudiantes.Count!=0)
-        {
-            IncreaseScore();
-            timer = 0.0f;
         }
 
         PorcentText.text = "Aprendizaje: " + Porcent + "%";
@@ -91,7 +83,7 @@ public class AreaEstudio : MonoBehaviour
     private void IncreaseScore()
     {
         score += Mathf.RoundToInt(scoreRate);
-        Porcent += 3;
+        Porcent += 2;
         if(Porcent > 100)
         {
             Porcent = 100;

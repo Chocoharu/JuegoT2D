@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 11f6f98faabdcc74cba196bf67dd57a5
+guid: 4e6045e416a1821418559dd489e9b669
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Profesor_IDLE_0
+      name: Resbalarce_derecha_0
       rect:
         serializedVersion: 2
-        x: 248
-        y: 141
-        width: 117
-        height: 199
+        x: 246
+        y: 139
+        width: 119
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea66948fd9ace447a2f8b24e36cd4e3
-      internalID: 7864823
+      spriteID: 122d449a54ae8654bb2df25ed2fec3cf
+      internalID: 1000763898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_1
+      name: Resbalarce_derecha_1
       rect:
         serializedVersion: 2
-        x: 828
-        y: 141
-        width: 116
-        height: 196
+        x: 826
+        y: 139
+        width: 119
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae7f93633e768347a869898ecf8d050
-      internalID: 2032100877
+      spriteID: 5199aaa5c6010a947a24b876395b986d
+      internalID: -1903936139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_2
+      name: Resbalarce_derecha_2
       rect:
         serializedVersion: 2
         x: 1406
-        y: 141
-        width: 117
-        height: 195
+        y: 139
+        width: 119
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e243fc98d91afc47ab557d742ccdafe
-      internalID: -1050613417
+      spriteID: 8c3f2fa2e9d6aad4db93b5413d943fa1
+      internalID: -768836620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_3
+      name: Resbalarce_derecha_3
       rect:
         serializedVersion: 2
-        x: 1985
-        y: 141
-        width: 116
-        height: 196
+        x: 1983
+        y: 139
+        width: 120
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a53f7b394e1b14b948d6846105b38f
-      internalID: 2109454619
+      spriteID: f98ae14d40372dd41983b890756ee438
+      internalID: -982636251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_4
+      name: Resbalarce_derecha_4
       rect:
         serializedVersion: 2
-        x: 2565
-        y: 141
-        width: 116
-        height: 199
+        x: 2564
+        y: 139
+        width: 119
+        height: 201
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c16ffa9e3fccfa84aa1efa997aa8f712
-      internalID: -1241129790
+      spriteID: 418f0ceb4e010024c8d15d30b1ac98cd
+      internalID: -2049214745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_derecha_5
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 139
+        width: 120
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be8d1ef641ece94892a973a14842798
+      internalID: -976093387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_derecha_6
+      rect:
+        serializedVersion: 2
+        x: 3721
+        y: 139
+        width: 120
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ae66b5930c00849a7b8d015ee6445d
+      internalID: 962476675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_derecha_7
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 139
+        width: 119
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cfd9c12622e524da059df0c6cb4aee
+      internalID: 1865270785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Resbalarce_derecha_8
+      rect:
+        serializedVersion: 2
+        x: 4879
+        y: 139
+        width: 120
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dc3e9f16f4c4042b1f82818cc4d4af
+      internalID: -1098326231
       vertices: []
       indices: 
       edges: []
@@ -238,11 +322,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Profesor_IDLE_0: 7864823
-      Profesor_IDLE_1: 2032100877
-      Profesor_IDLE_2: -1050613417
-      Profesor_IDLE_3: 2109454619
-      Profesor_IDLE_4: -1241129790
+      Resbalarce_derecha_0: 1000763898
+      Resbalarce_derecha_1: -1903936139
+      Resbalarce_derecha_2: -768836620
+      Resbalarce_derecha_3: -982636251
+      Resbalarce_derecha_4: -2049214745
+      Resbalarce_derecha_5: -976093387
+      Resbalarce_derecha_6: 962476675
+      Resbalarce_derecha_7: 1865270785
+      Resbalarce_derecha_8: -1098326231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

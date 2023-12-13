@@ -30,8 +30,6 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (SceneManager.GetActiveScene().name == "Juego")
-        //{ 
             if (Pausa != null)
             {
                 if (Pausa.activeSelf)
@@ -39,7 +37,6 @@ public class Movement : MonoBehaviour
                     return;
                 }
             }
-        //}
 
         if (Input.GetKey(KeyCode.Escape))
         {
@@ -57,14 +54,12 @@ public class Movement : MonoBehaviour
                 direccionOriginal = transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 3;
-                //transform.position += Vector3.right * Time.deltaTime * Speed;
             }
             else if (Input.GetKey(KeyCode.S) && CanMove)
             {
                 direccionOriginal = -transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 1;
-                //transform.position -= Vector3.right * Time.deltaTime * Speed;
             }
             else if (Input.GetKey(KeyCode.D) && CanMove)
             {
@@ -72,18 +67,14 @@ public class Movement : MonoBehaviour
                 rigidbody.velocity = direccionOriginal * Speed;
                 rigidbody.velocity = transform.right * Speed;
                 Dir = 2;
-                transform.localScale = new Vector3(1, 1, 1);
-                GetComponent<SpriteRenderer>().flipX = false;
-                //transform.position += Vector3.right * Time.deltaTime * Speed;
+                transform.localScale = new Vector2(1, 1);
             }
             else if (Input.GetKey(KeyCode.A) && CanMove)
             {
                 direccionOriginal = -transform.right;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 2;
-                transform.localScale = new Vector3(-1, 1, 1);
-                GetComponent<SpriteRenderer>().flipX = true;
-                //transform.position -= Vector3.right * Time.deltaTime * Speed;
+                transform.localScale = new Vector2(-1, 1);
             }
             else
             {
@@ -92,7 +83,6 @@ public class Movement : MonoBehaviour
             }
             animator.SetInteger("Movement", Dir);
         }
-        
     }
 
     private void OnTriggerStay2D(Collider2D collision)

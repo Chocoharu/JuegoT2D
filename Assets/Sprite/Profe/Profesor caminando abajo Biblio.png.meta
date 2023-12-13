@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 11f6f98faabdcc74cba196bf67dd57a5
+guid: 942f1433e77c11b4c8641f4360526c9a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Profesor_IDLE_0
+      name: Profesor caminando abajo_0
       rect:
         serializedVersion: 2
-        x: 248
-        y: 141
-        width: 117
-        height: 199
+        x: 145
+        y: 35
+        width: 268
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea66948fd9ace447a2f8b24e36cd4e3
-      internalID: 7864823
+      spriteID: 9f472439fee5105419ed90866e55a86b
+      internalID: 865542097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_1
+      name: Profesor caminando abajo_1
       rect:
         serializedVersion: 2
-        x: 828
-        y: 141
-        width: 116
-        height: 196
+        x: 723
+        y: 39
+        width: 270
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae7f93633e768347a869898ecf8d050
-      internalID: 2032100877
+      spriteID: 49087330c49e6c44aa412baff7eeeed1
+      internalID: 357022181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_2
+      name: Profesor caminando abajo_2
       rect:
         serializedVersion: 2
-        x: 1406
-        y: 141
-        width: 117
-        height: 195
+        x: 1303
+        y: 42
+        width: 268
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e243fc98d91afc47ab557d742ccdafe
-      internalID: -1050613417
+      spriteID: c5189ec5cf430c846994fddc4fb8b963
+      internalID: -2112887238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_3
+      name: Profesor caminando abajo_3
       rect:
         serializedVersion: 2
-        x: 1985
-        y: 141
-        width: 116
-        height: 196
+        x: 1881
+        y: 39
+        width: 270
+        height: 370
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a53f7b394e1b14b948d6846105b38f
-      internalID: 2109454619
+      spriteID: 5d6c51b842ab3c94b8b66cb5395052c0
+      internalID: -2038631903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Profesor_IDLE_4
+      name: Profesor caminando abajo_4
       rect:
         serializedVersion: 2
-        x: 2565
-        y: 141
-        width: 116
-        height: 199
+        x: 2460
+        y: 35
+        width: 270
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c16ffa9e3fccfa84aa1efa997aa8f712
-      internalID: -1241129790
+      spriteID: f64a219ffcff785449902d5b04d41b88
+      internalID: -836191480
       vertices: []
       indices: 
       edges: []
@@ -238,11 +238,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Profesor_IDLE_0: 7864823
-      Profesor_IDLE_1: 2032100877
-      Profesor_IDLE_2: -1050613417
-      Profesor_IDLE_3: 2109454619
-      Profesor_IDLE_4: -1241129790
+      Profesor caminando abajo_0: 865542097
+      Profesor caminando abajo_1: 357022181
+      Profesor caminando abajo_2: -2112887238
+      Profesor caminando abajo_3: -2038631903
+      Profesor caminando abajo_4: -836191480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
