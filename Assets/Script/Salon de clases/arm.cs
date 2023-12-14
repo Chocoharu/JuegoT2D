@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class arm : MonoBehaviour
@@ -13,6 +14,7 @@ public class arm : MonoBehaviour
     public GameObject tiza;
     Vector3 finalTarget;
     public int numtiza = 3;
+    public TextMeshProUGUI CantiTizaText;
 
     public GameObject Pause;
     //[SerializeField] private bool dialog = true; // si existe algun dialogo activarlo
@@ -46,5 +48,6 @@ public class arm : MonoBehaviour
         finalTarget = (targetrotation - transform.position).normalized;
         Ball.GetComponent<Rigidbody2D>().AddForce(finalTarget * speedTiza, ForceMode2D.Impulse);
         numtiza--;
+        CantiTizaText.text = "X " + numtiza;
     }
 }

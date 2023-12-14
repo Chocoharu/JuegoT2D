@@ -58,36 +58,36 @@ public class Movement : MonoBehaviour
             {
                 direccionOriginal = transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
-                Dir = 1;
                 IsMoving = true;
                 //transform.position += Vector3.right * Time.deltaTime * Speed;
+                Dir = 3;
             }
             else if (Input.GetKey(KeyCode.S) && CanMove)
             {
                 direccionOriginal = -transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
-                Dir = 3;
                 IsMoving = true;
                 //transform.position -= Vector3.right * Time.deltaTime * Speed;
+                Dir = 1;
             }
             else if (Input.GetKey(KeyCode.D) && CanMove)
             {
                 direccionOriginal = transform.right;
                 rigidbody.velocity = direccionOriginal * Speed;
                 rigidbody.velocity = transform.right * Speed;
-                Dir = 4;
-                transform.localScale = new Vector3(1, 1, 1);
                 IsMoving = true;
                 //transform.position += Vector3.right * Time.deltaTime * Speed;
+                Dir = 2;
+                transform.localScale = new Vector2(1, 1);
             }
             else if (Input.GetKey(KeyCode.A) && CanMove)
             {
                 direccionOriginal = -transform.right;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 2;
-                transform.localScale = new Vector3(-1, 1, 1);
                 IsMoving = true;
                 //transform.position -= Vector3.right * Time.deltaTime * Speed;
+                transform.localScale = new Vector2(-1, 1);
             }
             else
             {
@@ -145,11 +145,12 @@ public class Movement : MonoBehaviour
     private IEnumerator Deslizarse()
     {
         sobreCanica = true;
-
-        // Esperamos un tiempo arbitrario, puedes ajustar según sea necesario
+        animator.SetInteger("Resbalon", Dir);
+        // Esperamos un tiempo arbitrario, puedes ajustar segï¿½n sea necesario
         yield return new WaitForSeconds(1.0f);
 
         // Desactivamos el deslizamiento
         sobreCanica = false;
+        animator.SetInteger("Resbalon", 0);
     }
 }

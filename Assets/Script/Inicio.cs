@@ -8,7 +8,19 @@ public class Inicio : MonoBehaviour
 {
     private string escenaInicial = "Inicio";
     public TextMeshProUGUI bottonText;
+
     // Start is called before the first frame update
+    void Start()
+    {
+        // Obtén la escena anterior
+        string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", "Inicio");
+
+        // Verifica si la escena anterior fue "Biblioteca2"
+        /*if (escenaAnterior == "Biblioteca2")
+        {
+            bottonText.text = "Salir";
+        }*/
+    }
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -53,8 +65,7 @@ public class Inicio : MonoBehaviour
         }
         else if(escenaAnterior == "Biblioteca2")
         {
-            bottonText.text = "Salir";
-            Application.Quit();
+            SceneManager.LoadScene("PantallaFinal");
         }
     }
 }

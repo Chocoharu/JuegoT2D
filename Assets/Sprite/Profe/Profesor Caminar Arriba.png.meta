@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Profesor Caminar Arriba_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 9
+        width: 147
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f7af2ea2019dd48bffe2ee5083e12f
+      internalID: 1761002388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor Caminar Arriba_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 12
+        width: 147
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6abcc2546ef4343b092beadad10adb
+      internalID: -809317257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor Caminar Arriba_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 17
+        width: 147
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846894cf328e1f240b607728a62c421e
+      internalID: -1323600423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor Caminar Arriba_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 10
+        width: 147
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b714d86678eee479d26f9b1165b16b
+      internalID: 2116391317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor Caminar Arriba_4
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 9
+        width: 147
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb94366cd10dd4d40a159d01218472e9
+      internalID: 56839883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +237,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Profesor Caminar Arriba_0: 1761002388
+      Profesor Caminar Arriba_1: -809317257
+      Profesor Caminar Arriba_2: -1323600423
+      Profesor Caminar Arriba_3: 2116391317
+      Profesor Caminar Arriba_4: 56839883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

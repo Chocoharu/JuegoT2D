@@ -23,11 +23,13 @@ public class OcultarEstudiante : MonoBehaviour
 
     public GameObject Pause;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         OriginalPosition = transform.position;
         timer = Random.Range(2.0f, 3.0f);
         if (SceneManager.GetActiveScene().name == "Biblioteca")
@@ -60,7 +62,7 @@ public class OcultarEstudiante : MonoBehaviour
             {
                 if (!returning)
                 {
-                    animator.SetBool("Caminar", true);
+                    
                     MoveToPosition();
                 }
             }
@@ -72,6 +74,7 @@ public class OcultarEstudiante : MonoBehaviour
         }
         if (IsInOriginalOrTargetPosition())
         {
+            animator.SetBool("Caminar", false);
             canCreateCanica = true;
             randomProbability = Random.Range(1.0f, maxProbability);
         }
@@ -79,18 +82,17 @@ public class OcultarEstudiante : MonoBehaviour
 
     void MoveToPosition()
     {
-        float timerActivar = 5f;
-        float timerDesactivar = 3f;
-
         if (TargetPosition == null)
         {
             TargetPosition = GetRandomTargetPosition();
         }
-
+        Vector2 moveDirection = (TargetPosition.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(transform.position, TargetPosition.position, speed * Time.deltaTime);
+        
 
         if (canCreateCanica && !IsInOriginalOrTargetPosition())
         {
+            animator.SetBool("Caminar", true);
             float distanceToOriginal = Vector2.Distance(transform.position, OriginalPosition);
             float minimumDistance = 3.0f;
 
@@ -104,35 +106,26 @@ public class OcultarEstudiante : MonoBehaviour
                 }
             }
         }
+        if (moveDirection.x > 0)
+        {
+            spriteRenderer.flipX = true; // Mira a la derecha
+        }
+        else if (moveDirection.x < 0)
+        {
+            spriteRenderer.flipX = false; // Mira a la izquierda
+        }
 
         if (transform.position == TargetPosition.position)
         {
-            animator.SetBool("Caminar", false);
             escondido = true;
             this.GetComponent<SpriteRenderer>().sortingOrder = -1;
-
-            Animator animatorEstante = TargetPosition.GetComponent<Animator>();
-            
-
-            timerActivar -= Time.deltaTime;
-
-            if (timerActivar <= 0)
-            {
-                animatorEstante.SetBool("Recordatorio", true);
-                timerDesactivar -= Time.deltaTime;
-            }
-
-            if (timerDesactivar <= 0)
-            {
-                animatorEstante.SetBool("Recordatorio", false);
-                timerActivar = 5f;
-                timerDesactivar = 3.0f;            }
+            //Animator animatorEstante = TargetPosition.GetComponent<Animator>();
         }
     }
     public void ReturnToOriginalPosition()
     {
+        spriteRenderer.flipX = false;
         TargetPosition = null;
-        animator.SetBool("Caminar", true);
         escondido = false;
         this.GetComponent<SpriteRenderer>().sortingOrder = 0;
         StartCoroutine(MoveToOriginalPosition());
@@ -152,7 +145,6 @@ public class OcultarEstudiante : MonoBehaviour
         {
             float distCovered = (Time.time - startTime) * ReturnSpeed;
             float fractionOfJourney = distCovered / journeyLength;
-
             transform.position = Vector2.Lerp(transform.position, OriginalPosition, fractionOfJourney);
 
             yield return null;
@@ -161,10 +153,6 @@ public class OcultarEstudiante : MonoBehaviour
 
         TargetPosition = GetRandomTargetPosition();
         returning = false;
-        if(transform.position == OriginalPosition)
-        {
-            animator.SetBool("Caminar", false);
-        }
         
     }
     bool IsInOriginalOrTargetPosition()
