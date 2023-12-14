@@ -16,7 +16,7 @@ public class Transiciones : MonoBehaviour
     }
     public IEnumerator CambiarEscena()
     {
-        animator.SetTrigger("Iniciar");
+        animator.SetTrigger("Inciar");
         yield return new WaitForSeconds(animacionFinal.length);
 
         if (SceneManager.GetActiveScene().name == "Juego" || SceneManager.GetActiveScene().name == "juego2")

@@ -10,6 +10,7 @@ public class Pause : MonoBehaviour
     public GameObject panelPause;
     public GameObject BtnPause;
     
+    Transiciones transiciones;
 
     float currentTime = 0;
     
@@ -30,6 +31,7 @@ public class Pause : MonoBehaviour
     }
     public void menu()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene(0);
     }
     public void SpecialPause()
