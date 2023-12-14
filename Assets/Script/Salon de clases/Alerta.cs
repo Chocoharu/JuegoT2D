@@ -24,6 +24,9 @@ public class Alerta : MonoBehaviour
     public bool SpecialStudent = false;
     public GameObject special;
 
+    public AudioClip sonido; // Asigna tu clip de audio desde el Editor de Unity
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +67,11 @@ public class Alerta : MonoBehaviour
                     {
                         spriteGenerado = Instantiate(prefab, transform.position + transform.up - transform.right, Quaternion.identity);
                     }
-                    
+
+                    audioSource.clip = sonido;
+                    audioSource.Play();
+                    audioSource.loop = true;
+
                     profe.GetComponent<Golpe>().CantAlertas();
                     permisoGolpe = true;
                     Existe = true;
@@ -72,7 +79,7 @@ public class Alerta : MonoBehaviour
                     {
                         // Llamar al método StartMoving del script StudentMovement
                         GetComponent<StudentMovement>().StartMoving();
-                        Debug.Log("no normal");
+                        //Debug.Log("no normal");
                     }
                 }
             }
@@ -88,6 +95,7 @@ public class Alerta : MonoBehaviour
             }
         }
     }
+    
 
     public bool PermisoGolpe()
     {
@@ -111,7 +119,10 @@ public class Alerta : MonoBehaviour
             {
                 Destroy(spriteGenerado);
             }
-           
+
+            audioSource.loop = false;
+            audioSource.Stop();
+
             spritePow = Instantiate(Pow, transform.position + transform.up , Quaternion.identity);
             Destroy(spritePow, 0.5f);
             permisoGolpe = false;
@@ -121,7 +132,7 @@ public class Alerta : MonoBehaviour
 
             if (SpecialStudent)
             {
-                Debug.Log("normal");
+                //Debug.Log("normal");
                 // Llamar al método ReturnToSeat del script StudentMovement
                 GetComponent<StudentMovement>().ReturnToSeat();
             }
