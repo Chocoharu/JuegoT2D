@@ -6638,8 +6638,9 @@ MonoBehaviour:
   dialogueLines:
   - "Bienvenido profesor a el aula del 5Z, t\xFA trabajo es mantener el orden dentro
     del sal\xF3n\npresiona enter ->"
-  - "Cuando el ruido supere a m\xE1s de la mitad de los estudiantes. tendras 6 segundos
-    antes de ser despedido\n->"
+  - "Cuando el ruido supere a m\xE1s de la mitad de los estudiantes, tendr\xE1s 6
+    segundos antes de ser despedido. En caso de emergencia, tendr\xE1s 3 tizas para
+    lanzar las que callen a los estudiantes.\n->"
   - 'Te voy a mostrar como se hacen callar a los alumnos y me voy.
 
     ->'
