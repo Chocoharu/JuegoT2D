@@ -16,10 +16,10 @@ public class Inicio : MonoBehaviour
         string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", "Inicio");
 
         // Verifica si la escena anterior fue "Biblioteca2"
-        if (escenaAnterior == "Biblioteca2")
+        /*if (escenaAnterior == "Biblioteca2")
         {
             bottonText.text = "Salir";
-        }
+        }*/
     }
     public void NextScene()
     {
@@ -65,7 +65,7 @@ public class Inicio : MonoBehaviour
         }
         else if(escenaAnterior == "Biblioteca2")
         {
-            Application.Quit();
+            SceneManager.LoadScene("PantallaFinal");
         }
     }
 }
