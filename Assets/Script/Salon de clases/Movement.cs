@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     private Animator animator;
     private int Dir = 0;
     public bool CanMove = true;
+    public bool IsMoving = false;
 
     public GameObject Pausa;
     public Pause pause;
@@ -20,11 +21,15 @@ public class Movement : MonoBehaviour
     private float velocidadDeslizamiento = 10.0f;
     private Vector2 direccionOriginal;
 
+    public AudioClip sonido; // Asigna tu clip de audio desde el Editor de Unity
+    public AudioSource audioSource;
+    
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,13 +37,10 @@ public class Movement : MonoBehaviour
     {
         //if (SceneManager.GetActiveScene().name == "Juego")
         //{ 
-            if (Pausa != null)
-            {
-                if (Pausa.activeSelf)
-                {
-                    return;
-                }
-            }
+            if(Time.timeScale == 0f)
+        {
+            return;
+        }
         //}
 
         if (Input.GetKey(KeyCode.Escape))
@@ -57,6 +59,7 @@ public class Movement : MonoBehaviour
                 direccionOriginal = transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 1;
+                IsMoving = true;
                 //transform.position += Vector3.right * Time.deltaTime * Speed;
             }
             else if (Input.GetKey(KeyCode.S) && CanMove)
@@ -64,6 +67,7 @@ public class Movement : MonoBehaviour
                 direccionOriginal = -transform.up;
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 3;
+                IsMoving = true;
                 //transform.position -= Vector3.right * Time.deltaTime * Speed;
             }
             else if (Input.GetKey(KeyCode.D) && CanMove)
@@ -73,6 +77,7 @@ public class Movement : MonoBehaviour
                 rigidbody.velocity = transform.right * Speed;
                 Dir = 4;
                 transform.localScale = new Vector3(1, 1, 1);
+                IsMoving = true;
                 //transform.position += Vector3.right * Time.deltaTime * Speed;
             }
             else if (Input.GetKey(KeyCode.A) && CanMove)
@@ -81,14 +86,28 @@ public class Movement : MonoBehaviour
                 rigidbody.velocity = direccionOriginal * Speed;
                 Dir = 2;
                 transform.localScale = new Vector3(-1, 1, 1);
+                IsMoving = true;
                 //transform.position -= Vector3.right * Time.deltaTime * Speed;
             }
             else
             {
                 Dir = 0;
                 rigidbody.velocity = Vector3.zero;
+                IsMoving = false;
             }
             animator.SetInteger("Movement", Dir);
+        }
+        if (IsMoving)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = sonido;
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
         
     }

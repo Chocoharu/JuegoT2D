@@ -27,7 +27,10 @@ public class Golpe : MonoBehaviour
     public TextMeshProUGUI cuentaRegresiva;
     public GameObject objCuentaRegresiva;
     public int sliderline=4;
-    
+
+    public AudioClip sonido; // Asigna tu clip de audio desde el Editor de Unity
+    public AudioSource audioSource;
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +44,7 @@ public class Golpe : MonoBehaviour
         }
         //objetivos = GameObject.FindGameObjectsWithTag("Estudiante").Select(obj => obj.transform).ToArray();
         animator = GetComponent<Animator>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,6 +63,10 @@ public class Golpe : MonoBehaviour
                     if (distancia < distanciaMinima && estudiante.GetComponent<Alerta>().permisoGolpe)
                     {
                         //animator.SetBool("Golpear", true);
+
+                        audioSource.clip = sonido;
+                        audioSource.Play();
+
                         estudiante.GetComponent<Alerta>().Destruir();
                         //exito = true;
                         puntaje += 100;
