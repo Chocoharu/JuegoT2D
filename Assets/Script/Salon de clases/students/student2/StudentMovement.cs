@@ -13,6 +13,7 @@ public class StudentMovement : MonoBehaviour
     private Animator animator;
 
     public GameObject Pause;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class StudentMovement : MonoBehaviour
         navMeshAgent.speed = speed;
         SetWaypoints();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -35,6 +37,7 @@ public class StudentMovement : MonoBehaviour
         }
         if (isMoving && GetComponent<Alerta>().permisoGolpe)
         {
+            
             MoveToWaypoint();
 
             HandleAnimation();
@@ -66,6 +69,7 @@ public class StudentMovement : MonoBehaviour
         isMoving = false;
         currentWaypoint = 0;
         SetDestination(waypoints[currentWaypoint].position);
+        spriteRenderer.flipX = false;
     }
 
     public void StartMoving()
@@ -79,9 +83,17 @@ public class StudentMovement : MonoBehaviour
         float currentSpeed = navMeshAgent.velocity.magnitude;
 
         // Determinar si la velocidad es mayor que un valor umbral (puedes ajustar este valor según tus necesidades)
-        bool isMovingFast = currentSpeed > 0.1f;
+        bool isMovingFast = currentSpeed > 0.001f;
 
         // Configurar el parámetro de la animación en el Animator
-        //animator.SetBool("Caminan", isMovingFast);
+        animator.SetBool("Caminando", isMovingFast);
+        if (navMeshAgent.velocity.x > 0)
+        {
+            spriteRenderer.flipX = true; // Mover a la derecha
+        }
+        else if (navMeshAgent.velocity.x < 0)
+        {
+            spriteRenderer.flipX = false; // Mover a la izquierda
+        }
     }
 }

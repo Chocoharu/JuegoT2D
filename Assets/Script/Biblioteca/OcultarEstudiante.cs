@@ -23,11 +23,13 @@ public class OcultarEstudiante : MonoBehaviour
 
     public GameObject Pause;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         OriginalPosition = transform.position;
         timer = Random.Range(2.0f, 3.0f);
         if (SceneManager.GetActiveScene().name == "Biblioteca")
@@ -80,14 +82,11 @@ public class OcultarEstudiante : MonoBehaviour
 
     void MoveToPosition()
     {
-        float timerActivar = 5f;
-        float timerDesactivar = 3f;
-
         if (TargetPosition == null)
         {
             TargetPosition = GetRandomTargetPosition();
         }
-
+        Vector2 moveDirection = (TargetPosition.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(transform.position, TargetPosition.position, speed * Time.deltaTime);
         
 
@@ -107,30 +106,25 @@ public class OcultarEstudiante : MonoBehaviour
                 }
             }
         }
+        if (moveDirection.x > 0)
+        {
+            spriteRenderer.flipX = true; // Mira a la derecha
+        }
+        else if (moveDirection.x < 0)
+        {
+            spriteRenderer.flipX = false; // Mira a la izquierda
+        }
 
         if (transform.position == TargetPosition.position)
         {
             escondido = true;
             this.GetComponent<SpriteRenderer>().sortingOrder = -1;
             //Animator animatorEstante = TargetPosition.GetComponent<Animator>();
-
-            timerActivar -= Time.deltaTime;
-
-            if (timerActivar <= 0)
-            {
-                TargetPosition.GetComponent<Animator>().SetBool("Pista", true);
-                timerDesactivar -= Time.deltaTime;
-            }
-
-            if (timerDesactivar <= 0)
-            {
-                TargetPosition.GetComponent<Animator>().SetBool("Pista", false);
-                timerActivar = 5f;
-                timerDesactivar = 3.0f;            }
         }
     }
     public void ReturnToOriginalPosition()
     {
+        spriteRenderer.flipX = false;
         TargetPosition = null;
         escondido = false;
         this.GetComponent<SpriteRenderer>().sortingOrder = 0;

@@ -22,12 +22,12 @@ public class TiempoTotal : MonoBehaviour
         string tiempoTexto = string.Format("Has aguantado: {0:00}:{1:00}:{2:000}", minutos, segundos, milisegundos);
         TotalTiempo.text = tiempoTexto;
         int puntaje = PlayerPrefs.GetInt("Puntaje", 0);
-        PuntajeTexto.text = "Puntaje: " + puntaje;
+        PuntajeTexto.text = "Puntaje:        " + puntaje;
         string escenaAnterior = PlayerPrefs.GetString("EscenaAnterior", "Inicio");
         if (escenaAnterior == "Biblioteca" || escenaAnterior == "Biblioteca2")
         {
             int aprendizaje = PlayerPrefs.GetInt("Aprendizaje", 0);
-            AprendizajeTotal.text = "Aprendizaje: " + aprendizaje;
+            AprendizajeTotal.text = "Aprendizaje:        " + aprendizaje + "%";
         }
     }
 
